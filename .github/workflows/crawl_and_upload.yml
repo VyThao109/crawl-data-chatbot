@@ -19,9 +19,11 @@ jobs:
           sudo apt-get install -y google-chrome-stable
 
       - name: Setup ChromeDriver
-        uses: actions/setup-chromedriver@v1
+        uses: browser-actions/setup-chrome@v1
         with:
-          version: "latest"
+          chrome-version: "latest" # Hoặc phiên bản cụ thể như "120"
+          install-chromedriver: true # Tự động cài đặt ChromeDriver tương thích
+          install-dependencies: true
 
       - name: Setup Python
         uses: actions/setup-python@v4
