@@ -1,5 +1,16 @@
-# Bỏ qua tệp .env
+# Môi trường ảo
+venv/
 .env
 
-# Bỏ qua log
+# File credentials Firebase
+data-chatbot-products-firebase-adminsdk-*.json
+data/firebase_key.json
+
+# Log file
 *.log
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+
