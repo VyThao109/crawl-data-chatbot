@@ -15,7 +15,6 @@ from preprocess import clean_data, merge_data, generate_features
 # Đường dẫn đến file key JSON bạn tải về
 cred = credentials.Certificate('data-chatbot-products-firebase.json')
 
-
 # Khởi tạo app Firebase
 firebase_admin.initialize_app(cred)
 
