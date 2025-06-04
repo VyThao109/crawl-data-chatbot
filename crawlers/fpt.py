@@ -8,7 +8,7 @@ import json
 import os
 from my_logger import get_logger
 
-def setup_driver(logger):
+def setup_driver():
     """Initialize Chrome driver with proper configuration"""
     options = webdriver.ChromeOptions()
     

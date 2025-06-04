@@ -12,7 +12,7 @@ from bs4 import BeautifulSoup
 import json
 from my_logger import get_logger
 # ======= Setup driver =======
-def setup_driver(logger):
+def setup_driver():
     """Initialize Chrome driver with proper configuration"""
     options = webdriver.ChromeOptions()
     
