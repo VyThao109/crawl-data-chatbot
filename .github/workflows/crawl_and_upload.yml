@@ -13,17 +13,17 @@ jobs:
       - name: Checkout source code
         uses: actions/checkout@v3
 
-      - name: Setup Chrome
-        run: |
-          sudo apt-get update
-          sudo apt-get install -y google-chrome-stable
-
-      - name: Setup ChromeDriver
+      - name: Set up Google Chrome and ChromeDriver
         uses: browser-actions/setup-chrome@v1
         with:
-          chrome-version: "latest" # Hoặc phiên bản cụ thể như "120"
-          install-chromedriver: true # Tự động cài đặt ChromeDriver tương thích
+          chrome-version: "latest" # Hoặc phiên bản cụ thể như '120'
+          install-chromedriver: true
           install-dependencies: true
+
+      - name: Verify Chrome and ChromeDriver versions
+        run: |
+          chrome --version
+          chromedriver --version
 
       - name: Setup Python
         uses: actions/setup-python@v4
