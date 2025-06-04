@@ -12,17 +12,10 @@ from my_logger import init_logger, get_logger
 from crawlers import cellphoneS, fpt, tgdd
 from preprocess import clean_data, merge_data, generate_features
 
-# Lấy chuỗi JSON từ biến môi trường (được inject bởi GitHub Action)
-firebase_creds = os.environ.get("FIREBASE_KEY")
+# Khởi tạo Firebase app mặc định, SDK tự load credential từ file nhờ biến môi trường
+firebase_admin.initialize_app()
 
-# Chuyển chuỗi JSON thành dict
-cred_dict = json.loads(firebase_creds)
-
-# Khởi tạo credential từ dict
-cred = credentials.Certificate(cred_dict)
-
-# Khởi tạo Firebase app và client
-firebase_admin.initialize_app(cred)
+# Khởi tạo Firestore client
 db = firestore.client()
 
 def load_raw_data(source_dir: str):
