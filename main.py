@@ -12,10 +12,14 @@ from my_logger import init_logger, get_logger
 from crawlers import cellphoneS, fpt, tgdd
 from preprocess import clean_data, merge_data, generate_features
 
-# Khởi tạo Firebase app mặc định, SDK tự load credential từ file nhờ biến môi trường
-firebase_admin.initialize_app()
+# Đường dẫn đến file key JSON bạn tải về
+cred = credentials.Certificate('data-chatbot-products-firebase.json')
 
-# Khởi tạo Firestore client
+
+# Khởi tạo app Firebase
+firebase_admin.initialize_app(cred)
+
+# Khởi tạo client Firestore
 db = firestore.client()
 
 def load_raw_data(source_dir: str):

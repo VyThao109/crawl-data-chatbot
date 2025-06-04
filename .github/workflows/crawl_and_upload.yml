@@ -23,10 +23,6 @@ jobs:
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Create Firebase credentials
-        run: |
-          echo "${{ secrets.FIREBASE_KEY }}" > firebase_key.json
-
       - name: Run crawler and upload script
         run: |
           python main.py
