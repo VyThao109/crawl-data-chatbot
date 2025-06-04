@@ -13,7 +13,7 @@ from crawlers import cellphoneS, fpt, tgdd
 from preprocess import clean_data, merge_data, generate_features
 
 # Lấy chuỗi JSON từ biến môi trường (được inject bởi GitHub Action)
-firebase_creds = os.environ.get("FIREBASE_CREDENTIALS")
+firebase_creds = os.environ.get("FIREBASE_KEY")
 
 # Chuyển chuỗi JSON thành dict
 cred_dict = json.loads(firebase_creds)

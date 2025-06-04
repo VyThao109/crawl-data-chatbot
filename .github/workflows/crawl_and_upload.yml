@@ -2,7 +2,7 @@ name: Auto Crawl & Upload to Firebase
 
 on:
   schedule:
-    - cron: "30 12 * * *" # Mỗi ngày lúc 03:00 UTC (10:00 sáng giờ VN)
+    - cron: "0 1 * * 0" # Mỗi ngày lúc 03:00 UTC (10:00 sáng giờ VN)
   workflow_dispatch: # Cho phép chạy tay
 
 jobs:
