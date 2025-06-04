@@ -55,7 +55,7 @@ def crawl_product_list(driver, logger, category_url):
 
     while True:
         try:
-            view_more_button = WebDriverWait(driver, 5).until(
+            view_more_button = WebDriverWait(driver, 10).until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "div.cps-block-content_btn-showmore a"))
             )
             driver.execute_script("arguments[0].click();", view_more_button)
@@ -167,7 +167,7 @@ def scrape_features(driver, nuxt_data):
 
     # --- Phần 1: Lấy từ DOM ---
     try:
-        WebDriverWait(driver, 10).until(
+        WebDriverWait(driver, 15).until(
             EC.presence_of_element_located((By.ID, "v2Gallery"))
         )
         v2_gallery = driver.find_element(By.ID, "v2Gallery")
@@ -190,7 +190,6 @@ def scrape_features(driver, nuxt_data):
 
         content_source = soup.find("blockquote")
         if not content_source:
-            print("Không tìm thấy <blockquote>, tìm thẻ con đầu tiên là <p> thay thế.")
             for child in soup.body.descendants:
                 if isinstance(child, Tag) and child.name == "p":
                     content_source = child
@@ -205,8 +204,6 @@ def scrape_features(driver, nuxt_data):
             for sentence in sentences:
                 if sentence.strip():
                     features.append(sentence.strip())
-        else:
-            print("Không tìm thấy <blockquote> hoặc <p> nào trong nuxt_data.")
     except Exception as e:
         print("Error in nuxt_data extraction:", e)
 
