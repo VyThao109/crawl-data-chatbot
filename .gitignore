@@ -3,7 +3,7 @@ venv/
 .env
 
 # File credentials Firebase
-data-chatbot-products-firebase-adminsdk-*.json
+data-chatbot-products-firebase.json
 data/firebase_key.json
 
 # Log file
