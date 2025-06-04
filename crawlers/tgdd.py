@@ -12,27 +12,35 @@ from bs4 import BeautifulSoup
 import json
 from my_logger import get_logger
 # ======= Setup driver =======
-def setup_driver():
+def setup_driver(logger):
+    """Initialize Chrome driver with proper configuration"""
     options = webdriver.ChromeOptions()
-    options.add_argument("--headless=new")  # Dùng headless mới nếu Chrome hỗ trợ
-    options.add_argument("--disable-gpu")
-    options.add_argument("--no-sandbox")
-    options.add_argument("--disable-dev-shm-usage")
-    options.add_argument("--window-size=1920,1080")
-    options.add_argument("--disable-blink-features=AutomationControlled")
+    
+    # Essential options for GitHub Actions
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--disable-gpu')
+    options.add_argument('--window-size=1920,1080')
+    options.add_argument('--disable-web-security')
+    options.add_argument('--disable-features=VizDisplayCompositor')
+    options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
+    # Version compatibility handling
+    try:
+        # Try with explicit chromedriver path
+        service = webdriver.ChromeService('/usr/local/bin/chromedriver')
+        driver = webdriver.Chrome(service=service, options=options)
+        return driver
+    except Exception as e:
+        print(f"Failed to initialize Chrome with custom service: {e}")
+        # Fallback to default
+        try:
+            driver = webdriver.Chrome(options=options)
+            return driver
+        except Exception as e2:
+            print(f"Failed to initialize Chrome with default service: {e2}")
+            raise e2
 
-    # Thêm user-agent thân thiện, tránh bị chặn
-    options.add_argument(
-        "user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) "
-        "AppleWebKit/537.36 (KHTML, like Gecko) "
-        "Chrome/115.0.0.0 Safari/537.36"
-    )
-
-    # Tắt một số flags để tránh bị phát hiện
-    options.add_experimental_option("excludeSwitches", ["enable-automation"])
-    options.add_experimental_option('useAutomationExtension', False)
-    driver = webdriver.Chrome(options=options)
-    return driver
 
 def crawl_product_list(driver, logger, category_url): 
     driver.get(category_url)
