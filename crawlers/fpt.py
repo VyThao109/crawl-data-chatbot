@@ -2,9 +2,10 @@ from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException, WebDriverException
 import pandas as pd
 import time
-import json
+import time
 import os
 from my_logger import get_logger
 
@@ -281,33 +282,56 @@ def crawl():
 
             logger.info(f"Crawling danh mục: {category_name} - URL: {url}")
 
-            driver.get(url)
-            time.sleep(3)
+            try:
+                driver.get(url)
+                time.sleep(3)
+            except TimeoutException as te:
+                logger.warning(f"Timeout khi truy cập trang danh mục {category_name}: {te}")
+                continue
+            except WebDriverException as wde:
+                logger.warning(f"Lỗi trình duyệt khi mở trang danh mục {category_name}: {wde}")
+                continue
+            except Exception as e:
+                logger.warning(f"Lỗi không xác định khi mở trang danh mục {category_name}: {e}")
+                continue
 
             products = crawl_products_on_current_page(driver, logger)
-
             all_data = []
 
             for index, product in enumerate(products):
                 logger.info(f"Đang crawl ({index + 1}/{len(products)}): {product['name']}")
                 product_url = product["url"]
-                driver.get(product_url)
-                time.sleep(3) 
 
-                prices = get_colors_and_prices(driver, logger)
-                specs = get_specifications(driver, logger)
-                brand = extract_brand(product["name"], category_name)
+                try:
+                    driver.get(product_url)
+                    time.sleep(3)
+                except TimeoutException as te:
+                    logger.warning(f"Timeout khi truy cập sản phẩm: {product_url}: {te}")
+                    continue
+                except WebDriverException as wde:
+                    logger.warning(f"Lỗi trình duyệt khi mở sản phẩm: {product_url}: {wde}")
+                    continue
+                except Exception as e:
+                    logger.warning(f"Lỗi không xác định khi mở sản phẩm: {product_url}: {e}")
+                    continue
 
-                data_entry = {
-                    "name": product["name"],
-                    "url": product_url,
-                    "brand": brand,
-                    "prices": prices,
-                    "specifications": specs,
-                }
+                try:
+                    prices = get_colors_and_prices(driver, logger)
+                    specs = get_specifications(driver, logger)
+                    brand = extract_brand(product["name"], category_name)
 
-                all_data.append(data_entry)
-                
+                    data_entry = {
+                        "name": product["name"],
+                        "url": product_url,
+                        "brand": brand,
+                        "prices": prices,
+                        "specifications": specs,
+                    }
+                    all_data.append(data_entry)
+
+                except Exception as e:
+                    logger.error(f"Lỗi khi xử lý dữ liệu sản phẩm {product['name']}: {e}")
+                    continue
 
             out_path = os.path.join(output_dir, filename)
             df = pd.DataFrame(all_data)
@@ -315,6 +339,8 @@ def crawl():
             logger.info(f"Đã lưu dữ liệu danh mục {category_name} vào {out_path}")
 
     except Exception as e:
-        logger.error(f"Lỗi trong quá trình crawl: {str(e)}")
+        logger.error(f"Lỗi tổng quát trong quá trình crawl: {str(e)}")
+
     finally:
         driver.quit()
+

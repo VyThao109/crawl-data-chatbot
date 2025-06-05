@@ -11,6 +11,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup, Tag
 import json
 from .filter_cellphoneS import crawl_needs_filter
@@ -249,36 +250,47 @@ def get_image_urls(driver):
 def crawl_selected_range(start, end, df_input, category, driver, logger):
     results = []
     logger.info(f"Bắt đầu lấy dữ liệu chi tiết sản phẩm từ {start} đến {end} cho danh mục: {category}")
+    
     for index, row in df_input.iloc[start:end].iterrows():
         logger.info(f"Thu thập dữ liệu sản phẩm {index}: {row['name']}")
         try:
             driver.get(row["url"])
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+            WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+        except TimeoutException as te:
+            logger.warning(f"Timeout khi truy cập sản phẩm {row['name']} ({row['url']}): {te}")
+            time.sleep(2)  # Nghỉ một chút tránh bị block
+            continue
         except Exception as e:
-            logger.warning(f"Không truy cập được sản phẩm {row['name']} ({row['url']}): {e}")
+            logger.warning(f"Lỗi khác khi truy cập sản phẩm {row['name']} ({row['url']}): {e}")
+            time.sleep(2)
             continue
 
-        # Các hàm lấy thông tin chi tiết
-        brand_name = get_brand(driver)
-        nuxt_data = get_nuxt_data(driver)
-        specifications = extract_specifications(nuxt_data) if nuxt_data else {}
-        prices = scrape_prices(driver, nuxt_data)
-        features = scrape_features(driver, nuxt_data)
-        faq_answers = scrape_faq_answers(driver)
-        image_links = get_image_urls(driver)
-        
-        result = {
-            "name": row["name"],
-            "url": row["url"],
-            "category": category,
-            "brand": brand_name,
-            "specifications": specifications,
-            "prices": prices,
-            "image_links": image_links,
-            "features": features + faq_answers if (features or faq_answers) else []
-        }
-        results.append(result)
-        logger.debug(f"Đã thu thập chi tiết sản phẩm {row['name']}")
+        try:
+            # Các hàm lấy thông tin chi tiết
+            brand_name = get_brand(driver)
+            nuxt_data = get_nuxt_data(driver)
+            specifications = extract_specifications(nuxt_data) if nuxt_data else {}
+            prices = scrape_prices(driver, nuxt_data)
+            features = scrape_features(driver, nuxt_data)
+            faq_answers = scrape_faq_answers(driver)
+            image_links = get_image_urls(driver)
+
+            result = {
+                "name": row["name"],
+                "url": row["url"],
+                "category": category,
+                "brand": brand_name,
+                "specifications": specifications,
+                "prices": prices,
+                "image_links": image_links,
+                "features": features + faq_answers if (features or faq_answers) else []
+            }
+            results.append(result)
+            logger.debug(f"Đã thu thập chi tiết sản phẩm {row['name']}")
+        except Exception as e:
+            logger.error(f"Lỗi khi xử lý dữ liệu sản phẩm {row['name']}: {e}")
+            time.sleep(2)
+            continue
 
     logger.info(f"Hoàn tất crawl chi tiết {len(results)} sản phẩm cho danh mục {category}")
     return results

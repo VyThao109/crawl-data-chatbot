@@ -8,6 +8,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup
 import json
 from my_logger import get_logger
@@ -182,9 +183,15 @@ def crawl_selected_range(start_index, end_index, df_input, category, driver, log
         try:
             driver.get(row["url"])
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+        except TimeoutException as te:
+            logger.warning(f"Timeout khi truy cập sản phẩm {row['name']} ({row['url']}): {te}")
+            time.sleep(2)  # Nghỉ một chút tránh bị block
+            continue
         except Exception:
             logger.warning(f"Timeout khi tải trang: {row['url']}")
+            time.sleep(2)
             continue
+
 
         brand_name = get_brand(driver)
         specifications = get_specs(driver)

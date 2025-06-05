@@ -8,7 +8,7 @@ on:
       debug_mode:
         description: "Run in debug mode"
         required: false
-        default: "false"
+        default: false
         type: boolean
 
 env:
