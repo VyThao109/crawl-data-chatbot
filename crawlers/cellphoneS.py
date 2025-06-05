@@ -163,7 +163,7 @@ def scrape_prices(driver, nuxt_data):
             return []
     return prices
 
-def scrape_features(driver, nuxt_data):
+def scrape_features(driver, nuxt_data, logger=None):
     features = []
 
     # --- Phần 1: Lấy từ DOM ---
@@ -181,36 +181,39 @@ def scrape_features(driver, nuxt_data):
             clean_text = ' '.join(text.split())
             if clean_text:
                 features.append(clean_text)
-    except Exception as e:
-        print("Error in DOM extraction:", e)
 
-    # --- Phần 2: Lấy từ nuxt_data["data"][0]["pageInfo"]["content"] ---
+    except Exception as e:
+        msg = f"Lỗi khi lấy features từ DOM: {e}"
+        print(msg) if not logger else logger.warning(msg)
+
+    # --- Phần 2: Lấy từ nuxt_data ---
     try:
-        html_content = nuxt_data["data"][0]["pageInfo"]["content"]
-        soup = BeautifulSoup(html_content, "html.parser")
+        if nuxt_data and "data" in nuxt_data and nuxt_data["data"]:
+            html_content = nuxt_data["data"][0].get("pageInfo", {}).get("content", "")
+            if html_content:
+                soup = BeautifulSoup(html_content, "html.parser")
 
-        content_source = soup.find("blockquote")
-        if not content_source:
-            for child in soup.body.descendants:
-                if isinstance(child, Tag) and child.name == "p":
-                    content_source = child
-                    break
+                content_source = soup.find("blockquote")
+                if not content_source:
+                    for child in soup.body.descendants:
+                        if isinstance(child, Tag) and child.name == "p":
+                            content_source = child
+                            break
 
-        if content_source:
-            raw_text = content_source.get_text(separator=" ").strip()
-            clean_text = ' '.join(raw_text.split())
+                if content_source:
+                    raw_text = content_source.get_text(separator=" ").strip()
+                    clean_text = ' '.join(raw_text.split())
 
-            # Tách thành câu
-            sentences = re.split(r'(?<=[.!?])\s+', clean_text)
-            for sentence in sentences:
-                if sentence.strip():
-                    features.append(sentence.strip())
+                    # Tách thành câu
+                    sentences = re.split(r'(?<=[.!?])\s+', clean_text)
+                    for sentence in sentences:
+                        if sentence.strip():
+                            features.append(sentence.strip())
     except Exception as e:
-        print("Error in nuxt_data extraction:", e)
+        msg = f"Lỗi khi lấy features từ nuxt_data: {e}"
+        print(msg) if not logger else logger.warning(msg)
 
     return features
-
-
 
 def scrape_faq_answers(driver):
     answers = []
