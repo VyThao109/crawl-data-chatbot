@@ -44,31 +44,44 @@ def setup_driver():
 
 
 def crawl_product_list(driver, logger, category_url): 
-    driver.get(category_url)
+    try:
+        driver.get(category_url)
+    except TimeoutException as e:
+        logger.warning(f"Timeout khi truy cập URL: {category_url} - {e}")
+        return []  # hoặc return products nếu muốn trả lại danh sách đang có
+
     while True:
         try:
             # Click nút "Xem thêm"
-            view_more_button = WebDriverWait(driver, 5).until(
+            view_more_button = WebDriverWait(driver, 20).until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "div.view-more a"))
             )
             driver.execute_script("arguments[0].click();", view_more_button)  # Click using JavaScript
-            time.sleep(2)  
+            time.sleep(2)
 
             show_more_btn_text = view_more_button.text.strip()
             print(f"Còn: {show_more_btn_text}")
-        except:
-            print("No more 'View More' button found.")
-            break 
+        except TimeoutException:
+            print("Không tìm thấy nút 'Xem thêm' (Timeout).")
+            break
+        except Exception as e:
+            logger.warning(f"Lỗi khi click nút 'Xem thêm': {e}")
+            break
 
     # Lấy danh sách tất cả sản phẩm sau khi đã load hết
-    product_items = driver.find_elements(By.CSS_SELECTOR, "ul.listproduct li.item")
     products = []
+    try:
+        product_items = driver.find_elements(By.CSS_SELECTOR, "ul.listproduct li.item")
+    except Exception as e:
+        logger.error(f"Lỗi khi tìm danh sách sản phẩm: {e}")
+        return []
+
     i = 1
     for item in product_items:
         try:
             # Lấy URL sản phẩm
             first_a = item.find_element(By.TAG_NAME, "a")
-            product_url = first_a.get_attribute("href")
+            product_url = first_a.getAttribute("href")
             
             # Lấy tên sản phẩm
             h3_tag = item.find_element(By.TAG_NAME, "h3")
@@ -76,10 +89,11 @@ def crawl_product_list(driver, logger, category_url):
             
             products.append({"name": product_name, "url": product_url})
             logger.debug(f"Appended {i} name: {product_name}, url: {product_url}")
-            i = i + 1
-
-        except:
+            i += 1
+        except Exception as e:
+            logger.debug(f"Lỗi khi xử lý sản phẩm: {e}")
             continue
+
     return products
 
 def extract_json_product_gtm(driver):

@@ -90,14 +90,14 @@ def main():
 
     logger.info("== BẮT ĐẦU TOÀN BỘ QUÁ TRÌNH CRAWL ==")
 
-    logger.info(">>> Bắt đầu crawl từ Thế Giới Di Động")
-    tgdd.crawl()
+    logger.info(">>> Bắt đầu crawl từ CellphoneS")
+    cellphoneS.crawl()
 
     logger.info(">>> Bắt đầu crawl từ FPT")
     fpt.crawl()
 
-    logger.info(">>> Bắt đầu crawl từ CellphoneS")
-    cellphoneS.crawl()
+    logger.info(">>> Bắt đầu crawl từ Thế Giới Di Động")
+    tgdd.crawl()
 
     logger.info("== HOÀN TẤT TOÀN BỘ QUÁ TRÌNH CRAWL ==")
     logger.info("== BẮT ĐẦU QUÁ TRÌNH XỬ LÝ DỮ LIỆU ==")
