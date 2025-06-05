@@ -194,7 +194,7 @@ def scrape_features(driver, nuxt_data, logger=None):
                 soup = BeautifulSoup(html_content, "html.parser")
 
                 content_source = soup.find("blockquote")
-                if not content_source:
+                if not content_source and soup.body:
                     for child in soup.body.descendants:
                         if isinstance(child, Tag) and child.name == "p":
                             content_source = child
@@ -214,6 +214,7 @@ def scrape_features(driver, nuxt_data, logger=None):
         print(msg) if not logger else logger.warning(msg)
 
     return features
+
 
 def scrape_faq_answers(driver):
     answers = []
