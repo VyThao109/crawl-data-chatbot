@@ -56,6 +56,12 @@ def setup_driver():
         options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
         
         chromedriver_path = None
+    if chromedriver_path:
+        driver = webdriver.Chrome(executable_path=chromedriver_path, options=options)
+    else:
+        driver = webdriver.Chrome(options=options)
+    return driver
+
 
 
 def crawl_products_on_current_page(driver, logger, max_products=None):
