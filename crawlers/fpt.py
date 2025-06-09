@@ -11,52 +11,50 @@ import os
 from my_logger import get_logger
 
 def setup_driver():
-    """Initialize Chrome driver with proper configuration"""
-    options = webdriver.ChromeOptions()
+    """Initialize Chrome driver with proper configuration for both local and GitHub Actions"""
     
-    # Common options
-    options.add_argument('--headless')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--disable-dev-shm-usage')
-    options.add_argument('--disable-gpu')
-    options.add_argument('--window-size=1920,1080')
-    options.add_argument('--disable-web-security')
-    options.add_argument('--disable-features=VizDisplayCompositor')
+    options = Options()
+    is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
     
-    # Detect environment and set appropriate user-agent
-    if os.getenv('GITHUB_ACTIONS'):
-        # GitHub Actions environment
-        options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-        chromedriver_path = '/usr/local/bin/chromedriver'
-    else:
-        # Local environment
-        options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-        chromedriver_path = None
-    
-    try:
-        # Try with WebDriver Manager first
-        from webdriver_manager.chrome import ChromeDriverManager
-        service = Service(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service, options=options)
-        return driver
+    if is_github_actions:
+        # GitHub Actions specific options (more aggressive)
+        options.add_argument('--headless=new')  # Use new headless mode
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--disable-gpu')
+        options.add_argument('--disable-software-rasterizer')
+        options.add_argument('--disable-background-timer-throttling')
+        options.add_argument('--disable-backgrounding-occluded-windows')
+        options.add_argument('--disable-renderer-backgrounding')
+        options.add_argument('--disable-features=TranslateUI,VizDisplayCompositor')
+        options.add_argument('--disable-extensions')
+        options.add_argument('--disable-default-apps')
+        options.add_argument('--disable-sync')
+        options.add_argument('--disable-background-networking')
+        options.add_argument('--memory-pressure-off')
+        options.add_argument('--single-process')  # Important for stability on CI
+        options.add_argument('--window-size=1920,1080')
+        options.add_argument('--virtual-time-budget=60000')
         
-    except ImportError:
-        # WebDriver Manager not available
-        try:
-            if chromedriver_path and os.path.exists(chromedriver_path):
-                service = Service(chromedriver_path)
-                driver = webdriver.Chrome(service=service, options=options)
-            else:
-                # Use default Chrome driver from PATH
-                driver = webdriver.Chrome(options=options)
-            return driver
-            
-        except Exception as e:
-            print(f"Failed to initialize Chrome driver: {e}")
-            print("Solutions:")
-            print("1. Install webdriver-manager: pip install webdriver-manager")
-            print("2. Or download ChromeDriver and add to PATH")
-            raise e
+        # Linux user agent
+        options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+        
+        # Use the ChromeDriver installed by workflow
+        chromedriver_path = '/usr/local/bin/chromedriver'
+        
+    else:
+        # Local development options (less aggressive)
+        options.add_argument('--headless')  # Remove this line to see browser locally
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--disable-gpu')
+        options.add_argument('--window-size=1920,1080')
+        options.add_argument('--disable-web-security')
+        
+        # Windows user agent for local
+        options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+        
+        chromedriver_path = None
 
 
 def crawl_products_on_current_page(driver, logger, max_products=None):
@@ -134,7 +132,7 @@ def get_colors_and_prices(driver, logger):
                 logger.error(f"Không lấy được giá cho màu {btn.text.strip()}: {str(e)}")
                 continue
     except Exception as e:
-        logger.error("Không tìm thấy màu hoặc giá:", str(e))
+        logger.error(f"Không tìm thấy màu hoặc giá:  {str(e)}")
     return prices
 
 def get_specifications(driver, logger):
