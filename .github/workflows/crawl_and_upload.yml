@@ -95,8 +95,8 @@ jobs:
       - name: Run crawler and upload script with retry
         uses: nick-fields/retry@v2
         with:
-          timeout_minutes: 30
-          max_attempts: 3
+          timeout_minutes: 5
+          max_attempts: 2
           retry_wait_seconds: 60
           command: python main.py
         env:

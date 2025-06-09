@@ -4,70 +4,70 @@ import re
 import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.common.exceptions import TimeoutException
+from selenium.common.exceptions import TimeoutException, WebDriverException
+import urllib3
 from bs4 import BeautifulSoup
 import json
 from my_logger import get_logger
-# ======= Setup driver =======
+
+
 def setup_driver():
-    """Initialize Chrome driver with proper configuration"""
-    options = webdriver.ChromeOptions()
-    
-    # Common options
-    options.add_argument('--headless')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--disable-dev-shm-usage')
-    options.add_argument('--disable-gpu')
-    options.add_argument('--window-size=1920,1080')
-    options.add_argument('--disable-web-security')
-    options.add_argument('--disable-features=VizDisplayCompositor')
-    
-    # Detect environment and set appropriate user-agent
-    if os.getenv('GITHUB_ACTIONS'):
-        # GitHub Actions environment
+    options = Options()
+    is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
+
+    if is_github_actions:
+        # GitHub Actions specific options
+        options.add_argument('--headless=new')
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--disable-gpu')
+        options.add_argument('--enable-unsafe-swiftshader')
+        options.add_argument('--disable-software-rasterizer')
+        options.add_argument('--disable-background-timer-throttling')
+        options.add_argument('--disable-backgrounding-occluded-windows')
+        options.add_argument('--disable-renderer-backgrounding')
+        options.add_argument('--disable-features=TranslateUI,VizDisplayCompositor')
+        options.add_argument('--disable-extensions')
+        options.add_argument('--disable-default-apps')
+        options.add_argument('--disable-sync')
+        options.add_argument('--disable-background-networking')
+        options.add_argument('--memory-pressure-off')
+        options.add_argument('--single-process')
+        options.add_argument('--window-size=1920,1080')
+        options.add_argument('--virtual-time-budget=60000')
         options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+
         chromedriver_path = '/usr/local/bin/chromedriver'
-    else:
-        # Local environment
-        options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-        chromedriver_path = None
-    
-    try:
-        # Try with WebDriver Manager first
-        from webdriver_manager.chrome import ChromeDriverManager
-        service = Service(ChromeDriverManager().install())
+        service = Service(executable_path=chromedriver_path)
         driver = webdriver.Chrome(service=service, options=options)
-        return driver
-        
-    except ImportError:
-        # WebDriver Manager not available
-        try:
-            if chromedriver_path and os.path.exists(chromedriver_path):
-                service = Service(chromedriver_path)
-                driver = webdriver.Chrome(service=service, options=options)
-            else:
-                # Use default Chrome driver from PATH
-                driver = webdriver.Chrome(options=options)
-            return driver
-            
-        except Exception as e:
-            print(f"Failed to initialize Chrome driver: {e}")
-            print("Solutions:")
-            print("1. Install webdriver-manager: pip install webdriver-manager")
-            print("2. Or download ChromeDriver and add to PATH")
-            raise e
+
+    else:
+        # Local development
+        options.add_argument('--headless')
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--disable-gpu')
+        options.add_argument('--disable-web-security')
+        options.add_argument('--enable-unsafe-swiftshader') 
+        options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+
+        driver = webdriver.Chrome(options=options)
+
+    return driver
+
 
 
 def crawl_product_list(driver, logger, category_url): 
     try:
         driver.get(category_url)
-    except TimeoutException as e:
+    except (TimeoutException, WebDriverException, urllib3.exceptions.HTTPError) as e:
         logger.warning(f"Timeout khi truy cập URL: {category_url} - {e}")
-        return []  # hoặc return products nếu muốn trả lại danh sách đang có
+        return []
 
     while True:
         try:
@@ -200,10 +200,7 @@ def get_prices(driver):
         json_data = extract_json_product_gtm(driver)
         price = json_data.get("offers", {}).get("price", 0.0)
         return [{"color": "default", "price": float(price)}]
-
-    
     except Exception as e:
-        print(f"Lỗi khi lấy giá sản phẩm: {e}")
         return [{'color': 'default', 'price': 0.0}]
 
 def crawl_selected_range(start_index, end_index, df_input, category, driver, logger, df_results=None):
@@ -211,7 +208,7 @@ def crawl_selected_range(start_index, end_index, df_input, category, driver, log
     new_results = []
 
     for index, row in rows_to_crawl.iterrows():
-        logger.debug(f"Đang crawl ({index}/{len(df_input)}): {row['name']}")
+        logger.debug(f"Thu thập dữ liệu sản phẩm ({index}/{len(df_input)}): {row['name']}")
         
         try:
             driver.get(row["url"])
@@ -238,6 +235,18 @@ def crawl_selected_range(start_index, end_index, df_input, category, driver, log
             "specifications": specifications,
             "prices": prices,
         })
+        # Kiểm tra thiếu mục nào
+        missing_fields = []
+        if not brand_name:
+            missing_fields.append("brand")
+        if not specifications:
+            missing_fields.append("specifications")
+        if not prices:
+            missing_fields.append("prices")
+        if missing_fields:
+            logger.warning(f"Thiếu {', '.join(missing_fields)} ở sản phẩm: {row['name']}")
+
+        logger.info(f"Đã thu thập chi tiết sản phẩm {row['name']}")
 
     new_df = pd.DataFrame(new_results)
 
@@ -266,7 +275,7 @@ def crawl():
     driver = setup_driver()
 
     for category in categories:
-        logger.info(f"Đang lấy danh sách sản phẩm cho: {category ['name']}")
+        logger.info(f"Thu thập danh sách sản phẩm {category ['name']}")
         products = crawl_product_list(driver, logger, category ["url"])
         df_products = pd.DataFrame(products).drop_duplicates(subset=["url"], keep="last").reset_index(drop=True)
         detailed = crawl_selected_range(0, len(df_products), df_products, category ["name"], driver, logger)

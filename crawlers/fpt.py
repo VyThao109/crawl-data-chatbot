@@ -55,9 +55,6 @@ def setup_driver():
 
     return driver
 
-
-
-
 def crawl_products_on_current_page(driver, logger, max_products=None):
     while True:
         try:
@@ -286,7 +283,7 @@ def crawl():
     output_dir = "data/raw/fpt/"
     os.makedirs(output_dir, exist_ok=True)
     logger = get_logger()
-    logger.info("Khởi tạo trình duyệt và bắt đầu quá trình crawl")
+    logger.info("Khởi tạo trình duyệt và bắt đầu quá trình thu thập")
     driver = setup_driver()
 
     try:
@@ -299,7 +296,7 @@ def crawl():
                 logger.info(f"Không tìm thấy URL hoặc tên file cho danh mục {category_name}")
                 continue
 
-            logger.info(f"Crawling danh mục: {category_name} - URL: {url}")
+            logger.info(f"Truy cập trang danh mục: {category_name} - URL: {url}")
 
             try:
                 driver.get(url)
@@ -319,7 +316,7 @@ def crawl():
             all_data = []
 
             for index, product in enumerate(products):
-                logger.info(f"Đang lấy dữ liệu ({index + 1}/{len(products)}): {product['name']}")
+                logger.info(f"Thu thập dữ liệu sản phẩm ({index + 1}/{len(products)}): {product['name']}")
                 product_url = product["url"]
 
                 try:
@@ -349,11 +346,24 @@ def crawl():
                     }
                     all_data.append(data_entry)
 
+                    # Kiểm tra thiếu mục nào
+                    missing_fields = []
+                    if not prices:
+                        missing_fields.append("prices")
+                    if not specs:
+                        missing_fields.append("specifications")
+                    if not brand:
+                        missing_fields.append("brand")
+
+                    if missing_fields:
+                        logger.warning(f"Thiếu {', '.join(missing_fields)} ở sản phẩm: {product['name']}")
+
                 except Exception as e:
                     logger.error(f"Lỗi khi xử lý dữ liệu sản phẩm {product['name']}: {e}")
                     continue
-                finally: 
-                    logger.info(f"Đã lấy dữ liệu ({index + 1}/{len(products)}): {product['name']}")
+
+                finally:
+                    logger.info(f"Đã thu thập chi tiết sản phẩm {product['name']}")
 
             out_path = os.path.join(output_dir, filename)
             df = pd.DataFrame(all_data)
@@ -361,7 +371,7 @@ def crawl():
             logger.info(f"Đã lưu dữ liệu danh mục {category_name} vào {out_path}")
 
     except Exception as e:
-        logger.error(f"Lỗi tổng quát trong quá trình crawl: {str(e)}")
+        logger.error(f"Lỗi tổng quát trong quá trình thu thập: {str(e)}")
 
     finally:
         driver.quit()

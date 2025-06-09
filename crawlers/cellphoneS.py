@@ -7,6 +7,7 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
@@ -17,56 +18,50 @@ import json
 from .filter_cellphoneS import crawl_needs_filter
 from my_logger import get_logger
 
-# ======= Setup driver =======
 def setup_driver():
-    """Initialize Chrome driver with proper configuration"""
-    options = webdriver.ChromeOptions()
-    
-    # Common options
-    options.add_argument('--headless')
-    options.add_argument('--no-sandbox')
-    options.add_argument('--disable-dev-shm-usage')
-    options.add_argument('--disable-gpu')
-    options.add_argument('--window-size=1920,1080')
-    options.add_argument('--disable-web-security')
-    options.add_argument('--disable-features=VizDisplayCompositor')
-    
-    # Detect environment and set appropriate user-agent
-    if os.getenv('GITHUB_ACTIONS'):
-        # GitHub Actions environment
-        options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-        chromedriver_path = '/usr/local/bin/chromedriver'
-    else:
-        # Local environment
-        options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-        chromedriver_path = None
-    
-    try:
-        # Try with WebDriver Manager first
-        from webdriver_manager.chrome import ChromeDriverManager
-        service = Service(ChromeDriverManager().install())
-        driver = webdriver.Chrome(service=service, options=options)
-        return driver
-        
-    except ImportError:
-        # WebDriver Manager not available
-        try:
-            if chromedriver_path and os.path.exists(chromedriver_path):
-                service = Service(chromedriver_path)
-                driver = webdriver.Chrome(service=service, options=options)
-            else:
-                # Use default Chrome driver from PATH
-                driver = webdriver.Chrome(options=options)
-            return driver
-            
-        except Exception as e:
-            print(f"Failed to initialize Chrome driver: {e}")
-            print("Solutions:")
-            print("1. Install webdriver-manager: pip install webdriver-manager")
-            print("2. Or download ChromeDriver and add to PATH")
-            raise e
+    options = Options()
+    is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
 
-# ======= Crawl danh sách sản phẩm =======
+    if is_github_actions:
+        # GitHub Actions specific options
+        options.add_argument('--headless=new')
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--disable-gpu')
+        options.add_argument('--enable-unsafe-swiftshader')
+        options.add_argument('--disable-software-rasterizer')
+        options.add_argument('--disable-background-timer-throttling')
+        options.add_argument('--disable-backgrounding-occluded-windows')
+        options.add_argument('--disable-renderer-backgrounding')
+        options.add_argument('--disable-features=TranslateUI,VizDisplayCompositor')
+        options.add_argument('--disable-extensions')
+        options.add_argument('--disable-default-apps')
+        options.add_argument('--disable-sync')
+        options.add_argument('--disable-background-networking')
+        options.add_argument('--memory-pressure-off')
+        options.add_argument('--single-process')
+        options.add_argument('--window-size=1920,1080')
+        options.add_argument('--virtual-time-budget=60000')
+        options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+
+        chromedriver_path = '/usr/local/bin/chromedriver'
+        service = Service(executable_path=chromedriver_path)
+        driver = webdriver.Chrome(service=service, options=options)
+
+    else:
+        # Local development
+        options.add_argument('--headless')
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--disable-gpu')
+        options.add_argument('--disable-web-security')
+        options.add_argument('--enable-unsafe-swiftshader') 
+        options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+
+        driver = webdriver.Chrome(options=options)
+
+    return driver
+
 def crawl_product_list(driver, logger, category_url):
     logger.info(f"Truy cập trang danh mục: {category_url}")
     driver.get(category_url)
@@ -202,8 +197,7 @@ def scrape_features(driver, nuxt_data, logger=None):
                 features.append(clean_text)
 
     except Exception as e:
-        msg = f"Lỗi khi lấy features từ DOM: {e}"
-        print(msg) if not logger else logger.warning(msg)
+        pass
 
     # --- Phần 2: Lấy từ nuxt_data ---
     try:
@@ -229,8 +223,7 @@ def scrape_features(driver, nuxt_data, logger=None):
                         if sentence.strip():
                             features.append(sentence.strip())
     except Exception as e:
-        msg = f"Lỗi khi lấy features từ nuxt_data: {e}"
-        print(msg) if not logger else logger.warning(msg)
+        pass
 
     return features
 
@@ -309,11 +302,26 @@ def crawl_selected_range(start, end, df_input, category, driver, logger):
                 "features": features + faq_answers if (features or faq_answers) else []
             }
             results.append(result)
-            logger.debug(f"Đã thu thập chi tiết sản phẩm {row['name']}")
+            # Kiểm tra thiếu mục nào
+            missing_fields = []
+            if not brand_name:
+                missing_fields.append("brand")
+            if not specifications:
+                missing_fields.append("specifications")
+            if not prices:
+                missing_fields.append("prices")
+            if not image_links:
+                missing_fields.append("images")
+            if not features:
+                missing_fields.append("features")
+            if missing_fields:
+                logger.warning(f"Thiếu {', '.join(missing_fields)} ở sản phẩm: {row['name']}")
         except Exception as e:
             logger.error(f"Lỗi khi xử lý dữ liệu sản phẩm {row['name']}: {e}")
             time.sleep(2)
             continue
+        finally:
+            logger.info(f"Đã thu thập chi tiết sản phẩm {row['name']}")
 
     logger.info(f"Hoàn tất crawl chi tiết {len(results)} sản phẩm cho danh mục {category}")
     return results
