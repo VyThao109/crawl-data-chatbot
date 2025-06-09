@@ -303,6 +303,7 @@ def crawl():
 
             try:
                 driver.get(url)
+                print(driver.page_source)
                 time.sleep(3)
             except TimeoutException as te:
                 logger.warning(f"Timeout khi truy cập trang danh mục {category_name}: {te}")
