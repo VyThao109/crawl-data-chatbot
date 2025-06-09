@@ -12,14 +12,12 @@ import os
 from my_logger import get_logger
 
 def setup_driver():
-    """Initialize Chrome driver with proper configuration for both local and GitHub Actions"""
-    
     options = Options()
     is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
-    
+
     if is_github_actions:
-        # GitHub Actions specific options (more aggressive)
-        options.add_argument('--headless=new')  # Use new headless mode
+        # GitHub Actions specific options
+        options.add_argument('--headless=new')
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--disable-gpu')
@@ -33,33 +31,27 @@ def setup_driver():
         options.add_argument('--disable-sync')
         options.add_argument('--disable-background-networking')
         options.add_argument('--memory-pressure-off')
-        options.add_argument('--single-process')  # Important for stability on CI
+        options.add_argument('--single-process')
         options.add_argument('--window-size=1920,1080')
         options.add_argument('--virtual-time-budget=60000')
-        
-        # Linux user agent
         options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-        
-        # Use the ChromeDriver installed by workflow
+
         chromedriver_path = '/usr/local/bin/chromedriver'
-        
+        service = Service(executable_path=chromedriver_path)
+        driver = webdriver.Chrome(service=service, options=options)
+
     else:
-        # Local development options (less aggressive)
-        options.add_argument('--headless')  # Remove this line to see browser locally
+        # Local development
+        options.add_argument('--headless')
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--disable-gpu')
         options.add_argument('--window-size=1920,1080')
         options.add_argument('--disable-web-security')
-        
-        # Windows user agent for local
         options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-        
-        chromedriver_path = None
-    if chromedriver_path:
-        driver = webdriver.Chrome(executable_path=chromedriver_path, options=options)
-    else:
+
         driver = webdriver.Chrome(options=options)
+
     return driver
 
 
@@ -77,7 +69,7 @@ def crawl_products_on_current_page(driver, logger, max_products=None):
             show_more_btn_text = view_more_button.text.strip()
             print(f"Còn: {show_more_btn_text}")
         except Exception as e:
-            print("Không còn sản phẩm để tải thêm hoặc có lỗi:")
+            print("Không còn sản phẩm để tải thêm hoặc có lỗi")
             break
 
     product_data = []
