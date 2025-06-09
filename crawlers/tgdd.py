@@ -17,7 +17,7 @@ def setup_driver():
     """Initialize Chrome driver with proper configuration"""
     options = webdriver.ChromeOptions()
     
-    # Essential options for GitHub Actions
+    # Common options
     options.add_argument('--headless')
     options.add_argument('--no-sandbox')
     options.add_argument('--disable-dev-shm-usage')
@@ -25,22 +25,41 @@ def setup_driver():
     options.add_argument('--window-size=1920,1080')
     options.add_argument('--disable-web-security')
     options.add_argument('--disable-features=VizDisplayCompositor')
-    options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.124 Safari/537.36')
-    # Version compatibility handling
+    
+    # Detect environment and set appropriate user-agent
+    if os.getenv('GITHUB_ACTIONS'):
+        # GitHub Actions environment
+        options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+        chromedriver_path = '/usr/local/bin/chromedriver'
+    else:
+        # Local environment
+        options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+        chromedriver_path = None
+    
     try:
-        # Try with explicit chromedriver path
-        service = webdriver.ChromeService('/usr/local/bin/chromedriver')
+        # Try with WebDriver Manager first
+        from webdriver_manager.chrome import ChromeDriverManager
+        service = Service(ChromeDriverManager().install())
         driver = webdriver.Chrome(service=service, options=options)
         return driver
-    except Exception as e:
-        print(f"Failed to initialize Chrome with custom service: {e}")
-        # Fallback to default
+        
+    except ImportError:
+        # WebDriver Manager not available
         try:
-            driver = webdriver.Chrome(options=options)
+            if chromedriver_path and os.path.exists(chromedriver_path):
+                service = Service(chromedriver_path)
+                driver = webdriver.Chrome(service=service, options=options)
+            else:
+                # Use default Chrome driver from PATH
+                driver = webdriver.Chrome(options=options)
             return driver
-        except Exception as e2:
-            print(f"Failed to initialize Chrome with default service: {e2}")
-            raise e2
+            
+        except Exception as e:
+            print(f"Failed to initialize Chrome driver: {e}")
+            print("Solutions:")
+            print("1. Install webdriver-manager: pip install webdriver-manager")
+            print("2. Or download ChromeDriver and add to PATH")
+            raise e
 
 
 def crawl_product_list(driver, logger, category_url): 
