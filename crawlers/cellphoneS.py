@@ -338,7 +338,7 @@ categories = [
 def crawl():
     logger = get_logger()
     logger.info("Khởi tạo trình duyệt và bắt đầu quá trình crawl")
-    driver = setup_driver(logger)
+    driver = setup_driver()
 
     for category in categories:
         logger.info(f"Xử lý danh mục: {category['name']}")

@@ -13,45 +13,15 @@ from my_logger import get_logger
 
 def setup_driver():
     options = Options()
-    is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--disable-gpu')
+    options.add_argument('--disable-web-security')
+    options.add_argument('--enable-unsafe-swiftshader') 
+    options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
 
-    if is_github_actions:
-        # GitHub Actions specific options
-        options.add_argument('--headless=new')
-        options.add_argument('--no-sandbox')
-        options.add_argument('--disable-dev-shm-usage')
-        options.add_argument('--disable-gpu')
-        options.add_argument('--enable-unsafe-swiftshader')
-        options.add_argument('--disable-software-rasterizer')
-        options.add_argument('--disable-background-timer-throttling')
-        options.add_argument('--disable-backgrounding-occluded-windows')
-        options.add_argument('--disable-renderer-backgrounding')
-        options.add_argument('--disable-features=TranslateUI,VizDisplayCompositor')
-        options.add_argument('--disable-extensions')
-        options.add_argument('--disable-default-apps')
-        options.add_argument('--disable-sync')
-        options.add_argument('--disable-background-networking')
-        options.add_argument('--memory-pressure-off')
-        options.add_argument('--single-process')
-        options.add_argument('--window-size=1920,1080')
-        options.add_argument('--virtual-time-budget=60000')
-        options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-
-        chromedriver_path = '/usr/local/bin/chromedriver'
-        service = Service(executable_path=chromedriver_path)
-        driver = webdriver.Chrome(service=service, options=options)
-
-    else:
-        # Local development
-        options.add_argument('--headless')
-        options.add_argument('--no-sandbox')
-        options.add_argument('--disable-dev-shm-usage')
-        options.add_argument('--disable-gpu')
-        options.add_argument('--disable-web-security')
-        options.add_argument('--enable-unsafe-swiftshader') 
-        options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-
-        driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome(options=options)
 
     return driver
 
@@ -171,7 +141,7 @@ def get_specifications(driver, logger):
                 logger.error(f"Lỗi đọc dòng thông số kỹ thuật")
                 continue
     except Exception as e:
-        logger.error(f"Không thể mở modal cấu hình hoặc lấy dữ liệu")
+        pass
     return specs
 
 def extract_phone_brand(phone_name):
@@ -272,7 +242,7 @@ def extract_brand(product_name, category):
 
 
 categories = [
-    {"name": "điện thoại", "url": "https://fptshop.com.vn/dien-thoai", "name_file": "phone.csv"},
+    # {"name": "điện thoại", "url": "https://fptshop.com.vn/dien-thoai", "name_file": "phone.csv"},
     {"name": "máy tính bảng", "url": "https://fptshop.com.vn/may-tinh-bang", "name_file": "tablet.csv"},
     {"name": "laptop", "url": "https://fptshop.com.vn/may-tinh-xach-tay", "name_file": "laptop.csv"},
     {"name": "màn hình", "url": "https://fptshop.com.vn/man-hinh", "name_file": "monitor.csv"},
@@ -300,7 +270,6 @@ def crawl():
 
             try:
                 driver.get(url)
-                print(driver.page_source)
                 time.sleep(3)
             except TimeoutException as te:
                 logger.warning(f"Timeout khi truy cập trang danh mục {category_name}: {te}")
