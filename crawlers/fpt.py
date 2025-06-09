@@ -7,7 +7,7 @@ from selenium.common.exceptions import TimeoutException, WebDriverException
 from selenium.webdriver.chrome.service import Service
 import pandas as pd
 import time
-import time
+import json
 import os
 from my_logger import get_logger
 
@@ -144,6 +144,27 @@ def get_specifications(driver, logger):
         pass
     return specs
 
+def scrape_faq_answers(driver):
+    answers = []
+    try:
+        wait = WebDriverWait(driver, 10)
+        script_tags = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'script[type="application/ld+json"]')))
+
+        scripts = driver.find_elements(By.CSS_SELECTOR, 'script[type="application/ld+json"]')
+        for i, tag in enumerate(script_tags):
+            json_text = tag.get_attribute('innerHTML')
+            try:
+                data = json.loads(json_text)
+                if data.get('@type') == 'FAQPage':
+                    answers = [item['acceptedAnswer']['text'] for item in data.get('mainEntity', [])]
+                    break
+            except Exception as e:
+                print(f"Lỗi parse JSON ở thẻ {i}: {str(e)}")
+    except Exception:
+        pass
+
+    return answers
+
 def extract_phone_brand(phone_name):
     # Danh sách các thương hiệu phổ biến
     brands = [
@@ -244,9 +265,9 @@ def extract_brand(product_name, category):
 categories = [
     # {"name": "điện thoại", "url": "https://fptshop.com.vn/dien-thoai", "name_file": "phone.csv"},
     {"name": "máy tính bảng", "url": "https://fptshop.com.vn/may-tinh-bang", "name_file": "tablet.csv"},
-    {"name": "laptop", "url": "https://fptshop.com.vn/may-tinh-xach-tay", "name_file": "laptop.csv"},
-    {"name": "màn hình", "url": "https://fptshop.com.vn/man-hinh", "name_file": "monitor.csv"},
-    {"name": "pc", "url": "https://fptshop.com.vn/may-tinh-de-ban", "name_file": "pc.csv"}
+    # {"name": "laptop", "url": "https://fptshop.com.vn/may-tinh-xach-tay", "name_file": "laptop.csv"},
+    # {"name": "màn hình", "url": "https://fptshop.com.vn/man-hinh", "name_file": "monitor.csv"},
+    # {"name": "pc", "url": "https://fptshop.com.vn/may-tinh-de-ban", "name_file": "pc.csv"}
 ]
 
 def crawl():

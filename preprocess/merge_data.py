@@ -273,6 +273,13 @@ def merge_specs(base, other):
         elif base[k] != v:
             base[k] = [base[k], v]
 
+def merge_features(base_features, new_features):
+    if not isinstance(new_features, list):
+        return base_features
+    if not isinstance(base_features, list):
+        base_features = []
+    return list(set(base_features + new_features))
+
 # Hàm hỗ trợ tạo merged record
 def create_merged_record(cp_row, fpt_row=None, tgdd_row=None):
     if isinstance(cp_row['specifications'], str):
@@ -300,6 +307,9 @@ def create_merged_record(cp_row, fpt_row=None, tgdd_row=None):
         if isinstance(specs, str):
             specs = ast.literal_eval(specs)
         merge_specs(merged['specifications'], specs)
+
+        # features = fpt_row.get('features')
+        # merged['features'] = merge_features(merged['features'], features)
 
     if tgdd_row is not None:
         merged['url']['tgdd'] = tgdd_row['url']

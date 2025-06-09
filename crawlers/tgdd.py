@@ -9,8 +9,6 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
-from selenium.common.exceptions import TimeoutException, WebDriverException
-import urllib3
 from bs4 import BeautifulSoup
 import json
 from my_logger import get_logger
@@ -18,101 +16,51 @@ from my_logger import get_logger
 
 def setup_driver():
     options = Options()
-    is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--disable-gpu')
+    options.add_argument('--disable-web-security')
+    options.add_argument('--enable-unsafe-swiftshader') 
+    options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
 
-    if is_github_actions:
-        # GitHub Actions specific options
-        options.add_argument('--headless=new')
-        options.add_argument('--no-sandbox')
-        options.add_argument('--disable-dev-shm-usage')
-        options.add_argument('--disable-gpu')
-        options.add_argument('--enable-unsafe-swiftshader')
-        options.add_argument('--disable-software-rasterizer')
-        options.add_argument('--disable-background-timer-throttling')
-        options.add_argument('--disable-backgrounding-occluded-windows')
-        options.add_argument('--disable-renderer-backgrounding')
-        options.add_argument('--disable-features=TranslateUI,VizDisplayCompositor')
-        options.add_argument('--disable-extensions')
-        options.add_argument('--disable-default-apps')
-        options.add_argument('--disable-sync')
-        options.add_argument('--disable-background-networking')
-        options.add_argument('--memory-pressure-off')
-        options.add_argument('--single-process')
-        options.add_argument('--window-size=1920,1080')
-        options.add_argument('--virtual-time-budget=60000')
-        options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-
-        chromedriver_path = '/usr/local/bin/chromedriver'
-        service = Service(executable_path=chromedriver_path)
-        driver = webdriver.Chrome(service=service, options=options)
-
-    else:
-        # Local development
-        options.add_argument('--headless')
-        options.add_argument('--no-sandbox')
-        options.add_argument('--disable-dev-shm-usage')
-        options.add_argument('--disable-gpu')
-        options.add_argument('--disable-web-security')
-        options.add_argument('--enable-unsafe-swiftshader') 
-        options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
-
-        driver = webdriver.Chrome(options=options)
+    driver = webdriver.Chrome(options=options)
 
     return driver
 
-
-
 def crawl_product_list(driver, logger, category_url): 
-    try:
-        driver.get(category_url)
-    except (TimeoutException, WebDriverException, urllib3.exceptions.HTTPError) as e:
-        logger.warning(f"Timeout khi truy cập URL: {category_url} - {e}")
-        return []
-
+    driver.get(category_url)
     while True:
         try:
             # Click nút "Xem thêm"
-            view_more_button = WebDriverWait(driver, 20).until(
+            view_more_button = WebDriverWait(driver, 5).until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "div.view-more a"))
             )
             driver.execute_script("arguments[0].click();", view_more_button)  # Click using JavaScript
-            time.sleep(2)
+            time.sleep(2)  
 
             show_more_btn_text = view_more_button.text.strip()
-            print(f"Còn: {show_more_btn_text}")
-        except TimeoutException:
-            print("Không tìm thấy nút 'Xem thêm' (Timeout).")
-            break
-        except Exception as e:
-            logger.warning(f"Lỗi khi click nút 'Xem thêm': {e}")
-            break
+            if show_more_btn_text: 
+                print(f"Còn: {show_more_btn_text}")
+        except:
+            break 
 
     # Lấy danh sách tất cả sản phẩm sau khi đã load hết
+    product_items = driver.find_elements(By.CSS_SELECTOR, "ul.listproduct li.item")
     products = []
-    try:
-        product_items = driver.find_elements(By.CSS_SELECTOR, "ul.listproduct li.item")
-    except Exception as e:
-        logger.error(f"Lỗi khi tìm danh sách sản phẩm: {e}")
-        return []
-
     i = 1
-    for item in product_items:
-        try:
-            # Lấy URL sản phẩm
-            first_a = item.find_element(By.TAG_NAME, "a")
-            product_url = first_a.getAttribute("href")
-            
-            # Lấy tên sản phẩm
-            h3_tag = item.find_element(By.TAG_NAME, "h3")
-            product_name = h3_tag.text.strip()
-            
-            products.append({"name": product_name, "url": product_url})
-            logger.debug(f"Appended {i} name: {product_name}, url: {product_url}")
-            i += 1
-        except Exception as e:
-            logger.debug(f"Lỗi khi xử lý sản phẩm: {e}")
+    for i, item in enumerate(product_items, 1):
+        a_tags = item.find_elements(By.CSS_SELECTOR, "a.main-contain")
+        if not a_tags:
             continue
 
+        a_tag = a_tags[0]
+        product_url = a_tag.get_attribute("href")
+        product_name = a_tag.get_attribute("data-name")
+
+        if product_name and product_url:
+            products.append({"name": product_name, "url": product_url})
+    logger.info(f"Tổng sản phẩm thu thập được: {len(products)}")
     return products
 
 def extract_json_product_gtm(driver):
@@ -200,7 +148,10 @@ def get_prices(driver):
         json_data = extract_json_product_gtm(driver)
         price = json_data.get("offers", {}).get("price", 0.0)
         return [{"color": "default", "price": float(price)}]
+
+    
     except Exception as e:
+        print(f"Lỗi khi lấy giá sản phẩm: {e}")
         return [{'color': 'default', 'price': 0.0}]
 
 def crawl_selected_range(start_index, end_index, df_input, category, driver, logger, df_results=None):
@@ -208,20 +159,14 @@ def crawl_selected_range(start_index, end_index, df_input, category, driver, log
     new_results = []
 
     for index, row in rows_to_crawl.iterrows():
-        logger.debug(f"Thu thập dữ liệu sản phẩm ({index}/{len(df_input)}): {row['name']}")
+        logger.info(f"Thu thập dữ liệu ({index}/{len(df_input)}): {row['name']}")
         
         try:
             driver.get(row["url"])
             WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
-        except TimeoutException as te:
-            logger.warning(f"Timeout khi truy cập sản phẩm {row['name']} ({row['url']}): {te}")
-            time.sleep(2)  # Nghỉ một chút tránh bị block
-            continue
         except Exception:
             logger.warning(f"Timeout khi tải trang: {row['url']}")
-            time.sleep(2)
             continue
-
 
         brand_name = get_brand(driver)
         specifications = get_specs(driver)
@@ -235,18 +180,6 @@ def crawl_selected_range(start_index, end_index, df_input, category, driver, log
             "specifications": specifications,
             "prices": prices,
         })
-        # Kiểm tra thiếu mục nào
-        missing_fields = []
-        if not brand_name:
-            missing_fields.append("brand")
-        if not specifications:
-            missing_fields.append("specifications")
-        if not prices:
-            missing_fields.append("prices")
-        if missing_fields:
-            logger.warning(f"Thiếu {', '.join(missing_fields)} ở sản phẩm: {row['name']}")
-
-        logger.info(f"Đã thu thập chi tiết sản phẩm {row['name']}")
 
     new_df = pd.DataFrame(new_results)
 
@@ -275,7 +208,7 @@ def crawl():
     driver = setup_driver()
 
     for category in categories:
-        logger.info(f"Thu thập danh sách sản phẩm {category ['name']}")
+        logger.info(f"Đang lấy danh sách sản phẩm cho: {category ['name']}")
         products = crawl_product_list(driver, logger, category ["url"])
         df_products = pd.DataFrame(products).drop_duplicates(subset=["url"], keep="last").reset_index(drop=True)
         detailed = crawl_selected_range(0, len(df_products), df_products, category ["name"], driver, logger)
