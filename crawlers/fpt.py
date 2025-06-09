@@ -21,6 +21,7 @@ def setup_driver():
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--disable-gpu')
+        options.add_argument('--enable-unsafe-swiftshader')
         options.add_argument('--disable-software-rasterizer')
         options.add_argument('--disable-background-timer-throttling')
         options.add_argument('--disable-backgrounding-occluded-windows')
@@ -46,13 +47,14 @@ def setup_driver():
         options.add_argument('--no-sandbox')
         options.add_argument('--disable-dev-shm-usage')
         options.add_argument('--disable-gpu')
-        options.add_argument('--window-size=1920,1080')
         options.add_argument('--disable-web-security')
+        options.add_argument('--enable-unsafe-swiftshader') 
         options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
 
         driver = webdriver.Chrome(options=options)
 
     return driver
+
 
 
 
@@ -131,7 +133,7 @@ def get_colors_and_prices(driver, logger):
                 logger.error(f"Không lấy được giá cho màu {btn.text.strip()}: {str(e)}")
                 continue
     except Exception as e:
-        logger.error(f"Không tìm thấy màu hoặc giá:  {str(e)}")
+        print(f"Không tìm thấy màu hoặc giá")
     return prices
 
 def get_specifications(driver, logger):
@@ -169,10 +171,10 @@ def get_specifications(driver, logger):
                 elif len(values) > 1:
                     specs[key] = values
             except Exception as e:
-                logger.error(f"Lỗi đọc dòng thông số kỹ thuật: {str(e)}")
+                logger.error(f"Lỗi đọc dòng thông số kỹ thuật")
                 continue
     except Exception as e:
-        logger.error(f"Không thể mở modal cấu hình hoặc lấy dữ liệu: {type(e).__name__} - {str(e)}")
+        logger.error(f"Không thể mở modal cấu hình hoặc lấy dữ liệu")
     return specs
 
 def extract_phone_brand(phone_name):
@@ -316,7 +318,7 @@ def crawl():
             all_data = []
 
             for index, product in enumerate(products):
-                logger.info(f"Đang crawl ({index + 1}/{len(products)}): {product['name']}")
+                logger.info(f"Đang lấy dữ liệu ({index + 1}/{len(products)}): {product['name']}")
                 product_url = product["url"]
 
                 try:
@@ -349,6 +351,8 @@ def crawl():
                 except Exception as e:
                     logger.error(f"Lỗi khi xử lý dữ liệu sản phẩm {product['name']}: {e}")
                     continue
+                finally: 
+                    logger.info(f"Đã lấy dữ liệu ({index + 1}/{len(products)}): {product['name']}")
 
             out_path = os.path.join(output_dir, filename)
             df = pd.DataFrame(all_data)
