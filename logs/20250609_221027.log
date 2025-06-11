@@ -1,0 +1,128 @@
+[2025-06-09 22:10:27,748] [INFO] == BẮT ĐẦU TOÀN BỘ QUÁ TRÌNH CRAWL ==
+[2025-06-09 22:10:27,748] [INFO] >>> Bắt đầu crawl từ Thế Giới Di Động
+[2025-06-09 22:10:27,749] [INFO] Khởi tạo trình duyệt và bắt đầu quá trình crawl
+[2025-06-09 22:10:29,076] [INFO] Đang lấy danh sách sản phẩm cho: điện thoại
+[2025-06-09 22:10:48,028] [INFO] Appended 1 name: Điện thoại realme C71 6GB/128GB, url: https://www.thegioididong.com/dtdd/realme-c71-6gb
+[2025-06-09 22:10:48,061] [INFO] Appended 4 name: Điện thoại Xiaomi Redmi Note 14 Pro 5G 8GB/256GB, url: https://www.thegioididong.com/dtdd/xiaomi-redmi-note-14-pro-5g
+[2025-06-09 22:10:48,095] [INFO] Appended 7 name: Điện thoại iPhone 16 Pro Max 256GB, url: https://www.thegioididong.com/dtdd/iphone-16-pro-max
+[2025-06-09 22:10:48,155] [INFO] Appended 11 name: Điện thoại iPhone 16 Pro 128GB, url: https://www.thegioididong.com/dtdd/iphone-16-pro
+[2025-06-09 22:10:48,207] [INFO] Appended 16 name: Điện thoại Samsung Galaxy S25 Edge 5G 12GB/512GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-s25-edge-5g-512gb
+[2025-06-09 22:10:48,251] [INFO] Appended 19 name: Điện thoại Samsung Galaxy A56 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-a56
+[2025-06-09 22:10:48,290] [INFO] Appended 23 name: Điện thoại vivo V50 Lite 8GB/256GB, url: https://www.thegioididong.com/dtdd/vivo-v50-lite
+[2025-06-09 22:10:48,307] [INFO] Appended 24 name: Điện thoại Xiaomi Redmi Note 14 Pro 8GB/256GB, url: https://www.thegioididong.com/dtdd/xiaomi-redmi-note-14-pro
+[2025-06-09 22:10:48,336] [INFO] Appended 27 name: Điện thoại OPPO Find N5 5G 16GB/512GB, url: https://www.thegioididong.com/dtdd/oppo-find-n5
+[2025-06-09 22:10:48,355] [INFO] Appended 28 name: Điện thoại OPPO Reno13 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/oppo-reno13-5g
+[2025-06-09 22:10:48,387] [INFO] Appended 31 name: Điện thoại vivo V50 Lite 5G 8GB/256GB, url: https://www.thegioididong.com/dtdd/vivo-v50-lite-5g
+[2025-06-09 22:10:48,418] [INFO] Appended 34 name: Điện thoại realme 14T 5G 8GB/256GB, url: https://www.thegioididong.com/dtdd/realme-14t-5g-8gb
+[2025-06-09 22:10:48,447] [INFO] Appended 37 name: Điện thoại HONOR X8c 8GB/256GB, url: https://www.thegioididong.com/dtdd/honor-x8c?utm_flashsale=1
+[2025-06-09 22:10:48,479] [INFO] Appended 40 name: Điện thoại Tecno Spark 30 8GB/128GB, url: https://www.thegioididong.com/dtdd/tecno-spark-30
+[2025-06-09 22:10:48,507] [INFO] Appended 41 name: Điện thoại Masstel S9 6GB/256GB, url: https://www.thegioididong.com/dtdd/masstel-s9
+[2025-06-09 22:10:48,524] [INFO] Appended 42 name: Điện thoại iPhone 16 Plus 128GB, url: https://www.thegioididong.com/dtdd/iphone-16-plus
+[2025-06-09 22:10:48,642] [INFO] Appended 46 name: Điện thoại iPhone 16 128GB, url: https://www.thegioididong.com/dtdd/iphone-16
+[2025-06-09 22:10:48,676] [INFO] Appended 50 name: Điện thoại Samsung Galaxy A06 5G 6GB/128GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-a06-5g-6gb-128gb
+[2025-06-09 22:10:48,712] [INFO] Appended 53 name: Điện thoại Samsung Galaxy A36 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-a36
+[2025-06-09 22:10:48,757] [INFO] Appended 57 name: Điện thoại Xiaomi Redmi Note 14 Pro+ 5G 8GB/256GB, url: https://www.thegioididong.com/dtdd/xiaomi-redmi-note-14-pro-plus
+[2025-06-09 22:10:48,785] [INFO] Appended 60 name: Điện thoại OPPO Reno13 Pro 5G 12GB/512GB, url: https://www.thegioididong.com/dtdd/oppo-reno13-pro-5g
+[2025-06-09 22:10:48,803] [INFO] Appended 61 name: Điện thoại OPPO Reno13 F 8GB/256GB, url: https://www.thegioididong.com/dtdd/oppo-reno13-f
+[2025-06-09 22:10:48,820] [INFO] Appended 62 name: Điện thoại realme C75x 8GB/128GB, url: https://www.thegioididong.com/dtdd/realme-c75x
+[2025-06-09 22:10:48,858] [INFO] Appended 66 name: Điện thoại realme 14 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/realme-14-5g
+[2025-06-09 22:10:48,886] [INFO] Appended 69 name: Điện thoại Xiaomi Redmi 13x 6GB/128GB, url: https://www.thegioididong.com/dtdd/xiaomi-redmi-13x-6gb-128gb
+[2025-06-09 22:10:48,916] [INFO] Appended 72 name: Điện thoại HONOR X9c Smart 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/honor-x9c-smart?utm_flashsale=1
+[2025-06-09 22:10:48,946] [INFO] Appended 75 name: Điện thoại Samsung Galaxy S25 Ultra 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-s25-ultra
+[2025-06-09 22:10:48,981] [INFO] Appended 79 name: Điện thoại iPhone 16e 128GB, url: https://www.thegioididong.com/dtdd/iphone-16e
+[2025-06-09 22:10:49,032] [INFO] Appended 83 name: Điện thoại iPhone 15 128GB, url: https://www.thegioididong.com/dtdd/iphone-15
+[2025-06-09 22:10:49,070] [INFO] Appended 87 name: Điện thoại Samsung Galaxy Z Fold6 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-z-fold6
+[2025-06-09 22:10:49,096] [INFO] Appended 90 name: Điện thoại Samsung Galaxy A26 5G 6GB/128GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-a26-6gb-128gb
+[2025-06-09 22:10:49,135] [INFO] Appended 94 name: Điện thoại Xiaomi 15 5G 12GB/512GB, url: https://www.thegioididong.com/dtdd/xiaomi-15
+[2025-06-09 22:10:49,167] [INFO] Appended 97 name: Điện thoại Xiaomi 15 Ultra 5G 16GB/512GB Trắng, url: https://www.thegioididong.com/dtdd/xiaomi-15-ultra-trang
+[2025-06-09 22:10:49,211] [INFO] Appended 101 name: Điện thoại OPPO A60 8GB/128GB, url: https://www.thegioididong.com/dtdd/oppo-a60-128gb
+[2025-06-09 22:10:49,249] [INFO] Appended 104 name: Điện thoại OPPO A5 Pro 8GB/256GB, url: https://www.thegioididong.com/dtdd/oppo-a5-pro
+[2025-06-09 22:10:49,279] [INFO] Appended 107 name: Điện thoại OPPO A3x 4GB/64GB, url: https://www.thegioididong.com/dtdd/oppo-a3x-4gb-64gb
+[2025-06-09 22:10:49,314] [INFO] Appended 111 name: Điện thoại realme C75 8GB/128GB, url: https://www.thegioididong.com/dtdd/realme-c75-8gb-128gb?utm_flashsale=1
+[2025-06-09 22:10:49,349] [INFO] Appended 115 name: Điện thoại vivo Y29 8GB/128GB, url: https://www.thegioididong.com/dtdd/vivo-y29-8gb-128gb
+[2025-06-09 22:10:49,394] [INFO] Appended 118 name: Điện thoại HONOR X5b Plus 4GB/128GB, url: https://www.thegioididong.com/dtdd/honor-x5b-plus
+[2025-06-09 22:10:49,425] [INFO] Appended 121 name: Điện thoại Samsung Galaxy A05s 6GB/128GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-a05s-6gb
+[2025-06-09 22:10:49,441] [INFO] Appended 122 name: Điện thoại iPhone 15 Plus 128GB, url: https://www.thegioididong.com/dtdd/iphone-15-plus
+[2025-06-09 22:10:49,479] [INFO] Appended 126 name: Điện thoại iPhone 13 128GB, url: https://www.thegioididong.com/dtdd/iphone-13
+[2025-06-09 22:10:49,525] [INFO] Appended 130 name: Điện thoại Samsung Galaxy S24 FE 5G 8GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-s24-fe-8gb-256gb
+[2025-06-09 22:10:49,553] [INFO] Appended 133 name: Điện thoại Samsung Galaxy S24 5G 8GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-s24-256gb-5g
+[2025-06-09 22:10:49,571] [INFO] Appended 134 name: Điện thoại Xiaomi 14T 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/xiaomi-14t-5g
+[2025-06-09 22:10:49,605] [INFO] Appended 138 name: Điện thoại Xiaomi 14T Pro 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/xiaomi-14t-pro-5g-12gb-256gb
+[2025-06-09 22:10:49,635] [INFO] Appended 141 name: Điện thoại OPPO A3 8GB/128GB, url: https://www.thegioididong.com/dtdd/oppo-a3-8gb-128gb
+[2025-06-09 22:10:49,671] [INFO] Appended 145 name: Điện thoại Tecno Spark GO 1 3GB/64GB, url: https://www.thegioididong.com/dtdd/tecno-spark-go-1
+[2025-06-09 22:10:49,687] [INFO] Appended 146 name: Điện thoại OPPO Reno12 F 8GB/256GB, url: https://www.thegioididong.com/dtdd/oppo-reno12-f-4g-8gb-256gb
+[2025-06-09 22:10:49,704] [INFO] Appended 147 name: Điện thoại realme Note 60 6GB/128GB, url: https://www.thegioididong.com/dtdd/realme-note-60
+[2025-06-09 22:10:49,768] [INFO] Appended 151 name: Điện thoại vivo Y19s 6GB/128GB, url: https://www.thegioididong.com/dtdd/vivo-y19s-6gb-128gb
+[2025-06-09 22:10:49,804] [INFO] Appended 154 name: Điện thoại HONOR X8b 8GB/512GB, url: https://www.thegioididong.com/dtdd/honor-x8b
+[2025-06-09 22:10:49,821] [INFO] Appended 155 name: Điện thoại HONOR X6b 6GB/128GB Tím, url: https://www.thegioididong.com/dtdd/honor-x6b-6gb-128gb
+[2025-06-09 22:10:49,858] [INFO] Appended 158 name: Điện thoại iPhone 14 128GB, url: https://www.thegioididong.com/dtdd/iphone-14
+[2025-06-09 22:10:49,889] [INFO] Appended 161 name: Điện thoại iPhone 15 Pro Max 256GB, url: https://www.thegioididong.com/dtdd/iphone-15-pro-max
+[2025-06-09 22:10:49,934] [INFO] Appended 165 name: Điện thoại iPhone 12 64GB, url: https://www.thegioididong.com/dtdd/iphone-12
+[2025-06-09 22:10:49,966] [INFO] Appended 168 name: Điện thoại Xiaomi Redmi A3 3GB/64GB, url: https://www.thegioididong.com/dtdd/xiaomi-redmi-a3?utm_flashsale=1
+[2025-06-09 22:10:50,007] [INFO] Appended 171 name: Điện thoại Samsung Galaxy S25 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-s25
+[2025-06-09 22:10:50,044] [INFO] Appended 174 name: Điện thoại Xiaomi Redmi 13 6GB/128GB, url: https://www.thegioididong.com/dtdd/xiaomi-redmi-13-6gb-128gb
+[2025-06-09 22:10:50,077] [INFO] Appended 177 name: Điện thoại HONOR X5 Plus 4GB/64GB, url: https://www.thegioididong.com/dtdd/honor-x5-plus
+[2025-06-09 22:10:50,092] [INFO] Appended 178 name: Điện thoại Xiaomi Redmi 14C 6GB/128GB, url: https://www.thegioididong.com/dtdd/xiaomi-redmi-14c-6gb-128gb?utm_flashsale=1
+[2025-06-09 22:10:50,121] [INFO] Appended 181 name: Điện thoại OPPO Find X8 5G 16GB/512GB Hồng, url: https://www.thegioididong.com/dtdd/oppo-find-x8-hong
+[2025-06-09 22:10:50,148] [INFO] Appended 184 name: Điện thoại OPPO Find X8 Pro 5G 16GB/512GB, url: https://www.thegioididong.com/dtdd/oppo-find-x8-pro
+[2025-06-09 22:10:50,165] [INFO] Appended 185 name: Điện thoại realme 13+ 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/realme-13-plus-5g?utm_flashsale=1
+[2025-06-09 22:10:50,182] [INFO] Appended 186 name: Điện thoại vivo Y04 4GB/128GB, url: https://www.thegioididong.com/dtdd/vivo-y04
+[2025-06-09 22:10:50,218] [INFO] Appended 190 name: Điện thoại Samsung Galaxy A35 5G 8GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-a35-5g
+[2025-06-09 22:10:50,236] [INFO] Appended 191 name: Điện thoại realme Note 60x 4GB/64GB, url: https://www.thegioididong.com/dtdd/realme-note-60x-4gb
+[2025-06-09 22:10:50,278] [INFO] Appended 194 name: Điện thoại vivo V40 Lite 8GB/256GB, url: https://www.thegioididong.com/dtdd/vivo-v40-lite-8gb-256gb
+[2025-06-09 22:10:50,294] [INFO] Appended 195 name: Điện thoại realme Note 50 3GB/64GB, url: https://www.thegioididong.com/dtdd/realme-note-50-64gb
+[2025-06-09 22:10:50,312] [INFO] Appended 196 name: Điện thoại vivo V30 5G 12GB/512GB, url: https://www.thegioididong.com/dtdd/vivo-v30
+[2025-06-09 22:10:50,331] [INFO] Appended 197 name: Điện thoại vivo V30e 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/vivo-v30e-12gb
+[2025-06-09 22:10:50,361] [INFO] Appended 200 name: Điện thoại OPPO Reno13 F 5G 8GB/256GB, url: https://www.thegioididong.com/dtdd/oppo-reno13-f-5g
+[2025-06-09 22:10:50,389] [INFO] Appended 203 name: Điện thoại Xiaomi Redmi Note 14 8GB/128GB, url: https://www.thegioididong.com/dtdd/xiaomi-redmi-note-14-8gb-128gb
+[2025-06-09 22:10:50,426] [INFO] Appended 207 name: Điện thoại Samsung Galaxy A16 5G 8GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-a16-5g
+[2025-06-09 22:10:50,457] [INFO] Appended 210 name: Điện thoại Samsung Galaxy A06 4GB/64GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-a06-4gb-64gb
+[2025-06-09 22:10:50,502] [INFO] Appended 214 name: Điện thoại Xiaomi Redmi A5 3GB/64GB, url: https://www.thegioididong.com/dtdd/xiaomi-redmi-a5-3gb-64gb
+[2025-06-09 22:10:50,532] [INFO] Appended 217 name: Điện thoại Nokia HMD 105 4G, url: https://www.thegioididong.com/dtdd/nokia-hmd-105-4g
+[2025-06-09 22:10:50,549] [INFO] Appended 218 name: Điện thoại Masstel IZI 10, url: https://www.thegioididong.com/dtdd/masstel-izi-10
+[2025-06-09 22:10:50,566] [INFO] Appended 219 name: Điện thoại Mobell M331 4G, url: https://www.thegioididong.com/dtdd/mobell-m331
+[2025-06-09 22:10:50,583] [INFO] Appended 220 name: Điện thoại Viettel Sumo 4G T2, url: https://www.thegioididong.com/dtdd/viettel-sumo-4g-t2
+[2025-06-09 22:10:50,599] [INFO] Appended 221 name: Điện thoại Nokia 220 4G, url: https://www.thegioididong.com/dtdd/nokia-220-4g
+[2025-06-09 22:10:50,616] [INFO] Appended 222 name: Điện thoại Mobell M539, url: https://www.thegioididong.com/dtdd/mobell-m539
+[2025-06-09 22:10:50,632] [INFO] Appended 223 name: Điện thoại Mobell M239 4G, url: https://www.thegioididong.com/dtdd/mobell-m239
+[2025-06-09 22:10:50,651] [INFO] Appended 224 name: Điện thoại Masstel Fami 50 4G, url: https://www.thegioididong.com/dtdd/masstel-fami-50
+[2025-06-09 22:10:50,667] [INFO] Appended 225 name: Điện thoại Masstel IZI T6 4G, url: https://www.thegioididong.com/dtdd/masstel-izi-t6
+[2025-06-09 22:10:50,685] [INFO] Appended 226 name: Điện thoại Mobell F309 4G, url: https://www.thegioididong.com/dtdd/mobell-f309
+[2025-06-09 22:10:50,700] [INFO] Appended 227 name: Điện thoại Samsung Galaxy S24 Ultra 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-s24-ultra-5g
+[2025-06-09 22:10:50,717] [INFO] Appended 228 name: Điện thoại Benco 4G G3, url: https://www.thegioididong.com/dtdd/benco-4g-g3
+[2025-06-09 22:10:50,733] [INFO] Appended 229 name: Điện thoại Nokia 110 4G Pro, url: https://www.thegioididong.com/dtdd/nokia-110-4g-pro
+[2025-06-09 22:10:50,765] [INFO] Appended 230 name: Điện thoại Xiaomi Redmi Note 14 5G 8GB/256GB, url: https://www.thegioididong.com/dtdd/xiaomi-redmi-note-14-5g
+[2025-06-09 22:10:50,783] [INFO] Appended 231 name: Điện thoại HONOR X7c 8GB/256GB, url: https://www.thegioididong.com/dtdd/honor-x7c
+[2025-06-09 22:10:50,800] [INFO] Appended 232 name: Điện thoại Samsung Galaxy M35 5G 8GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-m35-5g
+[2025-06-09 22:10:50,818] [INFO] Appended 233 name: Điện thoại Nokia 3210 4G, url: https://www.thegioididong.com/dtdd/nokia-3210-4g
+[2025-06-09 22:10:50,836] [INFO] Appended 234 name: Điện thoại vivo Y03 4GB/128GB, url: https://www.thegioididong.com/dtdd/vivo-y03
+[2025-06-09 22:10:50,864] [INFO] Appended 237 name: Điện thoại vivo V40 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/vivo-v40-5g
+[2025-06-09 22:10:50,879] [INFO] Appended 238 name: Điện thoại Samsung Galaxy S25 Plus 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-s25-plus
+[2025-06-09 22:10:50,912] [INFO] Appended 241 name: Điện thoại OPPO Reno12 5G 12GB/512GB, url: https://www.thegioididong.com/dtdd/oppo-reno12-5g-12gb-512gb
+[2025-06-09 22:10:50,929] [INFO] Appended 242 name: Điện thoại Samsung Galaxy A16 8GB/128GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-a16-8gb-128gb
+[2025-06-09 22:10:50,968] [INFO] Appended 246 name: Điện thoại Tecno Spark 30C 6GB/128GB, url: https://www.thegioididong.com/dtdd/tecno-spark-30c
+[2025-06-09 22:10:50,986] [INFO] Appended 247 name: Điện thoại Mobell F209, url: https://www.thegioididong.com/dtdd/mobell-f209
+[2025-06-09 22:10:51,014] [INFO] Appended 248 name: Điện thoại Mobell F209, url: https://www.thegioididong.com/dtdd/mobell-f209
+[2025-06-09 22:10:51,034] [INFO] Appended 249 name: Điện thoại vivo Y28 8GB/128GB, url: https://www.thegioididong.com/dtdd/vivo-y28
+[2025-06-09 22:10:51,066] [INFO] Appended 252 name: Điện thoại OPPO A58 8GB/128GB, url: https://www.thegioididong.com/dtdd/oppo-a58-4g
+[2025-06-09 22:10:51,082] [INFO] Appended 253 name: Điện thoại vivo Y100 8GB/256GB, url: https://www.thegioididong.com/dtdd/vivo-y100
+[2025-06-09 22:10:51,112] [INFO] Appended 256 name: Điện thoại OPPO A5x 4GB/64GB, url: https://www.thegioididong.com/dtdd/oppo-a5x-4gb-64gb
+[2025-06-09 22:10:51,138] [INFO] Appended 259 name: Điện thoại vivo Y18 4GB/128GB, url: https://www.thegioididong.com/dtdd/vivo-y18-4gb-128gb?utm_flashsale=1
+[2025-06-09 22:10:51,168] [INFO] Appended 262 name: Điện thoại Masstel Fami 60S 4G, url: https://www.thegioididong.com/dtdd/masstel-fami-60s
+[2025-06-09 22:10:51,185] [INFO] Appended 263 name: Điện thoại TCL 406s 4GB/64GB, url: https://www.thegioididong.com/dtdd/tcl-406s
+[2025-06-09 22:10:51,201] [INFO] Appended 264 name: Điện thoại realme C65s 8GB/128GB, url: https://www.thegioididong.com/dtdd/realme-c65s-8gb-128gb
+[2025-06-09 22:10:51,245] [INFO] Appended 268 name: Điện thoại TCL 60 NXTPaper 8GB/256GB, url: https://www.thegioididong.com/dtdd/tcl-60-nxtpaper
+[2025-06-09 22:10:51,267] [INFO] Appended 269 name: Điện thoại OPPO Reno12 Pro 5G 12GB/512GB, url: https://www.thegioididong.com/dtdd/oppo-reno12-pro
+[2025-06-09 22:10:51,286] [INFO] Appended 270 name: Điện thoại realme 12 8GB/256GB, url: https://www.thegioididong.com/dtdd/realme-12
+[2025-06-09 22:10:51,315] [INFO] Appended 273 name: Điện thoại OPPO Reno12 5G 12GB/256GB Hồng, url: https://www.thegioididong.com/dtdd/oppo-reno12-5g-12gb-256gb-hong
+[2025-06-09 22:10:51,331] [INFO] Appended 274 name: Điện thoại OPPO Find N3 Flip 5G 12GB/256GB Hồng, url: https://www.thegioididong.com/dtdd/oppo-find-n3-flip-hong
+[2025-06-09 22:10:51,361] [INFO] Appended 277 name: Điện thoại HONOR 200 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/honor-200-12gb-256gb
+[2025-06-09 22:10:51,379] [INFO] Appended 278 name: Điện thoại OPPO Find N3 5G 16GB/512GB, url: https://www.thegioididong.com/dtdd/oppo-find-n3
+[2025-06-09 22:10:51,400] [INFO] Appended 279 name: Điện thoại iPhone 14 Plus 256GB, url: https://www.thegioididong.com/dtdd/iphone-14-plus-256gb
+[2025-06-09 22:10:51,432] [INFO] Appended 282 name: Điện thoại OPPO Reno12 F 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/oppo-reno12-f-5g-12gb-256gb
+[2025-06-09 22:10:51,462] [INFO] Appended 285 name: Điện thoại Samsung Galaxy A55 5G 12GB/256GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-a55-5g
+[2025-06-09 22:10:51,496] [INFO] Appended 288 name: Điện thoại Tecno Spark 30 5G 6GB/128GB, url: https://www.thegioididong.com/dtdd/tecno-spark-30-5g
+[2025-06-09 22:10:51,515] [INFO] Appended 289 name: Điện thoại HONOR Magic V3 5G 12GB/512GB, url: https://www.thegioididong.com/dtdd/honor-magic-v3
+[2025-06-09 22:10:51,532] [INFO] Appended 290 name: Điện thoại iPhone 15 Pro 1TB, url: https://www.thegioididong.com/dtdd/iphone-15-pro-1tb
+[2025-06-09 22:10:51,549] [INFO] Appended 291 name: Điện thoại OPPO A38 6GB/128GB, url: https://www.thegioididong.com/dtdd/oppo-a38-6gb
+[2025-06-09 22:10:51,567] [INFO] Appended 292 name: Điện thoại Samsung Galaxy M15 5G 6GB/128GB, url: https://www.thegioididong.com/dtdd/samsung-galaxy-m15

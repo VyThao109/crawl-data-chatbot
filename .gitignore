@@ -2,9 +2,6 @@
 venv/
 .env
 
-# Log file
-*.log
-
 # Python cache
 __pycache__/
 *.py[cod]
