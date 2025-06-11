@@ -2,6 +2,9 @@
 venv/
 .env
 
+# Firebase key
+data-chatbot-products-firebase.json
+
 # Python cache
 __pycache__/
 *.py[cod]
