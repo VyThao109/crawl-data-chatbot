@@ -7,26 +7,61 @@ sys.path.append(os.path.abspath(os.path.join(os.path.dirname(__file__), '..')))
 
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
 from webdriver_manager.chrome import ChromeDriverManager
+from selenium.common.exceptions import TimeoutException
 from bs4 import BeautifulSoup, Tag
 import json
 from .filter_cellphoneS import crawl_needs_filter
 from my_logger import get_logger
 
-# ======= Setup driver =======
-def setup_driver(logger):
-    logger.info("Khởi tạo trình điều khiển Chrome ở chế độ headless")
-    options = webdriver.ChromeOptions()
-    options.add_argument("--headless")
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    driver = webdriver.Chrome(options=options)
-    logger.info("Driver đã sẵn sàng")
+def setup_driver():
+    options = Options()
+    is_github_actions = os.getenv('GITHUB_ACTIONS') == 'true'
+
+    if is_github_actions:
+        # GitHub Actions specific options
+        options.add_argument('--headless=new')
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--disable-gpu')
+        options.add_argument('--enable-unsafe-swiftshader')
+        options.add_argument('--disable-software-rasterizer')
+        options.add_argument('--disable-background-timer-throttling')
+        options.add_argument('--disable-backgrounding-occluded-windows')
+        options.add_argument('--disable-renderer-backgrounding')
+        options.add_argument('--disable-features=TranslateUI,VizDisplayCompositor')
+        options.add_argument('--disable-extensions')
+        options.add_argument('--disable-default-apps')
+        options.add_argument('--disable-sync')
+        options.add_argument('--disable-background-networking')
+        options.add_argument('--memory-pressure-off')
+        options.add_argument('--single-process')
+        options.add_argument('--window-size=1920,1080')
+        options.add_argument('--virtual-time-budget=60000')
+        options.add_argument('--user-agent=Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+
+        chromedriver_path = '/usr/local/bin/chromedriver'
+        service = Service(executable_path=chromedriver_path)
+        driver = webdriver.Chrome(service=service, options=options)
+
+    else:
+        # Local development
+        options.add_argument('--headless')
+        options.add_argument('--no-sandbox')
+        options.add_argument('--disable-dev-shm-usage')
+        options.add_argument('--disable-gpu')
+        options.add_argument('--disable-web-security')
+        options.add_argument('--enable-unsafe-swiftshader') 
+        options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+
+        driver = webdriver.Chrome(options=options)
+
     return driver
 
-# ======= Crawl danh sách sản phẩm =======
 def crawl_product_list(driver, logger, category_url):
     logger.info(f"Truy cập trang danh mục: {category_url}")
     driver.get(category_url)
@@ -35,7 +70,7 @@ def crawl_product_list(driver, logger, category_url):
 
     while True:
         try:
-            view_more_button = WebDriverWait(driver, 5).until(
+            view_more_button = WebDriverWait(driver, 10).until(
                 EC.element_to_be_clickable((By.CSS_SELECTOR, "div.cps-block-content_btn-showmore a"))
             )
             driver.execute_script("arguments[0].click();", view_more_button)
@@ -142,12 +177,12 @@ def scrape_prices(driver, nuxt_data):
             return []
     return prices
 
-def scrape_features(driver, nuxt_data):
+def scrape_features(driver, nuxt_data, logger=None):
     features = []
 
     # --- Phần 1: Lấy từ DOM ---
     try:
-        WebDriverWait(driver, 10).until(
+        WebDriverWait(driver, 15).until(
             EC.presence_of_element_located((By.ID, "v2Gallery"))
         )
         v2_gallery = driver.find_element(By.ID, "v2Gallery")
@@ -160,38 +195,37 @@ def scrape_features(driver, nuxt_data):
             clean_text = ' '.join(text.split())
             if clean_text:
                 features.append(clean_text)
-    except Exception as e:
-        print("Error in DOM extraction:", e)
 
-    # --- Phần 2: Lấy từ nuxt_data["data"][0]["pageInfo"]["content"] ---
+    except Exception as e:
+        pass
+
+    # --- Phần 2: Lấy từ nuxt_data ---
     try:
-        html_content = nuxt_data["data"][0]["pageInfo"]["content"]
-        soup = BeautifulSoup(html_content, "html.parser")
+        if nuxt_data and "data" in nuxt_data and nuxt_data["data"]:
+            html_content = nuxt_data["data"][0].get("pageInfo", {}).get("content", "")
+            if html_content:
+                soup = BeautifulSoup(html_content, "html.parser")
 
-        content_source = soup.find("blockquote")
-        if not content_source:
-            print("Không tìm thấy <blockquote>, tìm thẻ con đầu tiên là <p> thay thế.")
-            for child in soup.body.descendants:
-                if isinstance(child, Tag) and child.name == "p":
-                    content_source = child
-                    break
+                content_source = soup.find("blockquote")
+                if not content_source and soup.body:
+                    for child in soup.body.descendants:
+                        if isinstance(child, Tag) and child.name == "p":
+                            content_source = child
+                            break
 
-        if content_source:
-            raw_text = content_source.get_text(separator=" ").strip()
-            clean_text = ' '.join(raw_text.split())
+                if content_source:
+                    raw_text = content_source.get_text(separator=" ").strip()
+                    clean_text = ' '.join(raw_text.split())
 
-            # Tách thành câu
-            sentences = re.split(r'(?<=[.!?])\s+', clean_text)
-            for sentence in sentences:
-                if sentence.strip():
-                    features.append(sentence.strip())
-        else:
-            print("Không tìm thấy <blockquote> hoặc <p> nào trong nuxt_data.")
+                    # Tách thành câu
+                    sentences = re.split(r'(?<=[.!?])\s+', clean_text)
+                    for sentence in sentences:
+                        if sentence.strip():
+                            features.append(sentence.strip())
     except Exception as e:
-        print("Error in nuxt_data extraction:", e)
+        pass
 
     return features
-
 
 
 def scrape_faq_answers(driver):
@@ -232,36 +266,62 @@ def get_image_urls(driver):
 def crawl_selected_range(start, end, df_input, category, driver, logger):
     results = []
     logger.info(f"Bắt đầu lấy dữ liệu chi tiết sản phẩm từ {start} đến {end} cho danh mục: {category}")
+    
     for index, row in df_input.iloc[start:end].iterrows():
         logger.info(f"Thu thập dữ liệu sản phẩm {index}: {row['name']}")
         try:
             driver.get(row["url"])
-            WebDriverWait(driver, 10).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+            WebDriverWait(driver, 20).until(EC.presence_of_element_located((By.TAG_NAME, "body")))
+        except TimeoutException as te:
+            logger.warning(f"Timeout khi truy cập sản phẩm {row['name']} ({row['url']}): {te}")
+            time.sleep(2)  # Nghỉ một chút tránh bị block
+            continue
         except Exception as e:
-            logger.warning(f"Không truy cập được sản phẩm {row['name']} ({row['url']}): {e}")
+            logger.warning(f"Lỗi khác khi truy cập sản phẩm {row['name']} ({row['url']}): {e}")
+            time.sleep(2)
             continue
 
-        # Các hàm lấy thông tin chi tiết
-        brand_name = get_brand(driver)
-        nuxt_data = get_nuxt_data(driver)
-        specifications = extract_specifications(nuxt_data) if nuxt_data else {}
-        prices = scrape_prices(driver, nuxt_data)
-        features = scrape_features(driver, nuxt_data)
-        faq_answers = scrape_faq_answers(driver)
-        image_links = get_image_urls(driver)
-        
-        result = {
-            "name": row["name"],
-            "url": row["url"],
-            "category": category,
-            "brand": brand_name,
-            "specifications": specifications,
-            "prices": prices,
-            "image_links": image_links,
-            "features": features + faq_answers if (features or faq_answers) else []
-        }
-        results.append(result)
-        logger.debug(f"Đã thu thập chi tiết sản phẩm {row['name']}")
+        try:
+            # Các hàm lấy thông tin chi tiết
+            brand_name = get_brand(driver)
+            nuxt_data = get_nuxt_data(driver)
+            specifications = extract_specifications(nuxt_data) if nuxt_data else {}
+            prices = scrape_prices(driver, nuxt_data)
+            features = scrape_features(driver, nuxt_data)
+            faq_answers = scrape_faq_answers(driver)
+            image_links = get_image_urls(driver)
+
+            result = {
+                "name": row["name"],
+                "url": row["url"],
+                "category": category,
+                "brand": brand_name,
+                "specifications": specifications,
+                "prices": prices,
+                "image_links": image_links,
+                "features": features + faq_answers if (features or faq_answers) else []
+            }
+            results.append(result)
+            # Kiểm tra thiếu mục nào
+            missing_fields = []
+            if not brand_name:
+                missing_fields.append("brand")
+            if not specifications:
+                missing_fields.append("specifications")
+            if not prices:
+                missing_fields.append("prices")
+            if not image_links:
+                missing_fields.append("images")
+            if not features:
+                missing_fields.append("features")
+            if missing_fields:
+                logger.warning(f"Thiếu {', '.join(missing_fields)} ở sản phẩm: {row['name']}")
+        except Exception as e:
+            logger.error(f"Lỗi khi xử lý dữ liệu sản phẩm {row['name']}: {e}")
+            time.sleep(2)
+            continue
+        finally:
+            logger.info(f"Đã thu thập chi tiết sản phẩm {row['name']}")
 
     logger.info(f"Hoàn tất crawl chi tiết {len(results)} sản phẩm cho danh mục {category}")
     return results
@@ -278,7 +338,7 @@ categories = [
 def crawl():
     logger = get_logger()
     logger.info("Khởi tạo trình duyệt và bắt đầu quá trình crawl")
-    driver = setup_driver(logger)
+    driver = setup_driver()
 
     for category in categories:
         logger.info(f"Xử lý danh mục: {category['name']}")

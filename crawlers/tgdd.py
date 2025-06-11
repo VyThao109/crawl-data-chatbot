@@ -4,6 +4,7 @@ import re
 import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.chrome.service import Service
@@ -11,12 +12,20 @@ from webdriver_manager.chrome import ChromeDriverManager
 from bs4 import BeautifulSoup
 import json
 from my_logger import get_logger
-# ======= Setup driver =======
+
+
 def setup_driver():
-    options = webdriver.ChromeOptions()
-    options.add_argument("--headless")
-    options.add_argument("--disable-blink-features=AutomationControlled")
+    options = Options()
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--disable-gpu')
+    options.add_argument('--disable-web-security')
+    options.add_argument('--enable-unsafe-swiftshader') 
+    options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+
     driver = webdriver.Chrome(options=options)
+
     return driver
 
 def crawl_product_list(driver, logger, category_url): 
@@ -31,31 +40,27 @@ def crawl_product_list(driver, logger, category_url):
             time.sleep(2)  
 
             show_more_btn_text = view_more_button.text.strip()
-            print(f"Còn: {show_more_btn_text}")
+            if show_more_btn_text: 
+                print(f"Còn: {show_more_btn_text}")
         except:
-            print("No more 'View More' button found.")
             break 
 
     # Lấy danh sách tất cả sản phẩm sau khi đã load hết
     product_items = driver.find_elements(By.CSS_SELECTOR, "ul.listproduct li.item")
     products = []
     i = 1
-    for item in product_items:
-        try:
-            # Lấy URL sản phẩm
-            first_a = item.find_element(By.TAG_NAME, "a")
-            product_url = first_a.get_attribute("href")
-            
-            # Lấy tên sản phẩm
-            h3_tag = item.find_element(By.TAG_NAME, "h3")
-            product_name = h3_tag.text.strip()
-            
-            products.append({"name": product_name, "url": product_url})
-            logger.debug(f"Appended {i} name: {product_name}, url: {product_url}")
-            i = i + 1
-
-        except:
+    for i, item in enumerate(product_items, 1):
+        a_tags = item.find_elements(By.CSS_SELECTOR, "a.main-contain")
+        if not a_tags:
             continue
+
+        a_tag = a_tags[0]
+        product_url = a_tag.get_attribute("href")
+        product_name = a_tag.get_attribute("data-name")
+
+        if product_name and product_url:
+            products.append({"name": product_name, "url": product_url})
+    logger.info(f"Tổng sản phẩm thu thập được: {len(products)}")
     return products
 
 def extract_json_product_gtm(driver):
@@ -154,7 +159,7 @@ def crawl_selected_range(start_index, end_index, df_input, category, driver, log
     new_results = []
 
     for index, row in rows_to_crawl.iterrows():
-        logger.debug(f"Đang crawl ({index}/{len(df_input)}): {row['name']}")
+        logger.info(f"Thu thập dữ liệu ({index}/{len(df_input)}): {row['name']}")
         
         try:
             driver.get(row["url"])

@@ -2,12 +2,8 @@
 venv/
 .env
 
-# File credentials Firebase
-data-chatbot-products-firebase-adminsdk-*.json
-data/firebase_key.json
-
-# Log file
-*.log
+# Firebase key
+data-chatbot-products-firebase.json
 
 # Python cache
 __pycache__/

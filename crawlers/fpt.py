@@ -1,12 +1,29 @@
 from selenium import webdriver
+from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+from selenium.common.exceptions import TimeoutException, WebDriverException
+from selenium.webdriver.chrome.service import Service
 import pandas as pd
 import time
 import json
 import os
 from my_logger import get_logger
+
+def setup_driver():
+    options = Options()
+    options.add_argument('--headless')
+    options.add_argument('--no-sandbox')
+    options.add_argument('--disable-dev-shm-usage')
+    options.add_argument('--disable-gpu')
+    options.add_argument('--disable-web-security')
+    options.add_argument('--enable-unsafe-swiftshader') 
+    options.add_argument('--user-agent=Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36')
+
+    driver = webdriver.Chrome(options=options)
+
+    return driver
 
 def crawl_products_on_current_page(driver, logger, max_products=None):
     while True:
@@ -21,7 +38,7 @@ def crawl_products_on_current_page(driver, logger, max_products=None):
             show_more_btn_text = view_more_button.text.strip()
             print(f"Còn: {show_more_btn_text}")
         except Exception as e:
-            print("Không còn sản phẩm để tải thêm hoặc có lỗi:")
+            print("Không còn sản phẩm để tải thêm hoặc có lỗi")
             break
 
     product_data = []
@@ -83,7 +100,7 @@ def get_colors_and_prices(driver, logger):
                 logger.error(f"Không lấy được giá cho màu {btn.text.strip()}: {str(e)}")
                 continue
     except Exception as e:
-        logger.error("Không tìm thấy màu hoặc giá:", str(e))
+        print(f"Không tìm thấy màu hoặc giá")
     return prices
 
 def get_specifications(driver, logger):
@@ -121,11 +138,32 @@ def get_specifications(driver, logger):
                 elif len(values) > 1:
                     specs[key] = values
             except Exception as e:
-                logger.error(f"Lỗi đọc dòng thông số kỹ thuật: {str(e)}")
+                logger.error(f"Lỗi đọc dòng thông số kỹ thuật")
                 continue
     except Exception as e:
-        logger.error(f"Không thể mở modal cấu hình hoặc lấy dữ liệu: {str(e)}")
+        pass
     return specs
+
+def scrape_faq_answers(driver):
+    answers = []
+    try:
+        wait = WebDriverWait(driver, 10)
+        script_tags = wait.until(EC.presence_of_all_elements_located((By.CSS_SELECTOR, 'script[type="application/ld+json"]')))
+
+        scripts = driver.find_elements(By.CSS_SELECTOR, 'script[type="application/ld+json"]')
+        for i, tag in enumerate(script_tags):
+            json_text = tag.get_attribute('innerHTML')
+            try:
+                data = json.loads(json_text)
+                if data.get('@type') == 'FAQPage':
+                    answers = [item['acceptedAnswer']['text'] for item in data.get('mainEntity', [])]
+                    break
+            except Exception as e:
+                print(f"Lỗi parse JSON ở thẻ {i}: {str(e)}")
+    except Exception:
+        pass
+
+    return answers
 
 def extract_phone_brand(phone_name):
     # Danh sách các thương hiệu phổ biến
@@ -225,22 +263,19 @@ def extract_brand(product_name, category):
 
 
 categories = [
-    {"name": "điện thoại", "url": "https://fptshop.com.vn/dien-thoai", "name_file": "phone.csv"},
+    # {"name": "điện thoại", "url": "https://fptshop.com.vn/dien-thoai", "name_file": "phone.csv"},
     {"name": "máy tính bảng", "url": "https://fptshop.com.vn/may-tinh-bang", "name_file": "tablet.csv"},
-    {"name": "laptop", "url": "https://fptshop.com.vn/may-tinh-xach-tay", "name_file": "laptop.csv"},
-    {"name": "màn hình", "url": "https://fptshop.com.vn/man-hinh", "name_file": "monitor.csv"},
-    {"name": "pc", "url": "https://fptshop.com.vn/may-tinh-de-ban", "name_file": "pc.csv"}
+    # {"name": "laptop", "url": "https://fptshop.com.vn/may-tinh-xach-tay", "name_file": "laptop.csv"},
+    # {"name": "màn hình", "url": "https://fptshop.com.vn/man-hinh", "name_file": "monitor.csv"},
+    # {"name": "pc", "url": "https://fptshop.com.vn/may-tinh-de-ban", "name_file": "pc.csv"}
 ]
 
 def crawl():
     output_dir = "data/raw/fpt/"
     os.makedirs(output_dir, exist_ok=True)
     logger = get_logger()
-    logger.info("Khởi tạo trình duyệt và bắt đầu quá trình crawl")
-    options = webdriver.ChromeOptions()
-    options.add_argument("--headless")
-    options.add_argument("--disable-blink-features=AutomationControlled")
-    driver = webdriver.Chrome(options=options)
+    logger.info("Khởi tạo trình duyệt và bắt đầu quá trình thu thập")
+    driver = setup_driver()
 
     try:
         for category in categories:
@@ -252,35 +287,73 @@ def crawl():
                 logger.info(f"Không tìm thấy URL hoặc tên file cho danh mục {category_name}")
                 continue
 
-            logger.info(f"Crawling danh mục: {category_name} - URL: {url}")
+            logger.info(f"Truy cập trang danh mục: {category_name} - URL: {url}")
 
-            driver.get(url)
-            time.sleep(3)
+            try:
+                driver.get(url)
+                time.sleep(3)
+            except TimeoutException as te:
+                logger.warning(f"Timeout khi truy cập trang danh mục {category_name}: {te}")
+                continue
+            except WebDriverException as wde:
+                logger.warning(f"Lỗi trình duyệt khi mở trang danh mục {category_name}: {wde}")
+                continue
+            except Exception as e:
+                logger.warning(f"Lỗi không xác định khi mở trang danh mục {category_name}: {e}")
+                continue
 
             products = crawl_products_on_current_page(driver, logger)
-
             all_data = []
 
             for index, product in enumerate(products):
-                logger.info(f"Đang crawl ({index + 1}/{len(products)}): {product['name']}")
+                logger.info(f"Thu thập dữ liệu sản phẩm ({index + 1}/{len(products)}): {product['name']}")
                 product_url = product["url"]
-                driver.get(product_url)
-                time.sleep(3) 
 
-                prices = get_colors_and_prices(driver, logger)
-                specs = get_specifications(driver, logger)
-                brand = extract_brand(product["name"], category_name)
+                try:
+                    driver.get(product_url)
+                    time.sleep(3)
+                except TimeoutException as te:
+                    logger.warning(f"Timeout khi truy cập sản phẩm: {product_url}: {te}")
+                    continue
+                except WebDriverException as wde:
+                    logger.warning(f"Lỗi trình duyệt khi mở sản phẩm: {product_url}: {wde}")
+                    continue
+                except Exception as e:
+                    logger.warning(f"Lỗi không xác định khi mở sản phẩm: {product_url}: {e}")
+                    continue
 
-                data_entry = {
-                    "name": product["name"],
-                    "url": product_url,
-                    "brand": brand,
-                    "prices": prices,
-                    "specifications": specs,
-                }
+                try:
+                    prices = get_colors_and_prices(driver, logger)
+                    specs = get_specifications(driver, logger)
+                    brand = extract_brand(product["name"], category_name)
 
-                all_data.append(data_entry)
-                
+                    data_entry = {
+                        "name": product["name"],
+                        "url": product_url,
+                        "brand": brand,
+                        "prices": prices,
+                        "specifications": specs,
+                    }
+                    all_data.append(data_entry)
+
+                    # Kiểm tra thiếu mục nào
+                    missing_fields = []
+                    if not prices:
+                        missing_fields.append("prices")
+                    if not specs:
+                        missing_fields.append("specifications")
+                    if not brand:
+                        missing_fields.append("brand")
+
+                    if missing_fields:
+                        logger.warning(f"Thiếu {', '.join(missing_fields)} ở sản phẩm: {product['name']}")
+
+                except Exception as e:
+                    logger.error(f"Lỗi khi xử lý dữ liệu sản phẩm {product['name']}: {e}")
+                    continue
+
+                finally:
+                    logger.info(f"Đã thu thập chi tiết sản phẩm {product['name']}")
 
             out_path = os.path.join(output_dir, filename)
             df = pd.DataFrame(all_data)
@@ -288,6 +361,8 @@ def crawl():
             logger.info(f"Đã lưu dữ liệu danh mục {category_name} vào {out_path}")
 
     except Exception as e:
-        logger.error(f"Lỗi trong quá trình crawl: {str(e)}")
+        logger.error(f"Lỗi tổng quát trong quá trình thu thập: {str(e)}")
+
     finally:
         driver.quit()
+

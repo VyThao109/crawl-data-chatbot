@@ -12,17 +12,13 @@ from my_logger import init_logger, get_logger
 from crawlers import cellphoneS, fpt, tgdd
 from preprocess import clean_data, merge_data, generate_features
 
-# Lấy chuỗi JSON từ biến môi trường (được inject bởi GitHub Action)
-firebase_creds = os.environ.get("FIREBASE_CREDENTIALS")
+# Đường dẫn đến file key JSON bạn tải về
+cred = credentials.Certificate('data-chatbot-products-firebase.json')
 
-# Chuyển chuỗi JSON thành dict
-cred_dict = json.loads(firebase_creds)
-
-# Khởi tạo credential từ dict
-cred = credentials.Certificate(cred_dict)
-
-# Khởi tạo Firebase app và client
+# Khởi tạo app Firebase
 firebase_admin.initialize_app(cred)
+
+# Khởi tạo client Firestore
 db = firestore.client()
 
 def load_raw_data(source_dir: str):
@@ -94,14 +90,15 @@ def main():
 
     logger.info("== BẮT ĐẦU TOÀN BỘ QUÁ TRÌNH CRAWL ==")
 
-    logger.info(">>> Bắt đầu crawl từ FPT")
-    fpt.crawl()
+    # logger.info(">>> Bắt đầu crawl từ Thế Giới Di Động")
+    # tgdd.crawl()
 
-    logger.info(">>> Bắt đầu crawl từ Thế Giới Di Động")
-    tgdd.crawl()
 
-    logger.info(">>> Bắt đầu crawl từ CellphoneS")
-    cellphoneS.crawl()
+    # logger.info(">>> Bắt đầu crawl từ FPT")
+    # fpt.crawl()
+
+    # logger.info(">>> Bắt đầu crawl từ CellphoneS")
+    # cellphoneS.crawl()
 
     logger.info("== HOÀN TẤT TOÀN BỘ QUÁ TRÌNH CRAWL ==")
     logger.info("== BẮT ĐẦU QUÁ TRÌNH XỬ LÝ DỮ LIỆU ==")

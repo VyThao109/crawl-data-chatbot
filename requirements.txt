@@ -1,0 +1,5 @@
+pandas
+firebase-admin
+selenium
+webdriver-manager
+beautifulsoup4

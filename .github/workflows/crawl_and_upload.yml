@@ -2,33 +2,133 @@ name: Auto Crawl & Upload to Firebase
 
 on:
   schedule:
-    - cron: "30 12 * * *" # Mỗi ngày lúc 03:00 UTC (10:00 sáng giờ VN)
+    - cron: "0 1 * * 0" # Mỗi tuần lúc 01:00 UTC (08:00 sáng giờ VN)
   workflow_dispatch: # Cho phép chạy tay
+    inputs:
+      debug_mode:
+        description: "Run in debug mode"
+        required: false
+        default: false
+        type: boolean
+
+env:
+  PYTHON_VERSION: "3.10"
 
 jobs:
   crawl-upload:
     runs-on: ubuntu-latest
+    timeout-minutes: 45
 
     steps:
       - name: Checkout source code
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
-      - name: Set up Python
+      # ===== FIX: Cài đặt Chrome và ChromeDriver với phiên bản khớp nhau =====
+      - name: Setup Chrome and ChromeDriver (matching versions)
+        run: |
+          # Xóa ChromeDriver cũ nếu có
+          sudo rm -f /usr/local/bin/chromedriver
+          sudo rm -rf /opt/hostedtoolcache/setup-chrome
+
+          # Cài đặt Chrome stable
+          wget -q -O - https://dl.google.com/linux/linux_signing_key.pub | sudo apt-key add -
+          sudo sh -c 'echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" >> /etc/apt/sources.list.d/google-chrome.list'
+          sudo apt-get update
+          sudo apt-get install -y google-chrome-stable
+
+          # Lấy phiên bản Chrome và cài ChromeDriver tương ứng
+          CHROME_VERSION=$(google-chrome --version | grep -oP '\d+\.\d+\.\d+\.\d+')
+          CHROME_MAJOR_VERSION=$(echo $CHROME_VERSION | cut -d'.' -f1)
+          echo "Chrome version: $CHROME_VERSION"
+          echo "Chrome major version: $CHROME_MAJOR_VERSION"
+
+          # Tải ChromeDriver khớp với phiên bản Chrome
+          if [ "$CHROME_MAJOR_VERSION" -ge "115" ]; then
+            # Từ Chrome 115+ dùng Chrome for Testing API
+            DRIVER_VERSION=$(curl -s "https://googlechromelabs.github.io/chrome-for-testing/LATEST_RELEASE_$CHROME_MAJOR_VERSION")
+            DRIVER_URL="https://edgedl.me.gvt1.com/edgedl/chrome/chrome-for-testing/$DRIVER_VERSION/linux64/chromedriver-linux64.zip"
+          else
+            # Chrome cũ hơn dùng API cũ
+            DRIVER_VERSION=$(curl -s "https://chromedriver.storage.googleapis.com/LATEST_RELEASE_$CHROME_MAJOR_VERSION")
+            DRIVER_URL="https://chromedriver.storage.googleapis.com/$DRIVER_VERSION/chromedriver_linux64.zip"
+          fi
+
+          echo "ChromeDriver version: $DRIVER_VERSION"
+          echo "Download URL: $DRIVER_URL"
+
+          # Tải và cài đặt ChromeDriver
+          wget -O /tmp/chromedriver.zip "$DRIVER_URL"
+          cd /tmp
+          unzip chromedriver.zip
+
+          # Xử lý cấu trúc thư mục khác nhau
+          if [ -d "chromedriver-linux64" ]; then
+            sudo mv chromedriver-linux64/chromedriver /usr/local/bin/
+          else
+            sudo mv chromedriver /usr/local/bin/
+          fi
+
+          sudo chmod +x /usr/local/bin/chromedriver
+          rm -rf /tmp/chromedriver*
+
+      - name: Verify Chrome and ChromeDriver versions
+        run: |
+          echo "=== Chrome Version ==="
+          google-chrome --version
+          echo "=== ChromeDriver Version ==="
+          chromedriver --version
+          echo "=== ChromeDriver Path ==="
+          which chromedriver
+
+      - name: Setup Python
         uses: actions/setup-python@v4
         with:
-          python-version: "3.10"
+          python-version: ${{ env.PYTHON_VERSION }}
+          cache: "pip"
 
       - name: Install dependencies
         run: |
           python -m pip install --upgrade pip
           pip install -r requirements.txt
 
-      - name: Create Firebase credentials
-        run: |
-          echo "${{ secrets.FIREBASE_KEY }}" > firebase_key.json
-
-      - name: Run crawler and upload script
-        run: |
-          python main.py
+      # ===== FIX: Thêm xử lý lỗi và retry =====
+      - name: Run crawler and upload script with retry
+        uses: nick-fields/retry@v2
+        with:
+          timeout_minutes: 5
+          max_attempts: 2
+          retry_wait_seconds: 60
+          command: python main.py
         env:
+          # ===== CẢNH BÁO: Chuyển sang GitHub Secrets thay vì file =====
+          # FIREBASE_CONFIG: ${{ secrets.FIREBASE_CONFIG }}
+          # FIREBASE_PROJECT_ID: ${{ secrets.FIREBASE_PROJECT_ID }}
+
+          # Tạm thời dùng file (KHÔNG AN TOÀN - cần sửa)
           GOOGLE_APPLICATION_CREDENTIALS: firebase_key.json
+          DEBUG_MODE: ${{ github.event.inputs.debug_mode || 'false' }}
+
+      # ===== Lưu logs khi có lỗi =====
+      - name: Upload logs on failure
+        if: failure()
+        uses: actions/upload-artifact@v4
+        with:
+          name: crawler-logs-${{ github.run_number }}
+          path: |
+            logs/
+            *.log
+          retention-days: 7
+
+      # ===== Thông báo thành công =====
+      - name: Notify success
+        if: success()
+        run: |
+          echo "Crawl hoàn thành thành công!"
+          echo "Kiểm tra Firebase để xem dữ liệu mới"
+
+      # ===== Thông báo lỗi (tùy chọn) =====
+      - name: Notify failure
+        if: failure()
+        run: |
+          echo "Crawl thất bại!"
+          echo "Kiểm tra logs để biết chi tiết lỗi"
