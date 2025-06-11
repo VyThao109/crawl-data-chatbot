@@ -1,0 +1,285 @@
+[2025-06-09 09:36:51,506] [INFO] == BẮT ĐẦU TOÀN BỘ QUÁ TRÌNH CRAWL ==
+[2025-06-09 09:36:51,506] [INFO] >>> Bắt đầu crawl từ FPT
+[2025-06-09 09:36:51,507] [INFO] Khởi tạo trình duyệt và bắt đầu quá trình crawl
+[2025-06-09 09:36:52,691] [INFO] Crawling danh mục: điện thoại - URL: https://fptshop.com.vn/dien-thoai
+[2025-06-09 09:37:26,377] [INFO] Tổng số sản phẩm trong danh sách 131
+[2025-06-09 09:37:30,243] [INFO] Đang lấy dữ liệu (1/131): iPhone 16 Pro Max 256GB
+[2025-06-09 09:38:03,325] [INFO] Đã lấy dữ liệu (1/131): iPhone 16 Pro Max 256GB
+[2025-06-09 09:38:03,325] [INFO] Đang lấy dữ liệu (2/131): Samsung Galaxy Z Fold6 5G 256GB
+[2025-06-09 09:38:29,999] [INFO] Đã lấy dữ liệu (2/131): Samsung Galaxy Z Fold6 5G 256GB
+[2025-06-09 09:38:30,000] [INFO] Đang lấy dữ liệu (3/131): iPhone 16 Pro 128GB
+[2025-06-09 09:39:02,369] [INFO] Đã lấy dữ liệu (3/131): iPhone 16 Pro 128GB
+[2025-06-09 09:39:02,370] [INFO] Đang lấy dữ liệu (4/131): iPhone 16 128GB
+[2025-06-09 09:39:39,121] [INFO] Đã lấy dữ liệu (4/131): iPhone 16 128GB
+[2025-06-09 09:39:39,122] [INFO] Đang lấy dữ liệu (5/131): iPhone 16 Plus 128GB
+[2025-06-09 09:40:15,870] [INFO] Đã lấy dữ liệu (5/131): iPhone 16 Plus 128GB
+[2025-06-09 09:40:15,870] [INFO] Đang lấy dữ liệu (6/131): Samsung Galaxy S24 FE 5G 128GB
+[2025-06-09 09:40:48,168] [INFO] Đã lấy dữ liệu (6/131): Samsung Galaxy S24 FE 5G 128GB
+[2025-06-09 09:40:48,168] [INFO] Đang lấy dữ liệu (7/131): Samsung Galaxy A06 5G 4GB 128GB
+[2025-06-09 09:41:14,457] [INFO] Đã lấy dữ liệu (7/131): Samsung Galaxy A06 5G 4GB 128GB
+[2025-06-09 09:41:14,457] [INFO] Đang lấy dữ liệu (8/131): Xiaomi Poco X7 5G 12GB 512GB
+[2025-06-09 09:41:41,173] [INFO] Đã lấy dữ liệu (8/131): Xiaomi Poco X7 5G 12GB 512GB
+[2025-06-09 09:41:41,174] [INFO] Đang lấy dữ liệu (9/131): TCL 60R 5G 4GB 128GB
+[2025-06-09 09:42:01,800] [INFO] Đã lấy dữ liệu (9/131): TCL 60R 5G 4GB 128GB
+[2025-06-09 09:42:01,800] [INFO] Đang lấy dữ liệu (10/131): Samsung Galaxy A56 5G 8GB 128GB
+[2025-06-09 09:42:33,339] [INFO] Đã lấy dữ liệu (10/131): Samsung Galaxy A56 5G 8GB 128GB
+[2025-06-09 09:42:33,339] [INFO] Đang lấy dữ liệu (11/131): Nubia V70 Design 8GB 128GB
+[2025-06-09 09:42:53,821] [INFO] Đã lấy dữ liệu (11/131): Nubia V70 Design 8GB 128GB
+[2025-06-09 09:42:53,821] [INFO] Đang lấy dữ liệu (12/131): Honor X5b 4GB 64GB
+[2025-06-09 09:43:14,607] [INFO] Đã lấy dữ liệu (12/131): Honor X5b 4GB 64GB
+[2025-06-09 09:43:14,607] [INFO] Đang lấy dữ liệu (13/131): Masstel Izi 16 4G
+[2025-06-09 09:43:36,750] [INFO] Đã lấy dữ liệu (13/131): Masstel Izi 16 4G
+[2025-06-09 09:43:36,750] [INFO] Đang lấy dữ liệu (14/131): Samsung Galaxy A06 4GB 128GB
+[2025-06-09 09:44:02,315] [INFO] Đã lấy dữ liệu (14/131): Samsung Galaxy A06 4GB 128GB
+[2025-06-09 09:44:02,316] [INFO] Đang lấy dữ liệu (15/131): OPPO A3 6GB 128GB
+[2025-06-09 09:44:24,205] [INFO] Đã lấy dữ liệu (15/131): OPPO A3 6GB 128GB
+[2025-06-09 09:44:24,205] [INFO] Đang lấy dữ liệu (16/131): Masstel Izi 15 4G
+[2025-06-09 09:44:44,385] [INFO] Đã lấy dữ liệu (16/131): Masstel Izi 15 4G
+[2025-06-09 09:44:44,385] [INFO] Đang lấy dữ liệu (17/131): iPhone 13 128GB
+[2025-06-09 09:45:10,595] [INFO] Đã lấy dữ liệu (17/131): iPhone 13 128GB
+[2025-06-09 09:45:10,596] [INFO] Đang lấy dữ liệu (18/131): Inoi 240 Modern 4G
+[2025-06-09 09:45:29,998] [INFO] Đã lấy dữ liệu (18/131): Inoi 240 Modern 4G
+[2025-06-09 09:45:29,998] [INFO] Đang lấy dữ liệu (19/131): Xiaomi Redmi Note 14 6GB 128GB
+[2025-06-09 09:45:57,091] [INFO] Đã lấy dữ liệu (19/131): Xiaomi Redmi Note 14 6GB 128GB
+[2025-06-09 09:45:57,092] [INFO] Đang lấy dữ liệu (20/131): iPhone 15 128GB
+[2025-06-09 09:46:33,895] [INFO] Đã lấy dữ liệu (20/131): iPhone 15 128GB
+[2025-06-09 09:46:33,895] [INFO] Đang lấy dữ liệu (21/131): Benco V91 Plus 6GB 128GB
+[2025-06-09 09:46:55,396] [INFO] Đã lấy dữ liệu (21/131): Benco V91 Plus 6GB 128GB
+[2025-06-09 09:46:55,396] [INFO] Đang lấy dữ liệu (22/131): iPhone 15 Pro Max 256GB
+[2025-06-09 09:47:28,334] [INFO] Đã lấy dữ liệu (22/131): iPhone 15 Pro Max 256GB
+[2025-06-09 09:47:28,334] [INFO] Đang lấy dữ liệu (23/131): Inoi 244 Modern Plus 4G
+[2025-06-09 09:47:47,984] [INFO] Đã lấy dữ liệu (23/131): Inoi 244 Modern Plus 4G
+[2025-06-09 09:47:47,984] [INFO] Đang lấy dữ liệu (24/131): iPhone 15 Plus 128GB
+[2025-06-09 09:48:26,075] [INFO] Đã lấy dữ liệu (24/131): iPhone 15 Plus 128GB
+[2025-06-09 09:48:26,075] [INFO] Đang lấy dữ liệu (25/131): iPhone 14 128GB
+[2025-06-09 09:48:58,103] [INFO] Đã lấy dữ liệu (25/131): iPhone 14 128GB
+[2025-06-09 09:48:58,104] [INFO] Đang lấy dữ liệu (26/131): Xiaomi Redmi Note 14 Pro Plus 5G 8GB 256GB
+[2025-06-09 09:49:24,565] [INFO] Đã lấy dữ liệu (26/131): Xiaomi Redmi Note 14 Pro Plus 5G 8GB 256GB
+[2025-06-09 09:49:24,565] [INFO] Đang lấy dữ liệu (27/131): OPPO Reno13 F 8GB 256GB
+[2025-06-09 09:49:45,019] [INFO] Đã lấy dữ liệu (27/131): OPPO Reno13 F 8GB 256GB
+[2025-06-09 09:49:45,019] [INFO] Đang lấy dữ liệu (28/131): Mobell M139 4G
+[2025-06-09 09:50:10,088] [INFO] Đã lấy dữ liệu (28/131): Mobell M139 4G
+[2025-06-09 09:50:10,088] [INFO] Đang lấy dữ liệu (29/131): Samsung Galaxy S25 5G 12GB 256GB
+[2025-06-09 09:50:41,642] [INFO] Đã lấy dữ liệu (29/131): Samsung Galaxy S25 5G 12GB 256GB
+[2025-06-09 09:50:41,642] [INFO] Đang lấy dữ liệu (30/131): OPPO A18 4GB 64GB
+[2025-06-09 09:51:02,257] [INFO] Đã lấy dữ liệu (30/131): OPPO A18 4GB 64GB
+[2025-06-09 09:51:02,257] [INFO] Đang lấy dữ liệu (31/131): Samsung Galaxy S24 Ultra 5G 256GB
+[2025-06-09 09:51:34,599] [INFO] Đã lấy dữ liệu (31/131): Samsung Galaxy S24 Ultra 5G 256GB
+[2025-06-09 09:51:34,600] [INFO] Đang lấy dữ liệu (32/131): Benco V91c 4GB 128GB
+[2025-06-09 09:51:54,740] [INFO] Đã lấy dữ liệu (32/131): Benco V91c 4GB 128GB
+[2025-06-09 09:51:54,741] [INFO] Đang lấy dữ liệu (33/131): OPPO A3 8GB 256GB
+[2025-06-09 09:52:15,718] [INFO] Đã lấy dữ liệu (33/131): OPPO A3 8GB 256GB
+[2025-06-09 09:52:15,719] [INFO] Đang lấy dữ liệu (34/131): Samsung Galaxy S24 Ultra 5G 256GB
+[2025-06-09 09:52:47,940] [INFO] Đã lấy dữ liệu (34/131): Samsung Galaxy S24 Ultra 5G 256GB
+[2025-06-09 09:52:47,941] [INFO] Đang lấy dữ liệu (35/131): Xiaomi 14T 5G 12GB 512GB
+[2025-06-09 09:53:08,065] [INFO] Đã lấy dữ liệu (35/131): Xiaomi 14T 5G 12GB 512GB
+[2025-06-09 09:53:08,065] [INFO] Đang lấy dữ liệu (36/131): iPhone 15 128GB
+[2025-06-09 09:53:45,263] [INFO] Đã lấy dữ liệu (36/131): iPhone 15 128GB
+[2025-06-09 09:53:45,263] [INFO] Đang lấy dữ liệu (37/131): Xiaomi Poco X7 5G 12GB 512GB
+[2025-06-09 09:54:11,890] [INFO] Đã lấy dữ liệu (37/131): Xiaomi Poco X7 5G 12GB 512GB
+[2025-06-09 09:54:11,891] [INFO] Đang lấy dữ liệu (38/131): Honor 200 5G 12GB 256GB
+[2025-06-09 09:54:33,134] [INFO] Đã lấy dữ liệu (38/131): Honor 200 5G 12GB 256GB
+[2025-06-09 09:54:33,134] [INFO] Đang lấy dữ liệu (39/131): Realme C61 4GB 128GB
+[2025-06-09 09:54:55,541] [INFO] Đã lấy dữ liệu (39/131): Realme C61 4GB 128GB
+[2025-06-09 09:54:55,542] [INFO] Đang lấy dữ liệu (40/131): Samsung Galaxy A35 5G 128GB
+[2025-06-09 09:55:21,389] [INFO] Đã lấy dữ liệu (40/131): Samsung Galaxy A35 5G 128GB
+[2025-06-09 09:55:21,389] [INFO] Đang lấy dữ liệu (41/131): TCL 60R 5G 4GB 128GB
+[2025-06-09 09:55:41,580] [INFO] Đã lấy dữ liệu (41/131): TCL 60R 5G 4GB 128GB
+[2025-06-09 09:55:41,581] [INFO] Đang lấy dữ liệu (42/131): Samsung Galaxy A06 5G 4GB 128GB
+[2025-06-09 09:56:07,840] [INFO] Đã lấy dữ liệu (42/131): Samsung Galaxy A06 5G 4GB 128GB
+[2025-06-09 09:56:07,841] [INFO] Đang lấy dữ liệu (43/131): Nubia V70 Design 8GB 128GB
+[2025-06-09 09:56:29,092] [INFO] Đã lấy dữ liệu (43/131): Nubia V70 Design 8GB 128GB
+[2025-06-09 09:56:29,092] [INFO] Đang lấy dữ liệu (44/131): Masstel Izi 16 4G
+[2025-06-09 09:56:48,370] [INFO] Đã lấy dữ liệu (44/131): Masstel Izi 16 4G
+[2025-06-09 09:56:48,370] [INFO] Đang lấy dữ liệu (45/131): OPPO A3 6GB 128GB
+[2025-06-09 09:57:08,888] [INFO] Đã lấy dữ liệu (45/131): OPPO A3 6GB 128GB
+[2025-06-09 09:57:08,888] [INFO] Đang lấy dữ liệu (46/131): Masstel Izi 15 4G
+[2025-06-09 09:57:28,642] [INFO] Đã lấy dữ liệu (46/131): Masstel Izi 15 4G
+[2025-06-09 09:57:28,642] [INFO] Đang lấy dữ liệu (47/131): iPhone 13 128GB
+[2025-06-09 09:57:54,658] [INFO] Đã lấy dữ liệu (47/131): iPhone 13 128GB
+[2025-06-09 09:57:54,658] [INFO] Đang lấy dữ liệu (48/131): Inoi 240 Modern 4G
+[2025-06-09 09:58:14,125] [INFO] Đã lấy dữ liệu (48/131): Inoi 240 Modern 4G
+[2025-06-09 09:58:14,125] [INFO] Đang lấy dữ liệu (49/131): Tecno Spark 30 5G 6GB 128GB
+[2025-06-09 09:58:40,043] [INFO] Đã lấy dữ liệu (49/131): Tecno Spark 30 5G 6GB 128GB
+[2025-06-09 09:58:40,043] [INFO] Đang lấy dữ liệu (50/131): Viettel Sumo T2 4G
+[2025-06-09 09:59:00,577] [INFO] Đã lấy dữ liệu (50/131): Viettel Sumo T2 4G
+[2025-06-09 09:59:00,577] [INFO] Đang lấy dữ liệu (51/131): Xiaomi Redmi 14C 4GB 128GB
+[2025-06-09 09:59:20,616] [INFO] Đã lấy dữ liệu (51/131): Xiaomi Redmi 14C 4GB 128GB
+[2025-06-09 09:59:20,617] [INFO] Đang lấy dữ liệu (52/131): Honor X8c 8GB 512GB
+[2025-06-09 09:59:41,943] [INFO] Đã lấy dữ liệu (52/131): Honor X8c 8GB 512GB
+[2025-06-09 09:59:41,944] [INFO] Đang lấy dữ liệu (53/131): Honor X9c 5G 12GB 256GB
+[2025-06-09 10:00:08,132] [INFO] Đã lấy dữ liệu (53/131): Honor X9c 5G 12GB 256GB
+[2025-06-09 10:00:08,132] [INFO] Đang lấy dữ liệu (54/131): Samsung Galaxy A16 5G 8GB 128GB
+[2025-06-09 10:00:34,137] [INFO] Đã lấy dữ liệu (54/131): Samsung Galaxy A16 5G 8GB 128GB
+[2025-06-09 10:00:34,138] [INFO] Đang lấy dữ liệu (55/131): Honor X7c 8GB 256GB
+[2025-06-09 10:01:01,893] [INFO] Đã lấy dữ liệu (55/131): Honor X7c 8GB 256GB
+[2025-06-09 10:01:01,894] [INFO] Đang lấy dữ liệu (56/131): iPhone 16e 128GB
+[2025-06-09 10:01:22,824] [INFO] Đã lấy dữ liệu (56/131): iPhone 16e 128GB
+[2025-06-09 10:01:22,826] [INFO] Đang lấy dữ liệu (57/131): Samsung Galaxy A26 5G 8GB 128GB
+[2025-06-09 10:01:48,411] [INFO] Đã lấy dữ liệu (57/131): Samsung Galaxy A26 5G 8GB 128GB
+[2025-06-09 10:01:48,411] [INFO] Đang lấy dữ liệu (58/131): Masstel Fami 60S 4G
+[2025-06-09 10:02:07,690] [INFO] Đã lấy dữ liệu (58/131): Masstel Fami 60S 4G
+[2025-06-09 10:02:07,690] [INFO] Đang lấy dữ liệu (59/131): Itel IT8010 4G
+[2025-06-09 10:02:32,289] [INFO] Đã lấy dữ liệu (59/131): Itel IT8010 4G
+[2025-06-09 10:02:32,289] [INFO] Đang lấy dữ liệu (60/131): Honor X6b 6GB 128GB
+[2025-06-09 10:02:53,146] [INFO] Đã lấy dữ liệu (60/131): Honor X6b 6GB 128GB
+[2025-06-09 10:02:53,146] [INFO] Đang lấy dữ liệu (61/131): Xiaomi Poco M7 Pro 5G 8GB 256GB
+[2025-06-09 10:03:19,325] [INFO] Đã lấy dữ liệu (61/131): Xiaomi Poco M7 Pro 5G 8GB 256GB
+[2025-06-09 10:03:19,325] [INFO] Đang lấy dữ liệu (62/131): Samsung Galaxy S25 Plus 5G 12GB 256GB
+[2025-06-09 10:03:51,727] [INFO] Đã lấy dữ liệu (62/131): Samsung Galaxy S25 Plus 5G 12GB 256GB
+[2025-06-09 10:03:51,727] [INFO] Đang lấy dữ liệu (63/131): OPPO A3 8GB 256GB
+[2025-06-09 10:04:12,552] [INFO] Đã lấy dữ liệu (63/131): OPPO A3 8GB 256GB
+[2025-06-09 10:04:12,553] [INFO] Đang lấy dữ liệu (64/131): Xiaomi 14T 5G 12GB 512GB
+[2025-06-09 10:04:33,319] [INFO] Đã lấy dữ liệu (64/131): Xiaomi 14T 5G 12GB 512GB
+[2025-06-09 10:04:33,319] [INFO] Đang lấy dữ liệu (65/131): iPhone 15 Plus 128GB
+[2025-06-09 10:05:09,999] [INFO] Đã lấy dữ liệu (65/131): iPhone 15 Plus 128GB
+[2025-06-09 10:05:09,999] [INFO] Đang lấy dữ liệu (66/131): Samsung Galaxy S25 5G 12GB 256GB
+[2025-06-09 10:05:41,883] [INFO] Đã lấy dữ liệu (66/131): Samsung Galaxy S25 5G 12GB 256GB
+[2025-06-09 10:05:41,884] [INFO] Đang lấy dữ liệu (67/131): Realme C60 4GB-64GB
+[2025-06-09 10:06:02,011] [INFO] Đã lấy dữ liệu (67/131): Realme C60 4GB-64GB
+[2025-06-09 10:06:02,011] [INFO] Đang lấy dữ liệu (68/131): Xiaomi 14T Pro 5G 12GB 1TB
+[2025-06-09 10:06:28,384] [INFO] Đã lấy dữ liệu (68/131): Xiaomi 14T Pro 5G 12GB 1TB
+[2025-06-09 10:06:28,384] [INFO] Đang lấy dữ liệu (69/131): Itel IT9310 4G
+[2025-06-09 10:06:47,506] [INFO] Đã lấy dữ liệu (69/131): Itel IT9310 4G
+[2025-06-09 10:06:47,506] [INFO] Đang lấy dữ liệu (70/131): OPPO A58 8GB 128GB
+[2025-06-09 10:07:08,160] [INFO] Đã lấy dữ liệu (70/131): OPPO A58 8GB 128GB
+[2025-06-09 10:07:08,160] [INFO] Đang lấy dữ liệu (71/131): ZTE Blade A55 4GB 128GB
+[2025-06-09 10:07:28,563] [INFO] Đã lấy dữ liệu (71/131): ZTE Blade A55 4GB 128GB
+[2025-06-09 10:07:28,563] [INFO] Đang lấy dữ liệu (72/131): Realme 14 5G 8GB 256GB
+[2025-06-09 10:07:44,110] [INFO] Đã lấy dữ liệu (72/131): Realme 14 5G 8GB 256GB
+[2025-06-09 10:07:44,110] [INFO] Đang lấy dữ liệu (73/131): Xiaomi Poco M6 Pro 12GB 512GB
+[2025-06-09 10:08:10,490] [INFO] Đã lấy dữ liệu (73/131): Xiaomi Poco M6 Pro 12GB 512GB
+[2025-06-09 10:08:10,490] [INFO] Đang lấy dữ liệu (74/131): Honor Magic V3 5G 12GB 512GB
+[2025-06-09 10:08:36,691] [INFO] Đã lấy dữ liệu (74/131): Honor Magic V3 5G 12GB 512GB
+[2025-06-09 10:08:36,691] [INFO] Đang lấy dữ liệu (75/131): Inoi A54 12GB (4+8GB) 256GB
+[2025-06-09 10:08:56,711] [INFO] Đã lấy dữ liệu (75/131): Inoi A54 12GB (4+8GB) 256GB
+[2025-06-09 10:08:56,712] [INFO] Đang lấy dữ liệu (76/131): Realme 13+ 5G 8GB 256GB
+[2025-06-09 10:09:12,554] [INFO] Đã lấy dữ liệu (76/131): Realme 13+ 5G 8GB 256GB
+[2025-06-09 10:09:12,554] [INFO] Đang lấy dữ liệu (77/131): Vivo Y03 4GB 64GB
+[2025-06-09 10:09:34,450] [INFO] Đã lấy dữ liệu (77/131): Vivo Y03 4GB 64GB
+[2025-06-09 10:09:34,451] [INFO] Đang lấy dữ liệu (78/131): Tecno Spark Go 1 4GB 64GB
+[2025-06-09 10:09:54,948] [INFO] Đã lấy dữ liệu (78/131): Tecno Spark Go 1 4GB 64GB
+[2025-06-09 10:09:54,949] [INFO] Đang lấy dữ liệu (79/131): OPPO Find X8 5G 16GB 512GB
+[2025-06-09 10:10:16,016] [INFO] Đã lấy dữ liệu (79/131): OPPO Find X8 5G 16GB 512GB
+[2025-06-09 10:10:16,017] [INFO] Đang lấy dữ liệu (80/131): Inoi A34 12GB (3+9GB) 128GB
+[2025-06-09 10:10:36,112] [INFO] Đã lấy dữ liệu (80/131): Inoi A34 12GB (3+9GB) 128GB
+[2025-06-09 10:10:36,112] [INFO] Đang lấy dữ liệu (81/131): Realme C60 4GB-64GB
+[2025-06-09 10:10:56,195] [INFO] Đã lấy dữ liệu (81/131): Realme C60 4GB-64GB
+[2025-06-09 10:10:56,195] [INFO] Đang lấy dữ liệu (82/131): Xiaomi 14T Pro 5G 12GB 512GB
+[2025-06-09 10:11:10,941] [INFO] Đã lấy dữ liệu (82/131): Xiaomi 14T Pro 5G 12GB 512GB
+[2025-06-09 10:11:10,941] [INFO] Đang lấy dữ liệu (83/131): Realme 14 5G 8GB 256GB
+[2025-06-09 10:11:26,376] [INFO] Đã lấy dữ liệu (83/131): Realme 14 5G 8GB 256GB
+[2025-06-09 10:11:26,376] [INFO] Đang lấy dữ liệu (84/131): Tecno Camon 40 8GB 128GB
+[2025-06-09 10:11:52,890] [INFO] Đã lấy dữ liệu (84/131): Tecno Camon 40 8GB 128GB
+[2025-06-09 10:11:52,890] [INFO] Đang lấy dữ liệu (85/131): Tecno Camon 40 Pro 8GB 256GB
+[2025-06-09 10:12:18,826] [INFO] Đã lấy dữ liệu (85/131): Tecno Camon 40 Pro 8GB 256GB
+[2025-06-09 10:12:18,826] [INFO] Đang lấy dữ liệu (86/131): Realme 13+ 5G 8GB 256GB
+[2025-06-09 10:12:34,491] [INFO] Đã lấy dữ liệu (86/131): Realme 13+ 5G 8GB 256GB
+[2025-06-09 10:12:34,492] [INFO] Đang lấy dữ liệu (87/131): Samsung Galaxy A55 5G 128GB
+[2025-06-09 10:13:01,680] [INFO] Đã lấy dữ liệu (87/131): Samsung Galaxy A55 5G 128GB
+[2025-06-09 10:13:01,680] [INFO] Đang lấy dữ liệu (88/131): Inoi A34 12GB (3+9GB) 128GB
+[2025-06-09 10:13:22,367] [INFO] Đã lấy dữ liệu (88/131): Inoi A34 12GB (3+9GB) 128GB
+[2025-06-09 10:13:22,368] [INFO] Đang lấy dữ liệu (89/131): Xiaomi 15 Ultra 5G 16GB 512GB
+[2025-06-09 10:13:43,532] [INFO] Đã lấy dữ liệu (89/131): Xiaomi 15 Ultra 5G 16GB 512GB
+[2025-06-09 10:13:43,532] [INFO] Đang lấy dữ liệu (90/131): Samsung Galaxy A25 5G 128GB
+[2025-06-09 10:14:10,808] [INFO] Đã lấy dữ liệu (90/131): Samsung Galaxy A25 5G 128GB
+[2025-06-09 10:14:10,808] [INFO] Đang lấy dữ liệu (91/131): Nokia 3210 4G
+[2025-06-09 10:14:36,911] [INFO] Đã lấy dữ liệu (91/131): Nokia 3210 4G
+[2025-06-09 10:14:36,911] [INFO] Đang lấy dữ liệu (92/131): OPPO Reno11 F 5G 8GB-256GB
+[2025-06-09 10:14:59,956] [INFO] Đã lấy dữ liệu (92/131): OPPO Reno11 F 5G 8GB-256GB
+[2025-06-09 10:14:59,956] [INFO] Đang lấy dữ liệu (93/131): Nubia V70 Max 6GB 128GB
+[2025-06-09 10:15:20,710] [INFO] Đã lấy dữ liệu (93/131): Nubia V70 Max 6GB 128GB
+[2025-06-09 10:15:20,711] [INFO] Đang lấy dữ liệu (94/131): Nokia 105 DS Pro 4G
+[2025-06-09 10:15:40,525] [INFO] Đã lấy dữ liệu (94/131): Nokia 105 DS Pro 4G
+[2025-06-09 10:15:40,527] [INFO] Đang lấy dữ liệu (95/131): Honor X9B 5G 12GB-256GB
+[2025-06-09 10:16:01,627] [INFO] Đã lấy dữ liệu (95/131): Honor X9B 5G 12GB-256GB
+[2025-06-09 10:16:01,627] [INFO] Đang lấy dữ liệu (96/131): OPPO A58 6GB-128GB
+[2025-06-09 10:16:22,652] [INFO] Đã lấy dữ liệu (96/131): OPPO A58 6GB-128GB
+[2025-06-09 10:16:22,652] [INFO] Đang lấy dữ liệu (97/131): Honor X9B 5G 12GB-256GB
+[2025-06-09 10:16:43,470] [INFO] Đã lấy dữ liệu (97/131): Honor X9B 5G 12GB-256GB
+[2025-06-09 10:16:43,470] [INFO] Đang lấy dữ liệu (98/131): Inoi 288s 4G
+[2025-06-09 10:16:57,300] [INFO] Đã lấy dữ liệu (98/131): Inoi 288s 4G
+[2025-06-09 10:16:57,300] [INFO] Đang lấy dữ liệu (99/131): Xiaomi 14T Pro 5G 12GB 512GB
+[2025-06-09 10:17:12,211] [INFO] Đã lấy dữ liệu (99/131): Xiaomi 14T Pro 5G 12GB 512GB
+[2025-06-09 10:17:12,211] [INFO] Đang lấy dữ liệu (100/131): Samsung Galaxy Z Flip5 5G 256GB
+[2025-06-09 10:17:43,520] [INFO] Đã lấy dữ liệu (100/131): Samsung Galaxy Z Flip5 5G 256GB
+[2025-06-09 10:17:43,521] [INFO] Đang lấy dữ liệu (101/131): Samsung Galaxy Z Flip4 5G 128GB
+[2025-06-09 10:18:04,594] [INFO] Đã lấy dữ liệu (101/131): Samsung Galaxy Z Flip4 5G 128GB
+[2025-06-09 10:18:04,594] [INFO] Đang lấy dữ liệu (102/131): Tecno Camon 40 8GB 128GB
+[2025-06-09 10:18:30,646] [INFO] Đã lấy dữ liệu (102/131): Tecno Camon 40 8GB 128GB
+[2025-06-09 10:18:30,647] [INFO] Đang lấy dữ liệu (103/131): OPPO Reno12 5G 12GB 256GB
+[2025-06-09 10:18:52,512] [INFO] Đã lấy dữ liệu (103/131): OPPO Reno12 5G 12GB 256GB
+[2025-06-09 10:18:52,512] [INFO] Đang lấy dữ liệu (104/131): Xiaomi Redmi A3 4GB 128GB
+[2025-06-09 10:19:18,376] [INFO] Đã lấy dữ liệu (104/131): Xiaomi Redmi A3 4GB 128GB
+[2025-06-09 10:19:18,376] [INFO] Đang lấy dữ liệu (105/131): Samsung Galaxy A05s 128GB
+[2025-06-09 10:19:38,705] [INFO] Đã lấy dữ liệu (105/131): Samsung Galaxy A05s 128GB
+[2025-06-09 10:19:38,705] [INFO] Đang lấy dữ liệu (106/131): OPPO A78 8GB-256GB
+[2025-06-09 10:19:59,561] [INFO] Đã lấy dữ liệu (106/131): OPPO A78 8GB-256GB
+[2025-06-09 10:19:59,561] [INFO] Đang lấy dữ liệu (107/131): Tecno Pova 6 8GB-256GB
+[2025-06-09 10:20:25,598] [INFO] Đã lấy dữ liệu (107/131): Tecno Pova 6 8GB-256GB
+[2025-06-09 10:20:25,598] [INFO] Đang lấy dữ liệu (108/131): OPPO Reno11 F 5G 8GB-256GB
+[2025-06-09 10:20:46,280] [INFO] Đã lấy dữ liệu (108/131): OPPO Reno11 F 5G 8GB-256GB
+[2025-06-09 10:20:46,281] [INFO] Đang lấy dữ liệu (109/131): iPhone 14 Plus 128GB
+[2025-06-09 10:21:07,523] [INFO] Đã lấy dữ liệu (109/131): iPhone 14 Plus 128GB
+[2025-06-09 10:21:07,524] [INFO] Đang lấy dữ liệu (110/131): Samsung Galaxy A15 128GB
+[2025-06-09 10:21:33,884] [INFO] Đã lấy dữ liệu (110/131): Samsung Galaxy A15 128GB
+[2025-06-09 10:21:33,884] [INFO] Đang lấy dữ liệu (111/131): Xiaomi Redmi Note 13 6GB 128GB
+[2025-06-09 10:21:54,247] [INFO] Đã lấy dữ liệu (111/131): Xiaomi Redmi Note 13 6GB 128GB
+[2025-06-09 10:21:54,247] [INFO] Đang lấy dữ liệu (112/131): OPPO Reno8 T 4G 8GB-256GB
+[2025-06-09 10:22:14,984] [INFO] Đã lấy dữ liệu (112/131): OPPO Reno8 T 4G 8GB-256GB
+[2025-06-09 10:22:14,984] [INFO] Đang lấy dữ liệu (113/131): OPPO Find N3 Flip 5G 12GB 256GB
+[2025-06-09 10:22:35,951] [INFO] Đã lấy dữ liệu (113/131): OPPO Find N3 Flip 5G 12GB 256GB
+[2025-06-09 10:22:35,951] [INFO] Đang lấy dữ liệu (114/131): Xiaomi Redmi Note 13 6GB 128GB
+[2025-06-09 10:22:56,535] [INFO] Đã lấy dữ liệu (114/131): Xiaomi Redmi Note 13 6GB 128GB
+[2025-06-09 10:22:56,535] [INFO] Đang lấy dữ liệu (115/131): Xiaomi Poco C71 4GB 128GB
+[2025-06-09 10:23:24,148] [INFO] Đã lấy dữ liệu (115/131): Xiaomi Poco C71 4GB 128GB
+[2025-06-09 10:23:24,148] [INFO] Đang lấy dữ liệu (116/131): Tecno Camon 30S 256GB
+[2025-06-09 10:23:51,281] [INFO] Đã lấy dữ liệu (116/131): Tecno Camon 30S 256GB
+[2025-06-09 10:23:51,281] [INFO] Đang lấy dữ liệu (117/131): Tecno Spark 30C 4GB 128GB
+[2025-06-09 10:24:18,611] [INFO] Đã lấy dữ liệu (117/131): Tecno Spark 30C 4GB 128GB
+[2025-06-09 10:24:18,611] [INFO] Đang lấy dữ liệu (118/131): Nubia RedMagic 10s Pro Plus 5G
+[2025-06-09 10:24:43,588] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:24:43,588] [INFO] Đã lấy dữ liệu (118/131): Nubia RedMagic 10s Pro Plus 5G
+[2025-06-09 10:24:43,589] [INFO] Đang lấy dữ liệu (119/131): Nubia RedMagi 10s Pro 5G
+[2025-06-09 10:25:08,550] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:25:08,550] [INFO] Đã lấy dữ liệu (119/131): Nubia RedMagi 10s Pro 5G
+[2025-06-09 10:25:08,551] [INFO] Đang lấy dữ liệu (120/131): OPPO Reno14 5G
+[2025-06-09 10:25:33,386] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:25:33,386] [INFO] Đã lấy dữ liệu (120/131): OPPO Reno14 5G
+[2025-06-09 10:25:33,387] [INFO] Đang lấy dữ liệu (121/131): Nubia Neo 3 4G
+[2025-06-09 10:25:57,953] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:25:57,953] [INFO] Đã lấy dữ liệu (121/131): Nubia Neo 3 4G
+[2025-06-09 10:25:57,953] [INFO] Đang lấy dữ liệu (122/131): Samsung Galaxy Z Fold7
+[2025-06-09 10:26:22,665] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:26:22,666] [INFO] Đã lấy dữ liệu (122/131): Samsung Galaxy Z Fold7
+[2025-06-09 10:26:22,667] [INFO] Đang lấy dữ liệu (123/131): Nubia RedMagic 10 Air 5G
+[2025-06-09 10:26:47,567] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:26:47,568] [INFO] Đã lấy dữ liệu (123/131): Nubia RedMagic 10 Air 5G
+[2025-06-09 10:26:47,568] [INFO] Đang lấy dữ liệu (124/131): Nubia A76
+[2025-06-09 10:27:12,493] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:27:12,494] [INFO] Đã lấy dữ liệu (124/131): Nubia A76
+[2025-06-09 10:27:12,494] [INFO] Đang lấy dữ liệu (125/131): Samsung Galaxy S25 Edge
+[2025-06-09 10:27:36,882] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:27:36,883] [INFO] Đã lấy dữ liệu (125/131): Samsung Galaxy S25 Edge
+[2025-06-09 10:27:36,883] [INFO] Đang lấy dữ liệu (126/131): Samsung Galaxy Z Flip FE
+[2025-06-09 10:28:01,788] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:28:01,788] [INFO] Đã lấy dữ liệu (126/131): Samsung Galaxy Z Flip FE
+[2025-06-09 10:28:01,788] [INFO] Đang lấy dữ liệu (127/131): Samsung Galaxy Z Flip7
+[2025-06-09 10:28:27,722] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:28:27,723] [INFO] Đã lấy dữ liệu (127/131): Samsung Galaxy Z Flip7
+[2025-06-09 10:28:27,723] [INFO] Đang lấy dữ liệu (128/131): Honor Power 5G
+[2025-06-09 10:28:52,229] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:28:52,230] [INFO] Đã lấy dữ liệu (128/131): Honor Power 5G
+[2025-06-09 10:28:52,230] [INFO] Đang lấy dữ liệu (129/131): Nubia Neo 3 GT
+[2025-06-09 10:29:17,180] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:29:17,180] [INFO] Đã lấy dữ liệu (129/131): Nubia Neo 3 GT
+[2025-06-09 10:29:17,181] [INFO] Đang lấy dữ liệu (130/131): Nubia Neo 3 5G
+[2025-06-09 10:29:41,864] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:29:41,864] [INFO] Đã lấy dữ liệu (130/131): Nubia Neo 3 5G
+[2025-06-09 10:29:41,864] [INFO] Đang lấy dữ liệu (131/131): ZTE nubia Flip
+[2025-06-09 10:30:06,024] [ERROR] Không thể mở modal cấu hình hoặc lấy dữ liệu
+[2025-06-09 10:30:06,025] [INFO] Đã lấy dữ liệu (131/131): ZTE nubia Flip
+[2025-06-09 10:30:06,086] [INFO] Đã lưu dữ liệu danh mục điện thoại vào data/raw/fpt/phone.csv
+[2025-06-09 10:30:06,087] [INFO] Crawling danh mục: máy tính bảng - URL: https://fptshop.com.vn/may-tinh-bang
+[2025-06-09 10:30:19,887] [INFO] Tổng số sản phẩm trong danh sách 60
+[2025-06-09 10:30:22,552] [INFO] Đang lấy dữ liệu (1/60): Samsung Galaxy Tab A9 WiFi 8GB 128GB

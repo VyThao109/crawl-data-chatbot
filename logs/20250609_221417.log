@@ -1,0 +1,739 @@
+[2025-06-09 22:14:17,082] [INFO] == BẮT ĐẦU TOÀN BỘ QUÁ TRÌNH CRAWL ==
+[2025-06-09 22:14:17,082] [INFO] >>> Bắt đầu crawl từ Thế Giới Di Động
+[2025-06-09 22:14:17,082] [INFO] Khởi tạo trình duyệt và bắt đầu quá trình crawl
+[2025-06-09 22:14:18,338] [INFO] Đang lấy danh sách sản phẩm cho: điện thoại
+[2025-06-09 22:14:40,185] [INFO] Tổng sản phẩm thu thập được: 124
+[2025-06-09 22:14:40,186] [INFO] Thu thập dữ liệu (0/123): Điện thoại realme C71 6GB/128GB
+[2025-06-09 22:14:43,959] [INFO] Thu thập dữ liệu (1/123): Điện thoại Xiaomi Redmi Note 14 Pro 5G 8GB/256GB
+[2025-06-09 22:14:46,701] [INFO] Thu thập dữ liệu (2/123): Điện thoại iPhone 16 Pro Max 256GB
+[2025-06-09 22:15:03,597] [INFO] Thu thập dữ liệu (3/123): Điện thoại iPhone 16 Pro 128GB
+[2025-06-09 22:15:21,440] [INFO] Thu thập dữ liệu (4/123): Điện thoại Samsung Galaxy S25 Edge 5G 12GB/512GB
+[2025-06-09 22:15:32,902] [INFO] Thu thập dữ liệu (5/123): Điện thoại Samsung Galaxy A56 5G 12GB/256GB
+[2025-06-09 22:15:44,584] [INFO] Thu thập dữ liệu (6/123): Điện thoại vivo V50 Lite 8GB/256GB
+[2025-06-09 22:15:56,107] [INFO] Thu thập dữ liệu (7/123): Điện thoại Xiaomi Redmi Note 14 Pro 8GB/256GB
+[2025-06-09 22:15:59,065] [INFO] Thu thập dữ liệu (8/123): Điện thoại OPPO Find N5 5G 16GB/512GB
+[2025-06-09 22:16:08,020] [INFO] Thu thập dữ liệu (9/123): Điện thoại OPPO Reno13 5G 12GB/256GB
+[2025-06-09 22:16:17,508] [INFO] Thu thập dữ liệu (10/123): Điện thoại vivo V50 Lite 5G 8GB/256GB
+[2025-06-09 22:16:28,595] [INFO] Thu thập dữ liệu (11/123): Điện thoại realme 14T 5G 8GB/256GB
+[2025-06-09 22:16:36,962] [INFO] Thu thập dữ liệu (12/123): Điện thoại HONOR X8c 8GB/256GB
+[2025-06-09 22:16:45,756] [INFO] Thu thập dữ liệu (13/123): Điện thoại Tecno Spark 30 8GB/128GB
+[2025-06-09 22:16:56,879] [INFO] Thu thập dữ liệu (14/123): Điện thoại Masstel S9 6GB/256GB
+[2025-06-09 22:17:05,208] [INFO] Thu thập dữ liệu (15/123): Điện thoại iPhone 16 Plus 128GB
+[2025-06-09 22:17:24,039] [INFO] Thu thập dữ liệu (16/123): Điện thoại iPhone 16 128GB
+[2025-06-09 22:17:40,749] [INFO] Thu thập dữ liệu (17/123): Điện thoại Samsung Galaxy A06 5G 6GB/128GB
+[2025-06-09 22:17:52,236] [INFO] Thu thập dữ liệu (18/123): Điện thoại Samsung Galaxy A36 5G 12GB/256GB
+[2025-06-09 22:18:03,305] [INFO] Thu thập dữ liệu (19/123): Điện thoại Xiaomi Redmi Note 14 Pro+ 5G 8GB/256GB
+[2025-06-09 22:18:12,490] [INFO] Thu thập dữ liệu (20/123): Điện thoại OPPO Reno13 Pro 5G 12GB/512GB
+[2025-06-09 22:18:21,204] [INFO] Thu thập dữ liệu (21/123): Điện thoại OPPO Reno13 F 8GB/256GB
+[2025-06-09 22:18:30,158] [INFO] Thu thập dữ liệu (22/123): Điện thoại realme C75x 8GB/128GB
+[2025-06-09 22:18:35,848] [INFO] Thu thập dữ liệu (23/123): Điện thoại realme 14 5G 12GB/256GB
+[2025-06-09 22:18:44,532] [INFO] Thu thập dữ liệu (24/123): Điện thoại Xiaomi Redmi 13x 6GB/128GB
+[2025-06-09 22:18:55,608] [INFO] Thu thập dữ liệu (25/123): Điện thoại HONOR X9c Smart 5G 12GB/256GB
+[2025-06-09 22:19:04,028] [INFO] Thu thập dữ liệu (26/123): Điện thoại Samsung Galaxy S25 Ultra 5G 12GB/256GB
+[2025-06-09 22:19:18,674] [INFO] Thu thập dữ liệu (27/123): Điện thoại iPhone 16e 128GB
+[2025-06-09 22:19:28,131] [INFO] Thu thập dữ liệu (28/123): Điện thoại iPhone 15 128GB
+[2025-06-09 22:19:44,855] [INFO] Thu thập dữ liệu (29/123): Điện thoại Samsung Galaxy Z Fold6 5G 12GB/256GB
+[2025-06-09 22:19:53,123] [INFO] Thu thập dữ liệu (30/123): Điện thoại Samsung Galaxy A26 5G 6GB/128GB
+[2025-06-09 22:20:04,673] [INFO] Thu thập dữ liệu (31/123): Điện thoại Xiaomi 15 5G 12GB/512GB
+[2025-06-09 22:20:16,730] [INFO] Thu thập dữ liệu (32/123): Điện thoại Xiaomi 15 Ultra 5G 16GB/512GB Trắng
+[2025-06-09 22:20:22,603] [INFO] Thu thập dữ liệu (33/123): Điện thoại OPPO A60 8GB/128GB
+[2025-06-09 22:20:31,225] [INFO] Thu thập dữ liệu (34/123): Điện thoại OPPO A5 Pro 8GB/256GB
+[2025-06-09 22:20:39,646] [INFO] Thu thập dữ liệu (35/123): Điện thoại OPPO A3x 4GB/64GB
+[2025-06-09 22:20:48,214] [INFO] Thu thập dữ liệu (36/123): Điện thoại realme C75 8GB/128GB
+[2025-06-09 22:20:59,526] [INFO] Thu thập dữ liệu (37/123): Điện thoại vivo Y29 8GB/128GB
+[2025-06-09 22:21:08,830] [INFO] Thu thập dữ liệu (38/123): Điện thoại HONOR X5b Plus 4GB/128GB
+[2025-06-09 22:21:17,505] [INFO] Thu thập dữ liệu (39/123): Điện thoại Samsung Galaxy A05s 6GB/128GB
+[2025-06-09 22:21:23,641] [INFO] Thu thập dữ liệu (40/123): Điện thoại iPhone 15 Plus 128GB
+[2025-06-09 22:21:42,376] [INFO] Thu thập dữ liệu (41/123): Điện thoại iPhone 13 128GB
+[2025-06-09 22:21:51,152] [INFO] Thu thập dữ liệu (42/123): Điện thoại Samsung Galaxy S24 FE 5G 8GB/256GB
+[2025-06-09 22:22:05,039] [INFO] Thu thập dữ liệu (43/123): Điện thoại Samsung Galaxy S24 5G 8GB/256GB
+[2025-06-09 22:22:19,291] [INFO] Thu thập dữ liệu (44/123): Điện thoại Xiaomi 14T 5G 12GB/256GB
+[2025-06-09 22:22:32,732] [INFO] Thu thập dữ liệu (45/123): Điện thoại Xiaomi 14T Pro 5G 12GB/256GB
+[2025-06-09 22:22:45,018] [INFO] Thu thập dữ liệu (46/123): Điện thoại OPPO A3 8GB/128GB
+[2025-06-09 22:22:53,116] [INFO] Thu thập dữ liệu (47/123): Điện thoại Tecno Spark GO 1 3GB/64GB
+[2025-06-09 22:23:01,901] [INFO] Thu thập dữ liệu (48/123): Điện thoại OPPO Reno12 F 8GB/256GB
+[2025-06-09 22:23:10,398] [INFO] Thu thập dữ liệu (49/123): Điện thoại realme Note 60 6GB/128GB
+[2025-06-09 22:23:19,189] [INFO] Thu thập dữ liệu (50/123): Điện thoại vivo Y19s 6GB/128GB
+[2025-06-09 22:23:35,124] [INFO] Thu thập dữ liệu (51/123): Điện thoại HONOR X8b 8GB/512GB
+[2025-06-09 22:23:43,654] [INFO] Thu thập dữ liệu (52/123): Điện thoại HONOR X6b 6GB/128GB Tím
+[2025-06-09 22:23:49,517] [INFO] Thu thập dữ liệu (53/123): Điện thoại iPhone 14 128GB
+[2025-06-09 22:24:01,200] [INFO] Thu thập dữ liệu (54/123): Điện thoại iPhone 15 Pro Max 256GB
+[2025-06-09 22:24:13,559] [INFO] Thu thập dữ liệu (55/123): Điện thoại iPhone 12 64GB
+[2025-06-09 22:24:25,575] [INFO] Thu thập dữ liệu (56/123): Điện thoại Xiaomi Redmi A3 3GB/64GB
+[2025-06-09 22:24:36,624] [INFO] Thu thập dữ liệu (57/123): Điện thoại Samsung Galaxy S25 5G 12GB/256GB
+[2025-06-09 22:24:50,520] [INFO] Thu thập dữ liệu (58/123): Điện thoại Xiaomi Redmi 13 6GB/128GB
+[2025-06-09 22:25:04,660] [INFO] Thu thập dữ liệu (59/123): Điện thoại HONOR X5 Plus 4GB/64GB
+[2025-06-09 22:25:10,365] [INFO] Thu thập dữ liệu (60/123): Điện thoại Xiaomi Redmi 14C 6GB/128GB
+[2025-06-09 22:25:22,090] [INFO] Thu thập dữ liệu (61/123): Điện thoại OPPO Find X8 5G 16GB/512GB Hồng
+[2025-06-09 22:25:27,550] [INFO] Thu thập dữ liệu (62/123): Điện thoại OPPO Find X8 Pro 5G 16GB/512GB
+[2025-06-09 22:25:36,657] [INFO] Thu thập dữ liệu (63/123): Điện thoại realme 13+ 5G 12GB/256GB
+[2025-06-09 22:25:45,211] [INFO] Thu thập dữ liệu (64/123): Điện thoại vivo Y04 4GB/128GB
+[2025-06-09 22:25:53,893] [INFO] Thu thập dữ liệu (65/123): Điện thoại Samsung Galaxy A35 5G 8GB/256GB
+[2025-06-09 22:26:05,121] [INFO] Thu thập dữ liệu (66/123): Điện thoại realme Note 60x 4GB/64GB
+[2025-06-09 22:26:13,903] [INFO] Thu thập dữ liệu (67/123): Điện thoại vivo V40 Lite 8GB/256GB
+[2025-06-09 22:26:25,245] [INFO] Thu thập dữ liệu (68/123): Điện thoại realme Note 50 3GB/64GB
+[2025-06-09 22:26:33,455] [INFO] Thu thập dữ liệu (69/123): Điện thoại vivo V30 5G 12GB/512GB
+[2025-06-09 22:26:42,287] [INFO] Thu thập dữ liệu (70/123): Điện thoại vivo V30e 5G 12GB/256GB
+[2025-06-09 22:26:51,247] [INFO] Thu thập dữ liệu (71/123): Điện thoại OPPO Reno13 F 5G 8GB/256GB
+[2025-06-09 22:27:03,372] [INFO] Thu thập dữ liệu (72/123): Điện thoại Xiaomi Redmi Note 14 8GB/128GB
+[2025-06-09 22:27:15,718] [INFO] Thu thập dữ liệu (73/123): Điện thoại Samsung Galaxy A16 5G 8GB/256GB
+[2025-06-09 22:27:27,610] [INFO] Thu thập dữ liệu (74/123): Điện thoại Samsung Galaxy A06 4GB/64GB
+[2025-06-09 22:27:39,566] [INFO] Thu thập dữ liệu (75/123): Điện thoại Xiaomi Redmi A5 3GB/64GB
+[2025-06-09 22:27:50,900] [INFO] Thu thập dữ liệu (76/123): Điện thoại Nokia HMD 105 4G
+[2025-06-09 22:28:01,865] [INFO] Thu thập dữ liệu (77/123): Điện thoại Masstel IZI 10
+[2025-06-09 22:28:13,603] [INFO] Thu thập dữ liệu (78/123): Điện thoại Mobell M331 4G
+[2025-06-09 22:28:24,459] [INFO] Thu thập dữ liệu (79/123): Điện thoại Viettel Sumo 4G T2
+[2025-06-09 22:28:32,429] [INFO] Thu thập dữ liệu (80/123): Điện thoại Nokia 220 4G
+[2025-06-09 22:28:41,078] [INFO] Thu thập dữ liệu (81/123): Điện thoại Mobell M539
+[2025-06-09 22:28:53,831] [INFO] Thu thập dữ liệu (82/123): Điện thoại Mobell M239 4G
+[2025-06-09 22:29:06,054] [INFO] Thu thập dữ liệu (83/123): Điện thoại Masstel Fami 50 4G
+[2025-06-09 22:29:18,973] [INFO] Thu thập dữ liệu (84/123): Điện thoại Masstel IZI T6 4G
+[2025-06-09 22:29:29,028] [INFO] Thu thập dữ liệu (85/123): Điện thoại Mobell F309 4G
+[2025-06-09 22:29:45,271] [INFO] Thu thập dữ liệu (86/123): Điện thoại Samsung Galaxy S24 Ultra 5G 12GB/256GB
+[2025-06-09 22:30:00,734] [INFO] Thu thập dữ liệu (87/123): Điện thoại Benco 4G G3
+[2025-06-09 22:30:09,967] [INFO] Thu thập dữ liệu (88/123): Điện thoại Nokia 110 4G Pro
+[2025-06-09 22:30:18,783] [INFO] Thu thập dữ liệu (89/123): Điện thoại Xiaomi Redmi Note 14 5G 8GB/256GB
+[2025-06-09 22:30:30,370] [INFO] Thu thập dữ liệu (90/123): Điện thoại HONOR X7c 8GB/256GB
+[2025-06-09 22:30:42,311] [INFO] Thu thập dữ liệu (91/123): Điện thoại Samsung Galaxy M35 5G 8GB/256GB
+[2025-06-09 22:30:50,810] [INFO] Thu thập dữ liệu (92/123): Điện thoại Nokia 3210 4G
+[2025-06-09 22:31:03,325] [INFO] Thu thập dữ liệu (93/123): Điện thoại vivo Y03 4GB/128GB
+[2025-06-09 22:31:11,756] [INFO] Thu thập dữ liệu (94/123): Điện thoại vivo V40 5G 12GB/256GB
+[2025-06-09 22:31:22,015] [INFO] Thu thập dữ liệu (95/123): Điện thoại Samsung Galaxy S25 Plus 5G 12GB/256GB
+[2025-06-09 22:31:36,888] [INFO] Thu thập dữ liệu (96/123): Điện thoại OPPO Reno12 5G 12GB/512GB
+[2025-06-09 22:31:48,091] [INFO] Thu thập dữ liệu (97/123): Điện thoại Samsung Galaxy A16 8GB/128GB
+[2025-06-09 22:31:59,264] [INFO] Thu thập dữ liệu (98/123): Điện thoại Tecno Spark 30C 6GB/128GB
+[2025-06-09 22:32:08,181] [INFO] Thu thập dữ liệu (99/123): Điện thoại Mobell F209
+[2025-06-09 22:32:30,781] [INFO] Thu thập dữ liệu (100/123): Điện thoại vivo Y28 8GB/128GB
+[2025-06-09 22:32:39,510] [INFO] Thu thập dữ liệu (101/123): Điện thoại OPPO A58 8GB/128GB
+[2025-06-09 22:32:46,012] [INFO] Thu thập dữ liệu (102/123): Điện thoại vivo Y100 8GB/256GB
+[2025-06-09 22:32:54,558] [INFO] Thu thập dữ liệu (103/123): Điện thoại OPPO A5x 4GB/64GB
+[2025-06-09 22:33:03,057] [INFO] Thu thập dữ liệu (104/123): Điện thoại vivo Y18 4GB/128GB
+[2025-06-09 22:33:11,337] [INFO] Thu thập dữ liệu (105/123): Điện thoại Masstel Fami 60S 4G
+[2025-06-09 22:33:20,892] [INFO] Thu thập dữ liệu (106/123): Điện thoại TCL 406s 4GB/64GB
+[2025-06-09 22:33:31,191] [INFO] Thu thập dữ liệu (107/123): Điện thoại realme C65s 8GB/128GB
+[2025-06-09 22:33:40,395] [INFO] Thu thập dữ liệu (108/123): Điện thoại TCL 60 NXTPaper 8GB/256GB
+[2025-06-09 22:33:49,259] [INFO] Thu thập dữ liệu (109/123): Điện thoại OPPO Reno12 Pro 5G 12GB/512GB
+[2025-06-09 22:33:58,547] [INFO] Thu thập dữ liệu (110/123): Điện thoại realme 12 8GB/256GB
+[2025-06-09 22:34:07,652] [INFO] Thu thập dữ liệu (111/123): Điện thoại OPPO Reno12 5G 12GB/256GB Hồng
+[2025-06-09 22:34:13,904] [INFO] Thu thập dữ liệu (112/123): Điện thoại OPPO Find N3 Flip 5G 12GB/256GB Hồng
+[2025-06-09 22:34:20,482] [INFO] Thu thập dữ liệu (113/123): Điện thoại HONOR 200 5G 12GB/256GB
+[2025-06-09 22:34:26,659] [INFO] Thu thập dữ liệu (114/123): Điện thoại OPPO Find N3 5G 16GB/512GB
+[2025-06-09 22:34:35,620] [INFO] Thu thập dữ liệu (115/123): Điện thoại iPhone 14 Plus 256GB
+[2025-06-09 22:34:44,894] [INFO] Thu thập dữ liệu (116/123): Điện thoại OPPO Reno12 F 5G 12GB/256GB
+[2025-06-09 22:34:53,751] [INFO] Thu thập dữ liệu (117/123): Điện thoại Samsung Galaxy A55 5G 12GB/256GB
+[2025-06-09 22:34:59,717] [INFO] Thu thập dữ liệu (118/123): Điện thoại Tecno Spark 30 5G 6GB/128GB
+[2025-06-09 22:35:11,977] [INFO] Thu thập dữ liệu (119/123): Điện thoại HONOR Magic V3 5G 12GB/512GB
+[2025-06-09 22:35:20,730] [INFO] Thu thập dữ liệu (120/123): Điện thoại iPhone 15 Pro 1TB
+[2025-06-09 22:35:26,911] [INFO] Thu thập dữ liệu (121/123): Điện thoại OPPO A38 6GB/128GB
+[2025-06-09 22:35:32,745] [INFO] Thu thập dữ liệu (122/123): Điện thoại Samsung Galaxy M15 5G 6GB/128GB
+[2025-06-09 22:35:44,167] [INFO] Đã cập nhật 123 dòng vào DataFrame. Tổng số dòng: 123
+[2025-06-09 22:35:44,196] [INFO] Hoàn thành crawl dữ liệu cho danh mục điện thoại
+[2025-06-09 22:35:44,199] [INFO] Đang lấy danh sách sản phẩm cho: máy tính bảng
+[2025-06-09 22:35:55,554] [INFO] Tổng sản phẩm thu thập được: 48
+[2025-06-09 22:35:55,555] [INFO] Thu thập dữ liệu (0/48): Máy tính bảng iPad A16 WiFi 128GB
+[2025-06-09 22:36:10,543] [INFO] Thu thập dữ liệu (1/48): Máy tính bảng iPad Air M3 11 inch WiFi 128GB
+[2025-06-09 22:36:24,322] [INFO] Thu thập dữ liệu (2/48): Máy tính bảng Xiaomi Pad 7 WiFi 8GB/256GB
+[2025-06-09 22:36:35,536] [INFO] Thu thập dữ liệu (3/48): Máy tính bảng OPPO Pad 3 8GB/256GB
+[2025-06-09 22:36:41,449] [INFO] Thu thập dữ liệu (4/48): Máy tính bảng Samsung Galaxy Tab S10 FE 5G 8GB/128GB
+[2025-06-09 22:36:52,875] [INFO] Thu thập dữ liệu (5/48): Máy tính bảng Samsung Galaxy Tab S10+ WiFi 12GB/256GB
+[2025-06-09 22:37:02,939] [INFO] Thu thập dữ liệu (6/48): Máy tính bảng Xiaomi Redmi Pad SE WiFi 4GB/128GB
+[2025-06-09 22:37:14,612] [INFO] Thu thập dữ liệu (7/48): Máy tính bảng Xiaomi Redmi Pad Pro WiFi 6GB/128GB
+[2025-06-09 22:37:26,298] [INFO] Thu thập dữ liệu (8/48): Máy tính bảng OPPO Pad Air WiFi 4GB/64GB
+[2025-06-09 22:37:32,184] [INFO] Thu thập dữ liệu (9/48): Máy tính bảng OPPO Pad Neo WiFi 6GB/128GB
+[2025-06-09 22:37:38,266] [INFO] Thu thập dữ liệu (10/48): Máy tính bảng TCL Tab 10L Gen 3 WiFi 4GB/64GB
+[2025-06-09 22:37:44,903] [INFO] Thu thập dữ liệu (11/48): Máy tính bảng HONOR Pad X8a WiFi 4GB/128GB
+[2025-06-09 22:37:50,753] [INFO] Thu thập dữ liệu (12/48): Máy tính bảng Lenovo Tab Plus WiFi 8GB/256GB
+[2025-06-09 22:37:56,584] [INFO] Thu thập dữ liệu (13/48): Máy tính bảng Samsung Galaxy Tab A9+ 5G 4GB/64GB
+[2025-06-09 22:38:08,470] [INFO] Thu thập dữ liệu (14/48): Máy tính bảng iPad Pro M4 11 inch WiFi 256GB
+[2025-06-09 22:38:17,139] [INFO] Thu thập dữ liệu (15/48): Máy tính bảng Xiaomi Redmi Pad SE 8.7 4G 4GB/128GB
+[2025-06-09 22:38:28,916] [INFO] Thu thập dữ liệu (16/48): Máy tính bảng Xiaomi Redmi Pad SE 8.7 WiFi 4GB/64GB
+[2025-06-09 22:38:40,530] [INFO] Thu thập dữ liệu (17/48): Máy tính bảng OPPO Pad 3 Pro 12GB/256GB
+[2025-06-09 22:38:46,428] [INFO] Thu thập dữ liệu (18/48): Máy tính bảng TCL Tab 10 Gen 2 4G 4GB/64GB
+[2025-06-09 22:38:52,383] [INFO] Thu thập dữ liệu (19/48): Máy tính bảng iPad 10 5G 256GB
+[2025-06-09 22:39:07,155] [INFO] Thu thập dữ liệu (20/48): Máy tính bảng iPad Pro M4 13 inch WiFi 256GB
+[2025-06-09 22:39:15,867] [INFO] Thu thập dữ liệu (21/48): Máy tính bảng Samsung Galaxy Tab A9 4G 4GB/64GB
+[2025-06-09 22:39:27,924] [INFO] Thu thập dữ liệu (22/48): Máy tính bảng Samsung Galaxy Tab S9 WiFi 8GB/128GB
+[2025-06-09 22:39:37,123] [INFO] Thu thập dữ liệu (23/48): Máy tính bảng TCL Tab 11 WiFi 4GB/128GB
+[2025-06-09 22:39:46,296] [INFO] Thu thập dữ liệu (24/48): Máy tính bảng Samsung Galaxy Tab S9 5G 8GB/128GB
+[2025-06-09 22:39:54,865] [INFO] Thu thập dữ liệu (25/48): Máy tính bảng Lenovo Tab M9 WiFi 4GB/64GB
+[2025-06-09 22:40:01,193] [INFO] Thu thập dữ liệu (26/48): Máy tính bảng iPad 9 4G 256GB
+[2025-06-09 22:40:07,424] [INFO] Thu thập dữ liệu (27/48): Máy tính bảng iPad mini 7 WiFi 128GB
+[2025-06-09 22:40:20,989] [INFO] Thu thập dữ liệu (28/48): Máy tính bảng Samsung Galaxy Tab A9+ WiFi 8GB/128GB
+[2025-06-09 22:40:32,581] [INFO] Thu thập dữ liệu (29/48): Máy tính bảng TCL Tab 10L Gen 2 WiFi 3GB/32GB
+[2025-06-09 22:40:38,572] [INFO] Thu thập dữ liệu (30/48): Máy tính bảng Lenovo Tab M11 4G 4GB/128GB
+[2025-06-09 22:40:44,984] [INFO] Thu thập dữ liệu (31/48): Máy tính bảng iPad Air 6 M2 13 inch 5G 128GB
+[2025-06-09 22:41:01,369] [INFO] Thu thập dữ liệu (32/48): Máy tính bảng iPad Air 6 M2 13 inch WiFi 128GB
+[2025-06-09 22:41:16,108] [INFO] Thu thập dữ liệu (33/48): Máy tính bảng Samsung Galaxy Tab S6 Lite 2024 4G 4GB/64GB
+[2025-06-09 22:41:24,962] [INFO] Thu thập dữ liệu (34/48): Máy tính bảng Lenovo Tab M11 WiFi 4GB/128GB
+[2025-06-09 22:41:30,691] [INFO] Thu thập dữ liệu (35/48): Máy tính bảng iPad Air 6 M2 11 inch 5G 128GB
+[2025-06-09 22:41:44,594] [INFO] Thu thập dữ liệu (36/48): Máy tính bảng iPad Pro M4 13 inch 5G 256GB
+[2025-06-09 22:41:52,718] [INFO] Thu thập dữ liệu (37/48): Máy tính bảng iPad mini 7 5G 128GB
+[2025-06-09 22:42:06,492] [INFO] Thu thập dữ liệu (38/48): Máy tính bảng iPad A16 5G 128GB
+[2025-06-09 22:42:21,201] [INFO] Thu thập dữ liệu (39/48): Máy tính bảng Xiaomi Pad 7 Pro WiFi 12GB/512GB
+[2025-06-09 22:42:32,804] [INFO] Thu thập dữ liệu (40/48): Máy tính bảng iPad Air M3 13 inch WiFi 128GB
+[2025-06-09 22:42:47,630] [INFO] Thu thập dữ liệu (41/48): Máy tính bảng Lenovo Tab 4G 4GB/64GB
+[2025-06-09 22:42:56,134] [INFO] Thu thập dữ liệu (42/48): Máy tính bảng Samsung Galaxy Tab S10 Ultra 5G 12GB/256GB
+[2025-06-09 22:43:05,337] [INFO] Thu thập dữ liệu (43/48): Máy tính bảng iPad Air M3 11 inch 5G 128GB
+[2025-06-09 22:43:21,501] [INFO] Thu thập dữ liệu (44/48): Máy tính bảng iPad Pro M4 11 inch Nano WiFi 1TB
+[2025-06-09 22:43:29,564] [INFO] Thu thập dữ liệu (45/48): Máy tính bảng Samsung Galaxy Tab S10 Ultra WiFi 12GB/256GB
+[2025-06-09 22:43:38,149] [INFO] Thu thập dữ liệu (46/48): Máy tính bảng iPad Air M3 13 inch 5G 128GB
+[2025-06-09 22:43:52,723] [INFO] Thu thập dữ liệu (47/48): Máy tính bảng iPad Air 6 M2 11 inch WiFi 512GB
+[2025-06-09 22:44:08,067] [INFO] Đã cập nhật 48 dòng vào DataFrame. Tổng số dòng: 48
+[2025-06-09 22:44:08,072] [INFO] Hoàn thành crawl dữ liệu cho danh mục máy tính bảng
+[2025-06-09 22:44:08,072] [INFO] Đang lấy danh sách sản phẩm cho: laptop
+[2025-06-09 22:44:57,398] [INFO] Tổng sản phẩm thu thập được: 352
+[2025-06-09 22:44:57,398] [INFO] Thu thập dữ liệu (0/352): Laptop Asus Vivobook Go 15 E1504FA R5 7520U/16GB/512GB/Win11 (NJ776W)
+[2025-06-09 22:45:03,374] [INFO] Thu thập dữ liệu (1/352): Laptop HP 15 fc0085AU R5 7430U/16GB/512GB/Win11 (A6VV8PA)
+[2025-06-09 22:45:08,869] [INFO] Thu thập dữ liệu (2/352): Laptop Dell Inspiron 15 3520 i5 1235U/16GB/512GB/120Hz/OfficeHS/Win11 (N5I5057W1)
+[2025-06-09 22:45:14,501] [INFO] Thu thập dữ liệu (3/352): Laptop MacBook Air 13 inch M4 16GB/256GB
+[2025-06-09 22:45:25,490] [INFO] Thu thập dữ liệu (4/352): Laptop Lenovo IdeaPad Slim 3 15IRH10 i5 13420H/16GB/512GB/Win11 (83K1000HVN)
+[2025-06-09 22:45:31,121] [INFO] Thu thập dữ liệu (5/352): Laptop Acer Aspire Go AG15 31P 30M4 i3 N305/8GB/256GB/Win11 (NX.KRPSV.004)
+[2025-06-09 22:45:36,481] [INFO] Thu thập dữ liệu (6/352): Laptop HP 15 fd0234TU i5 1334U/16GB/512GB/Win11 (9Q969PA)
+[2025-06-09 22:45:42,718] [INFO] Thu thập dữ liệu (7/352): Laptop Asus Vivobook 15 X1504VA i3 1315U/8GB/512GB/Win11 (NJ1634W)
+[2025-06-09 22:45:48,331] [INFO] Thu thập dữ liệu (8/352): Laptop Acer Gaming Nitro V 15 ANV15 41 R2UP R5 6600H/16GB/512GB/4GB RTX2050/165Hz/Win11 (NH.QPGSV.004)
+[2025-06-09 22:45:54,378] [INFO] Thu thập dữ liệu (9/352): Laptop MSI Gaming Thin 15 B12UCX i5 12450H/16GB/512GB/4GB RTX2050/144Hz/Win11 (2046VN)
+[2025-06-09 22:46:00,076] [INFO] Thu thập dữ liệu (10/352): Laptop Lenovo Gaming LOQ Essential 15IAX9E i5 12450HX/16GB/512GB/4GB RTX2050/144Hz/Win11 (83LK000BVN)
+[2025-06-09 22:46:05,882] [INFO] Thu thập dữ liệu (11/352): Laptop Dell Inspiron 15 3520 i5 1235U/16GB/512GB/120Hz/OfficeHS/KYHD/Win11 (25P2312)
+[2025-06-09 22:46:11,590] [INFO] Thu thập dữ liệu (12/352): Laptop HP 15 fd0303TU i3 1315U/8GB/512GB/Win11 (A2NL4PA)
+[2025-06-09 22:46:17,441] [INFO] Thu thập dữ liệu (13/352): Laptop Asus Vivobook 16 X1605VA i5 1335U/16GB/512GB/Win11 (MB360W)
+[2025-06-09 22:46:22,999] [INFO] Thu thập dữ liệu (14/352): Laptop Acer Aspire 3 A314 42P R3B3 R7 5700U/16GB/512GB/Win11 (NX.KSFSV.001)
+[2025-06-09 22:46:28,665] [INFO] Thu thập dữ liệu (15/352): Laptop MacBook Air 13 inch M1 8GB/256GB
+[2025-06-09 22:46:34,390] [INFO] Thu thập dữ liệu (16/352): Laptop Lenovo Ideapad Slim 3 15AMN8 R5 7520U/16GB/512GB/Win11 (82XQ00J0VN)
+[2025-06-09 22:46:40,012] [INFO] Thu thập dữ liệu (17/352): Laptop MSI Modern 15 F13MG i5 1335U/16GB/512GB/Win11 (082VN)
+[2025-06-09 22:46:45,769] [INFO] Thu thập dữ liệu (18/352): Laptop HP 245 G10 R5 7530U/8GB/512GB/Win11 (A20TDPT)
+[2025-06-09 22:46:51,781] [INFO] Thu thập dữ liệu (19/352): Laptop Dell Inspiron 15 3520 i7 1255U/16GB/512GB/120Hz/OfficeHS/KYHD/Win11 (N5I7125W1)
+[2025-06-09 22:46:57,510] [INFO] Thu thập dữ liệu (20/352): Laptop Asus Vivobook 16 X1605VA i7 13620H/16GB/512GB/OfficeHS24+365/Win11 (MB1875WS)
+[2025-06-09 22:47:03,297] [INFO] Thu thập dữ liệu (21/352): Laptop Acer Aspire 7 A715 76 53PJ i5 12450H/16GB/512GB/Win11 (NH.QGESV.007)
+[2025-06-09 22:47:08,959] [INFO] Thu thập dữ liệu (22/352): Laptop Lenovo Gaming LOQ 15IAX9 i5 12450HX/24GB/512GB/6GB RTX3050/144Hz/Win11 (83GS00D9VN)
+[2025-06-09 22:47:14,721] [INFO] Thu thập dữ liệu (23/352): Laptop MacBook Air 13 inch M2 16GB/256GB
+[2025-06-09 22:47:25,975] [INFO] Thu thập dữ liệu (24/352): Laptop HP Pavilion 15 eg3093TU i5 1335U/16GB/512GB/Win11 (8C5L4PA)
+[2025-06-09 22:47:31,652] [INFO] Thu thập dữ liệu (25/352): Laptop Asus Vivobook 15 X1504VA i5 1334U/16GB/512GB/OfficeHS24+365/Win11 (BQ2225WS)
+[2025-06-09 22:47:37,721] [INFO] Thu thập dữ liệu (26/352): Laptop Acer Gaming Nitro V 15 ANV15 41 R1JY R5 6600H/16GB/512GB/6GB RTX3050/165Hz/Win11 (NH.QPFSV.001)
+[2025-06-09 22:47:43,572] [INFO] Thu thập dữ liệu (27/352): Laptop Dell Inspiron 15 3520 i7 1255U/16GB/512GB/120Hz/OfficeHS/Win11 (71053682)
+[2025-06-09 22:47:49,465] [INFO] Thu thập dữ liệu (28/352): Laptop Lenovo Ideapad Slim 3 OLED 14IRH10 i5 13420H/24GB/512GB/Win11 (83K0000CVN)
+[2025-06-09 22:47:55,063] [INFO] Thu thập dữ liệu (29/352): Laptop MSI Modern 15 B12MO i5 1235U/8GB/512GB/Win11 (625VN)
+[2025-06-09 22:48:00,804] [INFO] Thu thập dữ liệu (30/352): Laptop HP 240 G9 i3 1215U/8GB/512GB/Win11 (AG2J5AT)
+[2025-06-09 22:48:06,516] [INFO] Thu thập dữ liệu (31/352): Laptop Asus Vivobook 15 OLED A1505ZA i5 12500H/16GB/512GB/120Hz/Win11 (MA415W)
+[2025-06-09 22:48:15,873] [INFO] Thu thập dữ liệu (32/352): Laptop Acer Aspire Lite AL14 52M 54CJ i5 1334U/16GB/512GB/Win11 (NX.J39SV.002)
+[2025-06-09 22:48:21,610] [INFO] Thu thập dữ liệu (33/352): Laptop Asus TUF Gaming A15 FA506NFR R7 7435HS/16GB/512GB/4GB RTX2050/144Hz/Win11 (HN113W)
+[2025-06-09 22:48:27,390] [INFO] Thu thập dữ liệu (34/352): Laptop Lenovo Gaming LOQ 15IAX9 i5 12450HX/16GB/512GB/6GB RTX3050/144Hz/Win11 (83GS000JVN)
+[2025-06-09 22:48:33,004] [INFO] Thu thập dữ liệu (35/352): Laptop Dell Inspiron 15 3520 i7 1255U/16GB/512GB/120Hz/OfficeHS/Win11 (N3520-i7U165W11BLU-FP)
+[2025-06-09 22:48:38,739] [INFO] Thu thập dữ liệu (36/352): Laptop MSI Gaming GF63 Thin 12VE i5 12450H/16GB/512GB/6GB RTX4050/144Hz/Win11 (460VN)
+[2025-06-09 22:48:44,678] [INFO] Thu thập dữ liệu (37/352): Laptop Asus Vivobook 14 X1404VA i5 1335U/16GB/512GB/Win11 (NK050W)
+[2025-06-09 22:48:50,601] [INFO] Thu thập dữ liệu (38/352): Laptop HP 240 G9 i5 1235U/16GB/512GB/Win11 (AG2J7AT)
+[2025-06-09 22:48:56,280] [INFO] Thu thập dữ liệu (39/352): Laptop Lenovo IdeaPad Slim 3 15IRH10 i7 13620H/24GB/512GB/Win11 (83K1000FVN)
+[2025-06-09 22:49:02,154] [INFO] Thu thập dữ liệu (40/352): Laptop Asus Gaming Vivobook K3605ZF i5 12500H/16GB/512GB/4GB RTX2050/Win11 (RP745W)
+[2025-06-09 22:49:07,908] [INFO] Thu thập dữ liệu (41/352): Laptop HP Gaming VICTUS 15 fa1139TX i5 12450H/16GB/512GB/4GB RTX2050/144Hz/Win11 (8Y6W3PA)
+[2025-06-09 22:49:13,930] [INFO] Thu thập dữ liệu (42/352): Laptop Dell Inspiron 15 3530 i7 1355U/16GB/1TB/120Hz/OfficeHS/Win11 (P16WD)
+[2025-06-09 22:49:19,603] [INFO] Thu thập dữ liệu (43/352): Laptop Acer Aspire Lite 16 G2 AL16 52P 572A i5 1334U/16GB/512GB/Win11 (NX.J2SSV.004)
+[2025-06-09 22:49:25,244] [INFO] Thu thập dữ liệu (44/352): Laptop MSI Gaming Thin 15 B13UC i7 13620H/32GB/512GB/4GB RTX3050/144Hz/Win11 (1411VN)
+[2025-06-09 22:49:30,662] [INFO] Thu thập dữ liệu (45/352): Laptop Asus Vivobook 16 X1605VA i5 13420H/16GB/512GB/OfficeHS24+365/Win11 (MB1876WS)
+[2025-06-09 22:49:36,290] [INFO] Thu thập dữ liệu (46/352): Laptop HP 15 fd0015TU i7 1355U/16GB/512GB/Win11 (A19C5PA)
+[2025-06-09 22:49:41,886] [INFO] Thu thập dữ liệu (47/352): Laptop Dell Inspiron 15 3520 i5 1235U/16GB/512GB/120Hz/OfficeHS24+365/KYHD/Win11 (71064798)
+[2025-06-09 22:49:47,391] [INFO] Thu thập dữ liệu (48/352): Laptop Asus Vivobook X1404ZA i3 1215U/8GB/512GB/Win11 (NK246W)
+[2025-06-09 22:49:53,844] [INFO] Thu thập dữ liệu (49/352): Laptop HP 240 G10 i5 1334U/16GB/512GB/Win11 (B93GZAT)
+[2025-06-09 22:49:59,517] [INFO] Thu thập dữ liệu (50/352): Laptop Acer Aspire 3 A315 44P R9W8 R7 5700U/8GB/512GB/Win11 (NX.KSJSV.002)
+[2025-06-09 22:50:05,548] [INFO] Thu thập dữ liệu (51/352): Laptop Lenovo Ideapad Slim 3 15IRH8 i7 13620H/16GB/1TB/Win11 (83EM003FVN)
+[2025-06-09 22:50:11,489] [INFO] Thu thập dữ liệu (52/352): Laptop MSI Gaming Thin 15 B12UC i5 12450H/16GB/512GB/4GB RTX3050/144Hz/Win11 (2045VN)
+[2025-06-09 22:50:16,993] [INFO] Thu thập dữ liệu (53/352): Laptop Lenovo Ideapad Slim 3 16IRH10 i5 13420H/24GB/512GB/Win11 (83K20003VN)
+[2025-06-09 22:50:22,970] [INFO] Thu thập dữ liệu (54/352): Laptop Asus Vivobook 14 X1404VA i5 1334U/16GB/512GB/OfficeHS24+365/Win11 (NK771WS)
+[2025-06-09 22:50:28,776] [INFO] Thu thập dữ liệu (55/352): Laptop HP Pavilion X360 14 ek2024TU Core 5 120U/16GB/512GB/Win11 (9Z2V6PA)
+[2025-06-09 22:50:34,373] [INFO] Thu thập dữ liệu (56/352): Laptop Dell Inspiron 15 3520 i7 1255U/16GB/512GB/120Hz/OfficeHS/KYHD/Win11 (25P2315)
+[2025-06-09 22:50:39,966] [INFO] Thu thập dữ liệu (57/352): Laptop Asus Gaming Vivobook K3605ZC i5 12500H/16GB/512GB/4GB RTX3050/Win11 (RP629W)
+[2025-06-09 22:50:45,600] [INFO] Thu thập dữ liệu (58/352): Laptop Acer Aspire 3 A315 59 5283 i5 1235U/8GB/512GB/Win11 (NX.K6TSV.00B)
+[2025-06-09 22:50:52,226] [INFO] Thu thập dữ liệu (59/352): Laptop HP Pavilion 15 eg3091TU i7 1355U/16GB/512GB/Win11 (8C5L2PA)
+[2025-06-09 22:50:58,002] [INFO] Thu thập dữ liệu (60/352): Laptop MSI Gaming Katana 15 B13UDXK i7 13620H/16GB/1TB/6GB RTX3050/144Hz/Win11 (2077VN)
+[2025-06-09 22:51:04,786] [INFO] Thu thập dữ liệu (61/352): Laptop Asus TUF Gaming F15 FX507ZC4 i5 12500H/16GB/512GB/4GB RTX3050/144Hz/Win11 (HN330W)
+[2025-06-09 22:51:10,291] [INFO] Thu thập dữ liệu (62/352): Laptop Asus Vivobook X1404ZA i5 1235U/16GB/512GB/Win11 (NK376W)
+[2025-06-09 22:51:15,801] [INFO] Thu thập dữ liệu (63/352): Laptop Lenovo Gaming LOQ 15ARP9 R7 7435HS/24GB/512GB/6GB RTX4050/144Hz/Win11 (83JC0040VN)
+[2025-06-09 22:51:21,465] [INFO] Thu thập dữ liệu (64/352): Laptop Dell Inspiron 14 5440 i5 1334U/16GB/512GB/OfficeHS/Win11 (NDY5V1)
+[2025-06-09 22:51:27,085] [INFO] Thu thập dữ liệu (65/352): Laptop HP 240 G10 i5 1335U/16GB/512GB/Win11 (9H2E4PT)
+[2025-06-09 22:51:32,658] [INFO] Thu thập dữ liệu (66/352): Laptop HP 245 G10 R5 7530U/8GB/512GB/Win11 (B8PF9AT)
+[2025-06-09 22:51:38,304] [INFO] Thu thập dữ liệu (67/352): Laptop Acer Aspire Lite 14 51M 36MH i3 1215U/8GB/256GB/Win11 (NX.KTVSV.001)
+[2025-06-09 22:51:44,558] [INFO] Thu thập dữ liệu (68/352): Laptop MSI Gaming Cyborg 15 A13VEK i7 13620H/16GB/512GB/6GB RTX4050/144Hz/Win11 (1423VN)
+[2025-06-09 22:51:50,338] [INFO] Thu thập dữ liệu (69/352): Laptop Asus Vivobook S 16 OLED S5606MA Ultra 5 125H/16GB/512GB/120Hz/Win11 (MX050W)
+[2025-06-09 22:51:56,289] [INFO] Thu thập dữ liệu (70/352): Laptop Acer Aspire Lite 15 AL15 71P 517D i5 12450H/16GB/512GB/Win11 (NX.J7KSV.001)
+[2025-06-09 22:52:02,530] [INFO] Thu thập dữ liệu (71/352): Laptop Dell Inspiron 15 3520 i5 1235U/16GB/512GB/120Hz/OfficeHS/Win11 (N3520-i5U165W11BLU-FP)
+[2025-06-09 22:52:08,987] [INFO] Thu thập dữ liệu (72/352): Laptop Asus TUF Gaming A15 FA507NUR R7 7435HS/16GB/512GB/6GB RTX4050/144Hz/Win11 (LP057W)
+[2025-06-09 22:52:14,665] [INFO] Thu thập dữ liệu (73/352): Laptop HP Gaming VICTUS 15 fb1022AX R5 7535HS/16GB/512GB/4GB RTX2050/144Hz/Win11 (94F19PA)
+[2025-06-09 22:52:20,477] [INFO] Thu thập dữ liệu (74/352): Laptop HP 15 fd1063TU Ultra 5 125H/16GB/512GB/Win11 (9Z2Y1PA)
+[2025-06-09 22:52:26,473] [INFO] Thu thập dữ liệu (75/352): Laptop Lenovo Ideapad Slim 5 14IAH8 i5 12450H/16GB/1TB/Win11 (83BF003WVN)
+[2025-06-09 22:52:32,221] [INFO] Thu thập dữ liệu (76/352): Laptop MSI Gaming GF63 Thin 12UC i7 12650H/8GB/512GB/4GB RTX3050/144Hz/Win11 (887VN)
+[2025-06-09 22:52:37,596] [INFO] Thu thập dữ liệu (77/352): Laptop GIGABYTE Gaming G5 MF5 RC555 i5 13500H/16GB/512GB/6GB RTX4050/144Hz/Win11 (9RC55MF5FEIAA1VN0C0)
+[2025-06-09 22:52:44,285] [INFO] Thu thập dữ liệu (78/352): Laptop Dell Inspiron 15 3520 i5 1235U/16GB/512GB/120Hz/OfficeHS24+365/Win11 (N3520-i5U165W11SLU-BL)
+[2025-06-09 22:52:50,666] [INFO] Thu thập dữ liệu (79/352): Laptop Asus Vivobook 15 X1504ZA i3 1215U/8GB/512GB/Win11 (NJ102W)
+[2025-06-09 22:52:56,364] [INFO] Thu thập dữ liệu (80/352): Laptop Acer Aspire Lite 15 AL15 41P R3QL R7 5700U/8GB/512GB/Win11 (NX.J54SV.001)
+[2025-06-09 22:53:02,737] [INFO] Thu thập dữ liệu (81/352): Laptop Asus Vivobook 15 X1504ZA i5 1235U/16GB/512GB/Win11 (NJ1608W)
+[2025-06-09 22:53:09,365] [INFO] Thu thập dữ liệu (82/352): Laptop Lenovo IdeaPad Slim 5 OLED 14AHP10 R7 8845HS/32GB/512GB/OfficeHS24+365/Win11 (83HV001MVN)
+[2025-06-09 22:53:15,393] [INFO] Thu thập dữ liệu (83/352): Laptop HP Envy x360 14 fc0162TU Ultra 5 125U/16GB/512GB/OfficeHS/Win11 (AY8X1PA)
+[2025-06-09 22:53:21,085] [INFO] Thu thập dữ liệu (84/352): Laptop HP Pavilion 15 eg2088TU i7 1260P/16GB/512GB/Win11 (7C0R0PA)
+[2025-06-09 22:53:27,301] [INFO] Thu thập dữ liệu (85/352): Laptop MSI Gaming Sword 16 HX B14VFKG i7 14700HX/16GB/1TB/8GB RTX4060/240Hz/Win11 (045VN)
+[2025-06-09 22:53:32,994] [INFO] Thu thập dữ liệu (86/352): Laptop Asus Vivobook 15 X1504ZA i5 1235U/16GB/512GB/Win11 (NJ1546W)
+[2025-06-09 22:53:39,313] [INFO] Thu thập dữ liệu (87/352): Laptop Acer Gaming Nitro 5 Tiger AN515 58 52SP i5 12500H/8GB/512GB/4GB RTX3050/144Hz/Win11 (NH.QFHSV.001)
+[2025-06-09 22:53:45,539] [INFO] Thu thập dữ liệu (88/352): Laptop Asus Vivobook 15 OLED A1505VA i5 13500H/16GB/512GB/120Hz/Win11 (MA467W)
+[2025-06-09 22:53:51,593] [INFO] Thu thập dữ liệu (89/352): Laptop Lenovo Ideapad Slim 3 15IAH8 i5 12450H/16GB/512GB/Win11 (83ER000EVN)
+[2025-06-09 22:53:57,151] [INFO] Thu thập dữ liệu (90/352): Laptop HP Pavilion X360 14 ek2027TU Core 7 150U/16GB/512GB/Win11 (9Z2V9PA)
+[2025-06-09 22:54:03,093] [INFO] Thu thập dữ liệu (91/352): Laptop HP Gaming VICTUS 16 s0173AX R5 7640HS/16GB/512GB/6GB RTX3050/144Hz/Win11 (A9LG9PA)
+[2025-06-09 22:54:08,909] [INFO] Thu thập dữ liệu (92/352): Laptop Dell Inspiron 15 3530 i5 1334U/16GB/512GB/120Hz/OfficeHS/KYHD/Win11 (71043885)
+[2025-06-09 22:54:15,176] [INFO] Thu thập dữ liệu (93/352): Laptop MSI Gaming GF63 Thin 12VE i5 12450H/8GB/512GB/6GB RTX4050/144Hz/Win11 (460VN)
+[2025-06-09 22:54:21,098] [INFO] Thu thập dữ liệu (94/352): Laptop Dell Inspiron 15 3530 i5 1334U/16GB/512GB/120Hz/OfficeHS/Win11 (N3530-i5U165W11SLU)
+[2025-06-09 22:54:26,776] [INFO] Thu thập dữ liệu (95/352): Laptop Acer Aspire 16 AI A16 71M 59L5 Ultra 5 125H/16GB/512GB/Win11 (NX.J4YSV.001)
+[2025-06-09 22:54:32,260] [INFO] Thu thập dữ liệu (96/352): Laptop Acer Aspire Lite 14 51M 36PN i3 1215U/8GB/512GB/Win11 (NX.KTWSV.001)
+[2025-06-09 22:54:37,963] [INFO] Thu thập dữ liệu (97/352): Laptop Asus TUF Gaming F15 FX507ZC4 i7 12700H/16GB/512GB/4GB RTX3050/144Hz/Win11 (HNi7MW)
+[2025-06-09 22:54:43,736] [INFO] Thu thập dữ liệu (98/352): Laptop Asus Vivobook 15 OLED A1505VA i5 13500H/16GB/512GB/Win11 (L1341W)
+[2025-06-09 22:54:49,538] [INFO] Thu thập dữ liệu (99/352): Laptop Asus Zenbook 14 OLED UX3402VA i5 13500H/16GB/512GB/90Hz/Win11 (KM657W)
+[2025-06-09 22:54:55,000] [INFO] Thu thập dữ liệu (100/352): Laptop Apple MacBook Air 13 inch M2 16GB/256GB/10GPU
+[2025-06-09 22:55:05,819] [INFO] Thu thập dữ liệu (101/352): Laptop HP Gaming VICTUS 16 s0077AX R7 7840HS/16GB/512GB/144Hz/6GB RTX3050/Win11 (8C5N6PA)
+[2025-06-09 22:55:11,429] [INFO] Thu thập dữ liệu (102/352): Laptop HP Elitebook 630 G10 i5 1335U/16GB/512GB/Win11 (9J0B4PT)
+[2025-06-09 22:55:17,196] [INFO] Thu thập dữ liệu (103/352): Laptop Lenovo Ideapad 1 15ALC7 R7 5700U/16GB/512GB/Win11 (82R400C1VN)
+[2025-06-09 22:55:23,215] [INFO] Thu thập dữ liệu (104/352): Laptop MSI Gaming Stealth 14 AI Studio A1VFG Ultra 7 155H/32GB/1TB/8GB RTX4060/120Hz/Win11 (085VN)
+[2025-06-09 22:55:28,998] [INFO] Thu thập dữ liệu (105/352): Laptop Dell Inspiron 15 3520 i5 1235U/8GB/512GB/120Hz/OfficeHS/Win11 (N3520-i5U085W11SLU)
+[2025-06-09 22:55:34,542] [INFO] Thu thập dữ liệu (106/352): Laptop Acer Gaming Nitro V ANV15 51 53NE i5 13420H/16GB/512GB/4GB RTX2050/144Hz/Win11 (NH.QNASV.002)
+[2025-06-09 22:55:40,547] [INFO] Thu thập dữ liệu (107/352): Laptop Acer Gaming Aspire 5 A515 58GM 51LB i5 13420H/16GB/512GB/4GB RTX2050/Win11 (NX.KQ4SV.002)
+[2025-06-09 22:55:46,449] [INFO] Thu thập dữ liệu (108/352): Laptop Dell Inspiron 15 3530 i7 1355U/16GB/512GB/120Hz/OfficeHS/Win11 (71043888)
+[2025-06-09 22:55:52,173] [INFO] Thu thập dữ liệu (109/352): Laptop Asus TUF Gaming F15 FX507VU i7 13620H/16GB/512GB/6GB RTX4050/144Hz/Win11 (LP186W)
+[2025-06-09 22:55:57,584] [INFO] Thu thập dữ liệu (110/352): Laptop Asus Vivobook 16 A1607CA Ultra 5 225H/16GB/512GB/OfficeHS24+365/Win11 (MB038WS)
+[2025-06-09 22:56:03,381] [INFO] Thu thập dữ liệu (111/352): Laptop MSI Gaming Katana 15 B13VFK i7 13620H/16GB/1TB/8GB RTX4060/144Hz/Win11 (676VN)
+[2025-06-09 22:56:09,040] [INFO] Thu thập dữ liệu (112/352): Laptop HP Probook 450 G10 i5 1335U/16GB/512GB/Win11 (9H1N5PT)
+[2025-06-09 22:56:14,592] [INFO] Thu thập dữ liệu (113/352): Laptop HP Elitebook 630 G10 i7 1355U/16GB/512GB/Win11 (9H1N9PT)
+[2025-06-09 22:56:20,357] [INFO] Thu thập dữ liệu (114/352): Laptop HP VICTUS 15 fa2731TX i5 13420H/16GB/512GB/6GB RTX3050/144Hz/Win11 (B85LNPA)
+[2025-06-09 22:56:26,488] [INFO] Thu thập dữ liệu (115/352): Laptop MSI Katana 15 B13VEK i5 13420H/16GB/512GB/6GB RTX4050/144Hz/Balo/Win11 (2416VN)
+[2025-06-09 22:56:32,359] [INFO] Thu thập dữ liệu (116/352): Laptop Lenovo IdeaPad 5 2in1 14IRH9 i5 13420H/16GB/512GB/Win11 (83KX003WVN)
+[2025-06-09 22:56:40,899] [INFO] Thu thập dữ liệu (117/352): Laptop Dell Latitude 3440 i5 1235U/16GB/512GB/Win11 (L3440-I51235U-16G512G)
+[2025-06-09 22:56:46,821] [INFO] Thu thập dữ liệu (118/352): Laptop Acer Aspire Lite 14 51M 59BN i5 1235U/16GB/512GB/Win11 (NX.KTXSV.001)
+[2025-06-09 22:56:52,182] [INFO] Thu thập dữ liệu (119/352): Laptop Dell Inspiron 15 3520 i5 1235U/16GB/512GB/120Hz/OfficeHS/Win11 (N5I5052W1)
+[2025-06-09 22:56:58,357] [INFO] Thu thập dữ liệu (120/352): Laptop Lenovo Gaming LOQ 15IRX9 i5 13450HX/16GB/512GB/6GB RTX3050/144Hz/Win11 (83DV003CVN)
+[2025-06-09 22:57:03,832] [INFO] Thu thập dữ liệu (121/352): Laptop Asus Gaming ROG Strix G16 G614JU i7 13650HX/32GB/1TB/6GB RTX4050/165Hz/Win11 (N3509W)
+[2025-06-09 22:57:09,342] [INFO] Thu thập dữ liệu (122/352): Laptop Asus Vivobook 15 OLED A1505VA i9 13900H/16GB/512GB/120Hz/OfficeHS/Win11 (MA586WS)
+[2025-06-09 22:57:14,883] [INFO] Thu thập dữ liệu (123/352): Laptop Acer Aspire Lite 16 G2 AL16 52P 76DU i7 1355U/16GB/512GB/Win11 (NX.J2SSV.005)
+[2025-06-09 22:57:20,371] [INFO] Thu thập dữ liệu (124/352): Laptop HP 240 G9 i5 1235U/16GB/512GB/Win11 (9T2G2PT)
+[2025-06-09 22:57:25,826] [INFO] Thu thập dữ liệu (125/352): Laptop HP 240 G9 i3 1215U/8GB/512GB/Win11 (6L1X8PA)
+[2025-06-09 22:57:33,084] [INFO] Thu thập dữ liệu (126/352): Laptop MSI Gaming Bravo 15 B7ED R5 7535HS/16GB/512GB/4GB RX6550M/144Hz/Win11 (010VN)
+[2025-06-09 22:57:39,478] [INFO] Thu thập dữ liệu (127/352): Laptop Dell Inspiron 15 3520 i5 1235U/8GB/512GB/120Hz/OfficeHS24+365/Win11 (N3520-i5U085W11SLU)
+[2025-06-09 22:57:45,129] [INFO] Thu thập dữ liệu (128/352): Laptop Dell Inspiron 15 3530 i7 1355U/16GB/1TB/120Hz/OfficeHS/Win11 (N3530-i7U161W11BLU-FP)
+[2025-06-09 22:57:51,549] [INFO] Thu thập dữ liệu (129/352): Laptop Acer Gaming Aspire 7 A715 76G 5806 i5 12450H/16GB/512GB/4GB RTX3050/144Hz/Win11 (NH.QMFSV.002)
+[2025-06-09 22:57:57,401] [INFO] Thu thập dữ liệu (130/352): Laptop Asus Zenbook 14 OLED UX3405MA Ultra 5 125H/16GB/512GB/Win11
+[2025-06-09 22:58:06,376] [INFO] Thu thập dữ liệu (131/352): Laptop Acer Aspire 16 AI A16 71M 71U7 Ultra 7 155H/16GB/512GB/Win11 (NX.J4YSV.002)
+[2025-06-09 22:58:13,211] [INFO] Thu thập dữ liệu (132/352): Laptop HP Pavilion 15 eg2081TU i5 1240P/16GB/512GB/Win11 (7C0Q4PA)
+[2025-06-09 22:58:28,376] [INFO] Thu thập dữ liệu (133/352): Laptop Lenovo IdeaPad Slim 5 14IMH9 Ultra 7 155H/32GB/1TB/Win11 (83DA0020VN)
+[2025-06-09 22:58:35,283] [INFO] Thu thập dữ liệu (134/352): Laptop HP 240 G10 i3 1315U/8GB/512GB/Win11 (B73TJAT)
+[2025-06-09 22:58:41,396] [INFO] Thu thập dữ liệu (135/352): Laptop Acer Gaming Nitro V ANV15 51 58AN i5 13420H/8GB/512GB/4GB RTX2050/144Hz/Win11 (NH.QNASV.001)
+[2025-06-09 22:58:48,031] [INFO] Thu thập dữ liệu (136/352): Laptop MSI Prestige 14 AI Studio C1UDXG Ultra 7 155H/16GB/1TB/6GB RTX3050/144Hz/Win11 (058VN)
+[2025-06-09 22:58:54,255] [INFO] Thu thập dữ liệu (137/352): Laptop Asus Vivobook S16 S3607VA i5 13420H/16GB/512GB/144Hz/OfficeHS24+365/Win11 (RP055WS)
+[2025-06-09 22:59:00,176] [INFO] Thu thập dữ liệu (138/352): Laptop Lenovo Gaming LOQ 15IRX9 i5 13450HX/24GB/512GB/6GB RTX3050/144Hz/Win11 (83DV00PSVN)
+[2025-06-09 22:59:06,222] [INFO] Thu thập dữ liệu (139/352): Laptop Dell Vostro 3530 i5 1335U/16GB/512GB/120Hz/OfficeHS/Win11 (80GG93)
+[2025-06-09 22:59:12,516] [INFO] Thu thập dữ liệu (140/352): Laptop Acer Gaming Nitro V ANV15 51 55CA i5 13420H/16GB/512GB/6GB RTX4050/144Hz/Win11 (NH.QN8SV.004)
+[2025-06-09 22:59:18,423] [INFO] Thu thập dữ liệu (141/352): Laptop Dell Inspiron 15 3530 i5 1334U/16GB/512GB/120Hz/OfficeHS24+365/KYHD/Win11 (71053696)
+[2025-06-09 22:59:24,170] [INFO] Thu thập dữ liệu (142/352): Laptop Dell Inspiron 16 5640 Core 7 150U/16GB/1TB/2GB MX570A/OfficeHS/Win11 (KHPF5)
+[2025-06-09 22:59:29,921] [INFO] Thu thập dữ liệu (143/352): Laptop Asus TUF Gaming F15 FX507VV i7 13620H/16GB/512GB/8GB RTX4060/144Hz/Win11 (LP151W)
+[2025-06-09 22:59:35,906] [INFO] Thu thập dữ liệu (144/352): Laptop Acer Aspire 5 A514 56P 54TN i5 1335U/8GB/512GB/Win11 (NX.KHRSV.004)
+[2025-06-09 22:59:42,106] [INFO] Thu thập dữ liệu (145/352): Laptop Acer Aspire 5 A515 58M 56YX i5 13420H/16GB/512GB/Win11 (NX.KQ8SV.005)
+[2025-06-09 22:59:47,771] [INFO] Thu thập dữ liệu (146/352): Laptop HP Probook 450 G10 i7 1355U/16GB/512GB/Win11 (9H8H1PT)
+[2025-06-09 22:59:53,514] [INFO] Thu thập dữ liệu (147/352): Laptop HP Pavilion 15 eg2082TU i5 1240P/8GB/512GB/Win11 (7C0Q5PA)
+[2025-06-09 22:59:59,963] [INFO] Thu thập dữ liệu (148/352): Laptop MSI Prestige 14 AI Studio C1VEG Ultra 7 155H/32GB/1TB/6GB RTX4050/Win11 (056VN)
+[2025-06-09 23:00:05,393] [INFO] Thu thập dữ liệu (149/352): Laptop Dell Inspiron 15 3520 i5 1235U/16GB/512GB/120Hz/OfficeHS24+365/KYHD/Win11 (71054775)
+[2025-06-09 23:00:11,740] [INFO] Thu thập dữ liệu (150/352): Laptop Dell Inspiron 16 5640 Core 7 150U/16GB/1TB/OfficeHS/Win11 (N5640-C7U161W11IBU)
+[2025-06-09 23:00:18,742] [INFO] Thu thập dữ liệu (151/352): Laptop Acer Swift Lite 14 AI SFL14 51M 56HS Ultra 5 125U/16GB/512GB/Win11 (NX.J1HSV.002)
+[2025-06-09 23:00:24,361] [INFO] Thu thập dữ liệu (152/352): Laptop Lenovo V14 G4 i7 1355U/16GB/512GB/Win11 (83A00012VN)
+[2025-06-09 23:00:30,724] [INFO] Thu thập dữ liệu (153/352): Laptop Asus Zenbook 14 OLED UM3406KA R7 AI 350/32GB/512GB/120Hz/OfficeHS24+365/Win11 (PP555WS)
+[2025-06-09 23:00:36,353] [INFO] Thu thập dữ liệu (154/352): Laptop Dell Inspiron 14 5440 Core 7 150U/16GB/1TB/OfficeHS/Win11 (7FN5J)
+[2025-06-09 23:00:41,996] [INFO] Thu thập dữ liệu (155/352): Laptop Acer Aspire Lite AL16 51P 596H i5 1235U/8GB/512GB/Win11 (NX.KWZSV.002)
+[2025-06-09 23:00:48,636] [INFO] Thu thập dữ liệu (156/352): Laptop Asus TUF Gaming A15 FA506NCR R7 7435HS/16GB/512GB/4GB RTX3050/144Hz/Win11 (HN097W)
+[2025-06-09 23:00:55,252] [INFO] Thu thập dữ liệu (157/352): Laptop HP Pavilion 16 af0053TU Ultra 7 155U/16GB/512GB/OfficeHS/Win11 (AY8C2PA)
+[2025-06-09 23:01:01,349] [INFO] Thu thập dữ liệu (158/352): Laptop HP Envy x360 14 fc0094TU Ultra 5 125U/16GB/512GB/Win11 (A19C4PA)
+[2025-06-09 23:01:06,997] [INFO] Thu thập dữ liệu (159/352): Laptop MSI Prestige 13 AI Evo A1MG Ultra 7 155H/32GB/1TB/Win11 (062VN)
+[2025-06-09 23:01:12,986] [INFO] Thu thập dữ liệu (160/352): Laptop Dell Latitude 3450 i5 1335U/16GB/512GB/Win11 (L3450-1335U-16512W)
+[2025-06-09 23:01:18,623] [INFO] Thu thập dữ liệu (161/352): Laptop Acer Gaming Aspire 5 A515 58GM 53PZ i5 13420H/8GB/512GB/4GB RTX2050/Win11 (NX.KQ4SV.008)
+[2025-06-09 23:01:24,571] [INFO] Thu thập dữ liệu (162/352): Laptop Dell Inspiron 15 3530 i5 1334U/16GB/512GB/120Hz/OfficeHS/Win11 (P16WD2)
+[2025-06-09 23:01:30,217] [INFO] Thu thập dữ liệu (163/352): Laptop Asus TUF Gaming A15 FA507NVR R7 7435HS/16GB/512GB/8GB RTX4060/144Hz/Win11 (LP007W)
+[2025-06-09 23:01:36,160] [INFO] Thu thập dữ liệu (164/352): Laptop Acer Gaming Predator Helios Neo PHN16 71 53M7 i5 13500HX/16GB/512GB/8GB RTX4060/165Hz/Win11 (NH.QLUSV.005)
+[2025-06-09 23:01:41,530] [INFO] Thu thập dữ liệu (165/352): Laptop Asus Zenbook 14 OLED UX3405MA Ultra 7 155H/32GB/1TB/120Hz/Win11 (PP152W)
+[2025-06-09 23:01:47,361] [INFO] Thu thập dữ liệu (166/352): Laptop Asus Gaming Vivobook K3605ZU i5 12500H/16GB/512GB/6GB RTX4050/144Hz/Win11 (RP296W)
+[2025-06-09 23:01:53,582] [INFO] Thu thập dữ liệu (167/352): Laptop Asus Vivobook 15 X1502VA i7 13620H/16GB/512GB/OfficeHS24+365/Win11 (BQ986WS)
+[2025-06-09 23:01:59,399] [INFO] Thu thập dữ liệu (168/352): Laptop HP Envy x360 14 fc0089TU Ultra 7 155U/16GB/512GB/Win11 (A19BZPA)
+[2025-06-09 23:02:05,379] [INFO] Thu thập dữ liệu (169/352): Laptop HP Gaming VICTUS 16 r0283TX i5 13500H/16GB/512GB/144Hz/6GB RTX3050/Win11 (AD9T3PA)
+[2025-06-09 23:02:10,908] [INFO] Thu thập dữ liệu (170/352): Laptop MSI Gaming Cyborg 14 A13VE i7 13620H/16GB/512GB/6GB RTX4050/144Hz/Win11 (090VN)
+[2025-06-09 23:02:16,873] [INFO] Thu thập dữ liệu (171/352): Laptop Lenovo IdeaPad Slim 5 OLED 14IRH10 i5 13420H/16GB/1TB/OfficeHS24+365 (83HR005YVN)
+[2025-06-09 23:02:22,589] [INFO] Thu thập dữ liệu (172/352): Laptop Dell Inspiron 15 3530 i7 1355U/16GB/512GB/120Hz/Office365/KYHD/Win11 (N5I7301W1)
+[2025-06-09 23:02:28,514] [INFO] Thu thập dữ liệu (173/352): Laptop Dell Inspiron 15 3520 i5 1235U/8GB/512GB/120Hz/OfficeHS24+365/Win11 (N3520-i5U085W11BLU-FP)
+[2025-06-09 23:02:34,081] [INFO] Thu thập dữ liệu (174/352): Laptop Dell G15 5530 i7 13650HX/16GB/1TB/8GB RTX4060/165Hz/OfficeHS/Win11 (i7HX161W11GR4060)
+[2025-06-09 23:02:39,872] [INFO] Thu thập dữ liệu (175/352): Laptop Asus Vivobook S 14 OLED S5406MA Ultra 5 125H/16GB/1TB/120Hz/Win11 (PP136W)
+[2025-06-09 23:02:45,508] [INFO] Thu thập dữ liệu (176/352): Laptop Acer Gaming Nitro V ANV15 51 57B2 i5 13420H/8GB/512GB/6GB RTX4050/144Hz/Win11 (NH.QN8SV.001)
+[2025-06-09 23:02:51,873] [INFO] Thu thập dữ liệu (177/352): Laptop Acer Gaming Nitro AN515 58 773Y i7 12700H/16GB/512GB/4GB RTX3050Ti/144Hz/Win11 (NH.QFKSV.001.16G)
+[2025-06-09 23:02:57,230] [INFO] Thu thập dữ liệu (178/352): Laptop Asus Gaming ROG Strix G16 G614JV i7 13650HX/32GB/1TB/8GB RTX4060/165Hz/Win11 (N3515W)
+[2025-06-09 23:03:02,943] [INFO] Thu thập dữ liệu (179/352): Laptop Asus Zenbook 14 UX3405CA Ultra 9 285H/32GB/1TB/120Hz/OfficeHS24+365/Win11 (PZ204WS)
+[2025-06-09 23:03:08,469] [INFO] Thu thập dữ liệu (180/352): Laptop MSI Modern 14 C13M i5 1335U/16GB/512GB/Win11 (611VN)
+[2025-06-09 23:03:14,225] [INFO] Thu thập dữ liệu (181/352): Laptop HP Elitebook 630 G11 Ultra 7 155U/16GB/512GB/Win11 (A7LC5PT)
+[2025-06-09 23:03:20,517] [INFO] Thu thập dữ liệu (182/352): Laptop HP Pavilion 15 eg3094TU i5 1335U/8GB/512GB/Win11 (8C5L5PA)
+[2025-06-09 23:03:25,959] [INFO] Thu thập dữ liệu (183/352): Laptop HP Envy X360 14 fa0048AU R7 8840HS/16GB/512GB/Win11 (A19BQPA)
+[2025-06-09 23:03:31,346] [INFO] Thu thập dữ liệu (184/352): Laptop MSI Gaming Katana A15 AI B8VG R7 8845HS/16GB/1TB/8GB RTX4070/144Hz/Win11 (465VN)
+[2025-06-09 23:03:37,154] [INFO] Thu thập dữ liệu (185/352): Laptop GIGABYTE A16 GA6H i5 13420H/16GB/512GB/6GB RTX4050/165Hz/Win11 (GAMING-A16-CMHH2VN893SH)
+[2025-06-09 23:03:42,429] [INFO] Thu thập dữ liệu (186/352): Laptop MSI Gaming Thin 15 B13UCX i5 13420H/16GB/512GB/4GB RTX2050/144Hz/Win11 (2080VN)
+[2025-06-09 23:03:48,266] [INFO] Thu thập dữ liệu (187/352): Laptop Dell Inspiron 15 3530 i5 1334U/16GB/512GB/120Hz/OfficeHS24+365/Win11 (N5I5530W1)
+[2025-06-09 23:03:54,210] [INFO] Thu thập dữ liệu (188/352): Laptop Lenovo Gaming Legion 5 16IRX9 i7 14650HX/16GB/1TB/8GB RTX4060/165Hz/Win11 (83DG0051VN)
+[2025-06-09 23:03:59,643] [INFO] Thu thập dữ liệu (189/352): Laptop Asus TUF Gaming A15 FA506NC R5 7535HS/16GB/512GB/4GB RTX3050/144Hz/Win11 (HN017W)
+[2025-06-09 23:04:07,175] [INFO] Thu thập dữ liệu (190/352): Laptop Asus TUF Gaming F15 FX507ZC4 i7 12700H/16GB/512GB/4GB RTX3050/144Hz/Win11 (HN181W)
+[2025-06-09 23:04:12,725] [INFO] Thu thập dữ liệu (191/352): Laptop Dell Inspiron 15 3520 i5 1235U/8GB/512GB/120Hz/OfficeHS/KYHD/Win11 (71027003)
+[2025-06-09 23:04:18,380] [INFO] Thu thập dữ liệu (192/352): Laptop HP Gaming VICTUS 16 r0130TX i5 13500H/16GB/512GB/144Hz/6GB RTX3050/Win11 (8C5N5PA)
+[2025-06-09 23:04:23,802] [INFO] Thu thập dữ liệu (193/352): Laptop Acer Aspire 5 A515 58M 79R7 i7 13620H/16GB/512GB/Win11 (NX.KQ8SV.007)
+[2025-06-09 23:04:29,807] [INFO] Thu thập dữ liệu (194/352): Laptop HP Pavilion 16 af0055TU Ultra 5 125U/16GB/512GB/OfficeHS/Win11 (AY8C4PA)
+[2025-06-09 23:04:35,055] [INFO] Thu thập dữ liệu (195/352): Laptop Dell Inspiron 15 3530 i5 1334U/16GB/512GB/120Hz/OfficeHS/Win11 (N5I5340W1)
+[2025-06-09 23:04:40,433] [INFO] Thu thập dữ liệu (196/352): Laptop Dell Vostro 3520 i5 1235U/16GB/512GB/120Hz/OfficeHS/Win11 (71030559)
+[2025-06-09 23:04:46,297] [INFO] Thu thập dữ liệu (197/352): Laptop Lenovo Ideapad Slim 5 15IRU9 Core 5 120U/16GB/512GB/Win11 (83D0000EVN)
+[2025-06-09 23:04:51,764] [INFO] Thu thập dữ liệu (198/352): Laptop Dell Vostro 15 3520 i5 1235U/8GB/512GB/120Hz/OfficeHS/Win11 (5M2TT2)
+[2025-06-09 23:04:57,710] [INFO] Thu thập dữ liệu (199/352): Laptop Acer Swift Go 14 41 R251 R5 7430U/16GB/1TB/Win11 (NX.KG3SV.005)
+[2025-06-09 23:05:03,341] [INFO] Thu thập dữ liệu (200/352): Laptop Lenovo ThinkBook 14 G6 i7 1355U/16GB/512GB/Win11 (21KG00BQVN)
+[2025-06-09 23:05:09,160] [INFO] Thu thập dữ liệu (201/352): Laptop Asus Vivobook S 14 S5406SA Ultra 5 226V/16GB/512GB/120Hz/OfficeHS/Win11 (PP060WS)
+[2025-06-09 23:05:15,170] [INFO] Thu thập dữ liệu (202/352): Laptop Acer Gaming Nitro 5 Tiger AN515 58 769J i7 12700H/8GB/512GB/4GB RTX3050/144Hz/Win11 (NH.QFHSV.003)
+[2025-06-09 23:05:27,064] [INFO] Thu thập dữ liệu (203/352): Laptop Asus TUF Gaming F15 FX507ZC4 i5 12500H/16GB/1TB/4GB RTX3050/144Hz/Win11 (HN229W)
+[2025-06-09 23:05:33,359] [INFO] Thu thập dữ liệu (204/352): Laptop HP Gaming VICTUS 16 s0078AX R5 7640HS/16GB/512GB/6GB RTX3050/144Hz/Win11 (8C5N7PA)
+[2025-06-09 23:05:39,178] [INFO] Thu thập dữ liệu (205/352): Laptop HP Envy X360 14 fa0050AU R5 8640HS/16GB/512GB/Win11 (A29H8PA)
+[2025-06-09 23:05:45,440] [INFO] Thu thập dữ liệu (206/352): Laptop Acer Swift Go 14 AI SFG14 73 71ZX Ultra 7 155H/16GB/512GB/Win11 (NX.KSLSV.002)
+[2025-06-09 23:05:51,057] [INFO] Thu thập dữ liệu (207/352): Laptop Dell Inspiron 7440 Core 7 150U/16GB/1TB/OfficeHS/Win11 (N7440-C7U161W11IBU)
+[2025-06-09 23:05:56,741] [INFO] Thu thập dữ liệu (208/352): Laptop Dell G15 5530 i9 13900HX/16GB/1TB/8GB RTX4060/165Hz/OfficeHS/Win11 (i9HX161W11GR4060)
+[2025-06-09 23:06:02,362] [INFO] Thu thập dữ liệu (209/352): Laptop Lenovo ThinkBook 16 G7 Ultra 7 155U/32GB/1TB/Win11 (21MS007HVN)
+[2025-06-09 23:06:08,639] [INFO] Thu thập dữ liệu (210/352): Laptop Asus TUF Gaming A15 FA506NF R5 7535HS/16GB/512GB/4GB RTX2050/144Hz/Win11 (HN012W)
+[2025-06-09 23:06:14,142] [INFO] Thu thập dữ liệu (211/352): Laptop Asus Zenbook A14 UX3407QA X1 26 100/16GB/512GB/OfficeHS24+365/Win11 (QD299WS)
+[2025-06-09 23:06:19,768] [INFO] Thu thập dữ liệu (212/352): Laptop HP Envy X360 14 fc0153TU Ultra 7 155U/32GB/512GB/OfficeHS/Win11 (AY8V4PA)
+[2025-06-09 23:06:25,456] [INFO] Thu thập dữ liệu (213/352): Laptop Dell Inspiron 15 3520 i5 1235U/16GB/512GB/120Hz/OfficeHS/KYHD/Win11 (71043883)
+[2025-06-09 23:06:31,698] [INFO] Thu thập dữ liệu (214/352): Laptop MSI Gaming Cyborg 15 AI A1VEK Ultra 7 155H/16GB/512GB/6GB RTX4050/144Hz/Win11 (053VN)
+[2025-06-09 23:06:37,008] [INFO] Thu thập dữ liệu (215/352): Laptop Lenovo IdeaPad Slim 5 14Q8X9 X1P 42 100/16GB/512GB/Win11 (83HL000KVN)
+[2025-06-09 23:06:42,776] [INFO] Thu thập dữ liệu (216/352): Laptop MSI Gaming Katana A15 AI B8VE R7 8845HS/16GB/512GB/6GB RTX4050/144Hz/Win11 (402VN)
+[2025-06-09 23:06:48,188] [INFO] Thu thập dữ liệu (217/352): Laptop Dell Inspiron 15 3520 i5 1235U/8GB/512GB/120Hz/OfficeHS/Win11 (i5U085W11BLU)
+[2025-06-09 23:06:53,988] [INFO] Thu thập dữ liệu (218/352): Laptop Lenovo Gaming Legion Pro 5 16IRX9 i9 14900HX/32GB/1TB/8GB RTX4060/240Hz/Win11 (83DF0047VN)
+[2025-06-09 23:06:59,905] [INFO] Thu thập dữ liệu (219/352): Laptop Asus Vivobook S14 S3407CA Ultra 5 225H/16GB/512GB/OfficeHS24+365/Win11 (LY095WS)
+[2025-06-09 23:07:05,727] [INFO] Thu thập dữ liệu (220/352): Laptop Asus Vivobook S 15 S5507QA X1E 78 100/32GB/1TB/OfficeHS/Win11 (MA090WS)
+[2025-06-09 23:07:11,193] [INFO] Thu thập dữ liệu (221/352): Laptop Asus Vivobook S 16 M5606KA R7 AI 350/24GB/512GB/OfficeHS24+365/Win11 (RI016WS)
+[2025-06-09 23:07:16,521] [INFO] Thu thập dữ liệu (222/352): Laptop Dell Inspiron 15 3530 i5 1335U/8GB/512GB/120Hz/OfficeHS/Win11 (N3530-i5U085W11BLU)
+[2025-06-09 23:07:22,292] [INFO] Thu thập dữ liệu (223/352): Laptop Dell Vostro 15 3520 i5 1235U/16GB/512GB/120Hz/OfficeHS/KYHD/Win11 (i5U165W11GRU)
+[2025-06-09 23:07:27,876] [INFO] Thu thập dữ liệu (224/352): Laptop HP OmniBook Ultra Flip 14 fh0038TU Ultra 9 288V/32GB/1TB/120Hz/OfficeHS/Win11 (B2CP4PA)
+[2025-06-09 23:07:34,183] [INFO] Thu thập dữ liệu (225/352): Laptop HP Elitebook 630 G10 i7 1355U/16GB/512GB/Win11 (873F2PA)
+[2025-06-09 23:07:40,143] [INFO] Thu thập dữ liệu (226/352): Laptop HP Pavilion 15 eg3095TU i5 1335U/8GB/512GB/Win11 (8C5L6PA)
+[2025-06-09 23:07:45,638] [INFO] Thu thập dữ liệu (227/352): Laptop MSI Creator Z17 HX Studio A14VGT i7 14700HX/32GB/2TB/8GB RTX4070/165Hz/Win11 (272VN)
+[2025-06-09 23:07:51,418] [INFO] Thu thập dữ liệu (228/352): Laptop Acer Swift AI SF14 51 53P9 Ultra 5 226V/16GB/1TB/Win11 (NX.J2KSV.002)
+[2025-06-09 23:07:57,967] [INFO] Thu thập dữ liệu (229/352): Laptop Dell Inspiron 15 3530 i7 1355U/16GB/512GB/120Hz/OfficeHS/Win11 (71026454)
+[2025-06-09 23:08:03,448] [INFO] Thu thập dữ liệu (230/352): Laptop Lenovo Gaming LOQ 15IAX9 i5 12450HX/24GB/512GB/4GB RTX2050/144Hz/Win11 (83GS00DBVN)
+[2025-06-09 23:08:09,132] [INFO] Thu thập dữ liệu (231/352): Laptop Dell Inspiron 14 5440 Core 7 150U/16GB/512GB/OfficeHS/Win11 (N4I7204W1)
+[2025-06-09 23:08:15,214] [INFO] Thu thập dữ liệu (232/352): Laptop Lenovo V14 Core 5 120U/16GB/512GB/Win11 (83HD0001VN)
+[2025-06-09 23:08:21,201] [INFO] Thu thập dữ liệu (233/352): Laptop Acer Gaming Nitro V 16 ProPanel ANV16 41 R6ZY R5 8645HS/16GB/512GB/6GB RTX3050/165Hz/Win11 (NH.QP2SV.002)
+[2025-06-09 23:08:30,833] [INFO] Thu thập dữ liệu (234/352): Laptop HP Elitebook 635 Aero G11 R7 8840HS/16GB/512GB/Win11 (A8WS7PT)
+[2025-06-09 23:08:36,746] [INFO] Thu thập dữ liệu (235/352): Laptop Asus Vivobook 14X OLED K3405VC i5 13500H/16GB/512GB/4GB RTX3050/Win11 (KM006W)
+[2025-06-09 23:08:43,204] [INFO] Thu thập dữ liệu (236/352): Laptop Asus Zenbook 14 OLED UX3405MA Ultra 9 185H/32GB/1TB/120Hz/Win11 (PP475W)
+[2025-06-09 23:08:49,195] [INFO] Thu thập dữ liệu (237/352): Laptop MSI Creator M16 HX C14VFG i7 14700HX/32GB/1TB/8GB RTX4060/240Hz/Win11 (040VN)
+[2025-06-09 23:08:56,142] [INFO] Thu thập dữ liệu (238/352): Laptop Asus Vivobook S 14 S5406SA Ultra 7 258V/32GB/1TB/120Hz/OfficeHS/Win11 (PP059WS)
+[2025-06-09 23:09:01,527] [INFO] Thu thập dữ liệu (239/352): Laptop Lenovo Thinkpad X13 Ultra 5 125U/16GB/512GB/Win11 Pro (21LU004NVN)
+[2025-06-09 23:09:06,871] [INFO] Thu thập dữ liệu (240/352): Laptop Dell Vostro 15 3520 i5 1235U/16GB/512GB/120Hz/OfficeHS/Win11 (V3520-i5U165W11GRU)
+[2025-06-09 23:09:13,466] [INFO] Thu thập dữ liệu (241/352): Laptop Dell Inspiron 7440 Core 5 120U/16GB/1TB/OfficeHS/Win11 (N4I5006W1)
+[2025-06-09 23:09:18,859] [INFO] Thu thập dữ liệu (242/352): Laptop Asus Zenbook S 14 UX5406SA Ultra 7 258V/32GB/1TB/120Hz/OfficeHS/Win11 (PV140WS)
+[2025-06-09 23:09:24,737] [INFO] Thu thập dữ liệu (243/352): Laptop Lenovo ThinkBook 14 G7 Ultra 7 155U/32GB/1TB/Win11 (21MR0070VN)
+[2025-06-09 23:09:30,474] [INFO] Thu thập dữ liệu (244/352): Laptop HP Gaming VICTUS 16 r0127TX i7 13700H/16GB/512GB/8GB RTX4060/144Hz/Win11 (8C5N2PA)
+[2025-06-09 23:09:36,356] [INFO] Thu thập dữ liệu (245/352): Laptop MSI Gaming Cyborg 15 A13VFK i7 13620H/16GB/512GB/8GB RTX4060/144Hz/Win11 (876VN)
+[2025-06-09 23:09:42,595] [INFO] Thu thập dữ liệu (246/352): Laptop Lenovo Gaming LOQ Essential 15IAX9E i5 12450HX/16GB/512GB/6GB RTX3050/144Hz/Win11 (83LK0079VN)
+[2025-06-09 23:09:51,913] [INFO] Thu thập dữ liệu (247/352): Laptop Dell Latitude 5350 Ultra 7 165U/16GB/512GB/Win11 (L5350-165U-16512W)
+[2025-06-09 23:09:57,617] [INFO] Thu thập dữ liệu (248/352): Laptop Lenovo Yoga Slim 7 14IMH9 Ultra 7 155H/32GB/1TB/OfficeHS/Win11 (83CV001VVN)
+[2025-06-09 23:10:03,312] [INFO] Thu thập dữ liệu (249/352): Laptop Asus Zenbook 14 UX3405CA Ultra 5 225H/16GB/512GB/120Hz/OfficeHS24+365/Win11 (PZ187WS)
+[2025-06-09 23:10:09,580] [INFO] Thu thập dữ liệu (250/352): Laptop Asus Zenbook 14 UX3405CA Ultra 7 255H/16GB/512GB/120Hz/OfficeHS24+365/Win11 (PZ368WS)
+[2025-06-09 23:10:15,254] [INFO] Thu thập dữ liệu (251/352): Laptop Dell Latitude 5450 Ultra 5 125U/16GB/512GB/Win11 (L5450-125U-16512W)
+[2025-06-09 23:10:24,903] [INFO] Thu thập dữ liệu (252/352): Laptop HP OmniBook X 14 fe1010QU X1P 42 100/16GB/512GB/OfficeHS/Win11 (B53KBPA)
+[2025-06-09 23:10:30,489] [INFO] Thu thập dữ liệu (253/352): Laptop MSI Gaming Titan 18 HX AI A2XWIG Ultra 9 285HX/64GB/6TB/16GB RTX5080/120Hz/Win11 (090VN)
+[2025-06-09 23:10:36,333] [INFO] Thu thập dữ liệu (254/352): Laptop Asus TUF Gaming A15 FA507NV R7 7735HS/16GB/512GB/8GB RTX4060/144Hz/Win11 (LP031W)
+[2025-06-09 23:10:41,993] [INFO] Thu thập dữ liệu (255/352): Laptop Lenovo ThinkPad E14 Gen 6 Ultra 7 155U/16GB/512GB/Win11 (21M7004UVN)
+[2025-06-09 23:10:47,889] [INFO] Thu thập dữ liệu (256/352): Laptop Dell Latitude 3440 i7 1355U/16GB/512GB/Win11 (71038103)
+[2025-06-09 23:10:53,675] [INFO] Thu thập dữ liệu (257/352): Laptop Asus Vivobook 16 M1607KA R7 AI 350/16GB/512GB/OfficeHS24+365/Win11 (MB091WS)
+[2025-06-09 23:10:59,185] [INFO] Thu thập dữ liệu (258/352): Laptop Asus Vivobook 15 X1504VA i7 1355U/16GB/512GB/Win11 (NJ023W)
+[2025-06-09 23:11:04,666] [INFO] Thu thập dữ liệu (259/352): Laptop Lenovo Ideapad Slim 5 14IMH9 Ultra 7 155H/32GB/512GB/Win11 (83DA001YVN)
+[2025-06-09 23:11:10,061] [INFO] Thu thập dữ liệu (260/352): Laptop Dell XPS 13 9340 Ultra 7 155H/16GB/1TB/OfficeHS/Win11 (HXRGT)
+[2025-06-09 23:11:15,519] [INFO] Thu thập dữ liệu (261/352): Laptop HP Gaming OMEN 16 xf0071AX R7 7840HS/32GB/1TB/8GB RTX4060/240Hz/Win11 (8W946PA)
+[2025-06-09 23:11:21,101] [INFO] Thu thập dữ liệu (262/352): Laptop MSI Gaming Raider 18 HX AI A2XWIG Ultra 9 285HX/64GB/4TB/16GB RTX5080/120Hz/Win11 (033VN)
+[2025-06-09 23:11:26,580] [INFO] Thu thập dữ liệu (263/352): Laptop Lenovo ThinkBook 16 G6 i5 13420H/16GB/512GB/Win11 (21KH00Q0VN)
+[2025-06-09 23:11:32,324] [INFO] Thu thập dữ liệu (264/352): Laptop Lenovo IdeaPad Slim 5 14IMH9 Ultra 5 125H/16GB/512GB/Win11 (83DA001NVN)
+[2025-06-09 23:11:37,678] [INFO] Thu thập dữ liệu (265/352): Laptop Lenovo ThinkBook 14 Ultra 7 155U/16GB/512GB/Win11 (21MR0072VN)
+[2025-06-09 23:11:43,517] [INFO] Thu thập dữ liệu (266/352): Laptop HP Probook 450 G10 i5 1335U/16GB/512GB/Win11 (873D1PA)
+[2025-06-09 23:11:49,636] [INFO] Thu thập dữ liệu (267/352): Laptop Asus TUF Gaming F15 FX507VU i7 13620H/16GB/512GB/6GB RTX4050/144Hz/Win11 (LP167W)
+[2025-06-09 23:11:55,196] [INFO] Thu thập dữ liệu (268/352): Laptop Asus Zenbook DUO UX8406CA Ultra 9 285H/32GB/1TB/120Hz/OfficeHS24+365/Win11 (PZ109WS)
+[2025-06-09 23:12:04,635] [INFO] Thu thập dữ liệu (269/352): Laptop MSI Gaming Stealth 18 HX AI A2XWIG Ultra 9 275HX/32GB/2TB/16GB RTX5080/120Hz/Win11 (017VN)
+[2025-06-09 23:14:04,637] [WARNING] Timeout khi tải trang: https://www.thegioididong.com/laptop/msi-stealth-18-hx-ai-a2xwig-ultra-9-017vn
+[2025-06-09 23:14:04,637] [INFO] Thu thập dữ liệu (270/352): Laptop HP OmniBook Ultra Flip 14 fh0040TU Ultra 7 258V/32GB/1TB/120Hz/OfficeHS/Win11 (B13VHPA)
+[2025-06-09 23:16:04,643] [WARNING] Timeout khi tải trang: https://www.thegioididong.com/laptop/hp-omnibook-uf-14-fh0040tu-ultra-7-b13vhpa
+[2025-06-09 23:16:04,643] [INFO] Thu thập dữ liệu (271/352): Laptop Lenovo Gaming Legion Pro 5 16IRX9 i9 14900HX/32GB/1TB/8GB RTX4070/240Hz/Win11 (83DF0046VN)
+[2025-06-09 23:17:12,323] [INFO] Thu thập dữ liệu (272/352): Laptop HP Elitebook 630 G10 i7 1355U/16GB/512GB/Win11 (9J0B7PT)
+[2025-06-09 23:17:18,408] [INFO] Thu thập dữ liệu (273/352): Laptop Asus TUF Gaming Dash F15 FX517ZE i5 12450H/8GB/512GB/4GB RTX3050Ti/144Hz/Win11 (HN045W)
+[2025-06-09 23:17:24,826] [INFO] Thu thập dữ liệu (274/352): Laptop Asus Vivobook 15 X1504VA i5 1335U/8GB/512GB/Win11 (NJ025W)
+[2025-06-09 23:17:31,334] [INFO] Thu thập dữ liệu (275/352): Laptop MSI Prestige 13 AI+ A2VMG Ultra 7 258V/32GB/1TB/Win11 (040VN)
+[2025-06-09 23:17:37,146] [INFO] Thu thập dữ liệu (276/352): Laptop Lenovo Yoga Slim 7 15ILL9 Ultra 7 258V/32GB/1TB/120Hz/OfficeHS/Win11 (83HM000GVN)
+[2025-06-09 23:17:42,864] [INFO] Thu thập dữ liệu (277/352): Laptop MSI Gaming Vector 16 HX AI A2XWIG Ultra 9 275HX/16GB/1TB/16GB RTX5080/240Hz/Win11 (062VN)
+[2025-06-09 23:17:49,973] [INFO] Thu thập dữ liệu (278/352): Laptop MSI Prestige 16 AI+ B2VMG Ultra 9 288V/32GB/1TB/Win11 (016VN)
+[2025-06-09 23:17:56,250] [INFO] Thu thập dữ liệu (279/352): Laptop Asus Vivobook 14 A1407CA Ultra 5 225H/16GB/512GB/OfficeHS24+365/Win11 (LY008WS)
+[2025-06-09 23:18:02,119] [INFO] Thu thập dữ liệu (280/352): Laptop HP Envy X360 14 fa0047AU R7 8840HS/16GB/1TB/Win11 (A19BPPA)
+[2025-06-09 23:18:07,756] [INFO] Thu thập dữ liệu (281/352): Laptop Lenovo ThinkBook 16 G7 Ultra 5 125U/16GB/512GB/Win11 (21MS007GVN)
+[2025-06-09 23:18:13,764] [INFO] Thu thập dữ liệu (282/352): Laptop Lenovo Yoga Slim 7 OLED 14ILL10 Ultra 7 258V/32GB/1TB/120Hz/OfficeHS24+365/Win11 (83JX0037VN)
+[2025-06-09 23:18:20,150] [INFO] Thu thập dữ liệu (283/352): Laptop Lenovo Yoga Pro 7 14ASP9 R9 AI 365/32GB/1TB/120Hz/OfficeHS/Win11 (83HN0022VN)
+[2025-06-09 23:18:26,320] [INFO] Thu thập dữ liệu (284/352): Laptop Asus Vivobook S 16 S5606CA Ultra 5 225H/16GB/512GB/120Hz/OfficeHS24+365/Win11 (RI114WS)
+[2025-06-09 23:18:32,621] [INFO] Thu thập dữ liệu (285/352): Laptop Dell XPS 13 9340 Ultra 7 155H/16GB/1TB/OfficeHS/Win11 (HXRGT2)
+[2025-06-09 23:18:38,462] [INFO] Thu thập dữ liệu (286/352): Laptop Lenovo ThinkPad E16 Ultra 7 155H/32GB/1TB/Win11 (21MA004PVN)
+[2025-06-09 23:18:44,789] [INFO] Thu thập dữ liệu (287/352): Laptop Asus Zenbook S16 UM5606KA R7 AI 350/24GB/1TB/120Hz/OfficeHS24+365/Win11 (RK113WS)
+[2025-06-09 23:18:50,163] [INFO] Thu thập dữ liệu (288/352): Laptop Lenovo Gaming Legion Slim 5 16AHP9 R7 8845HS/32GB/1TB/8GB RTX4060/165Hz/Win11 (83DH003BVN)
+[2025-06-09 23:18:55,697] [INFO] Thu thập dữ liệu (289/352): Laptop Lenovo V15 G5 IRL Core 5 120U/16GB/512GB/Win11 (83HF0000VN)
+[2025-06-09 23:19:01,552] [INFO] Thu thập dữ liệu (290/352): Laptop MacBook Pro 14 inch M4 16GB/512GB
+[2025-06-09 23:19:10,325] [INFO] Thu thập dữ liệu (291/352): Laptop MacBook Air 15 inch M4 16GB/256GB
+[2025-06-09 23:19:15,889] [INFO] Thu thập dữ liệu (292/352): Laptop Dell Inspiron 15 3530 i7 1355U/16GB/512GB/120Hz/OfficeHS24+365/Win11 (N5I7216W1)
+[2025-06-09 23:19:21,811] [INFO] Thu thập dữ liệu (293/352): Laptop Acer Aspire 5 A515 58GM 598J i5 13420H/16GB/512GB/4GB RTX2050/144Hz/Win11 (NX.KW1SV.002)
+[2025-06-09 23:19:27,309] [INFO] Thu thập dữ liệu (294/352): Laptop MacBook Air 13 inch M4 24GB/256GB
+[2025-06-09 23:19:40,958] [INFO] Thu thập dữ liệu (295/352): Laptop MacBook Air 15 inch M4 24GB/512GB
+[2025-06-09 23:19:46,788] [INFO] Thu thập dữ liệu (296/352): Laptop MacBook Pro 14 inch M4 Pro 24GB/512GB
+[2025-06-09 23:19:52,302] [INFO] Thu thập dữ liệu (297/352): Laptop MacBook Pro 16 inch M4 Pro 48GB/512GB
+[2025-06-09 23:19:58,075] [INFO] Thu thập dữ liệu (298/352): Laptop MacBook Pro 14 inch Nano M4 Pro 24GB/512GB
+[2025-06-09 23:20:06,268] [INFO] Thu thập dữ liệu (299/352): Laptop MacBook Pro 14 inch M4 16GB/1TB
+[2025-06-09 23:20:14,455] [INFO] Thu thập dữ liệu (300/352): Laptop Dell Inspiron 15 3520 i7 1255U/16GB/512GB/120Hz/OfficeHS24+365/Win11 (N3520-i7U165W11SLU-BL)
+[2025-06-09 23:20:20,111] [INFO] Thu thập dữ liệu (301/352): Laptop Dell Inspiron 14 5430 i5 1340P/16GB/512GB/4GB RTX2050/120Hz/OfficeHS/Win11 (N5430-i5P165W11SL2050)
+[2025-06-09 23:20:25,684] [INFO] Thu thập dữ liệu (302/352): Laptop MacBook Pro 14 inch Nano M4 16GB/512GB
+[2025-06-09 23:20:31,334] [INFO] Thu thập dữ liệu (303/352): Laptop Lenovo IdeaPad Slim 5 OLED 15ARP10 R7 7735HS/16GB/512GB/165Hz/Win11 (83J3001DVN)
+[2025-06-09 23:20:37,483] [INFO] Thu thập dữ liệu (304/352): Laptop Samsung Galaxy Chromebook Go XE340XDA N4500/4GB/32GB/ChromeOS
+[2025-06-09 23:20:42,985] [INFO] Thu thập dữ liệu (305/352): Laptop Samsung Galaxy Chromebook Go XE310XDA N4500/4GB/32GB/ChromeOS
+[2025-06-09 23:20:48,785] [INFO] Thu thập dữ liệu (306/352): Laptop MacBook Pro 16 inch M4 Pro 24GB/1TB
+[2025-06-09 23:20:54,311] [INFO] Thu thập dữ liệu (307/352): Laptop Lenovo IdeaPad Slim 3 14IRH10 i5 13420H/24GB/512GB/Win11 (83K0000AVN)
+[2025-06-09 23:20:59,888] [INFO] Thu thập dữ liệu (308/352): Laptop HP Elitebook 630 G10 i5 1335U/16GB/512GB/Win11 (9J0B5PT)
+[2025-06-09 23:21:05,485] [INFO] Thu thập dữ liệu (309/352): Laptop MacBook Pro 14 inch M4 Pro 48GB/512GB
+[2025-06-09 23:21:12,504] [INFO] Thu thập dữ liệu (310/352): Laptop MacBook Air 13 inch M2 24GB/512GB
+[2025-06-09 23:21:20,478] [INFO] Thu thập dữ liệu (311/352): Laptop MacBook Pro 14 inch Nano M4 Max 36GB/1TB
+[2025-06-09 23:21:26,035] [INFO] Thu thập dữ liệu (312/352): Laptop LG Gram 16Z90S Ultra 7 155H/16GB/512GB/Win11 (16Z90S-G.AH76A5)
+[2025-06-09 23:21:31,700] [INFO] Thu thập dữ liệu (313/352): Laptop Lenovo IdeaPad Slim 3 15IRH10 i7 13620H/16GB/512GB/Win11 (83K1000JVN)
+[2025-06-09 23:21:38,270] [INFO] Thu thập dữ liệu (314/352): Laptop GIGABYTE Gaming G6 KF RC56 i7 13620H/16GB/1TB/8GB RTX4060/165Hz/Win11 (9RC56KF0HJJANIVN000)
+[2025-06-09 23:21:43,933] [INFO] Thu thập dữ liệu (315/352): Laptop HP Elitebook X360 1040 G11 Ultra 7 165H/32GB/1TB/Win11 Pro (AM9H3PT)
+[2025-06-09 23:21:50,022] [INFO] Thu thập dữ liệu (316/352): Laptop Asus Gaming ROG Strix SCAR 18 G835LW Ultra 9 275HX/64GB/4TB/16GB RTX5080/240Hz/Win11 (SA172W)
+[2025-06-09 23:21:56,143] [INFO] Thu thập dữ liệu (317/352): Laptop Dell Latitude 7350 Ultra 5 135U/16GB/512GB/Win11 (L7350-135U-16512W)
+[2025-06-09 23:22:02,174] [INFO] Thu thập dữ liệu (318/352): Laptop Acer Aspire Lite 14 AL14 51P 35QD i3 1305U/8GB/512GB/Win11 (NX.J84SV.001)
+[2025-06-09 23:22:08,749] [INFO] Thu thập dữ liệu (319/352): Laptop HP Gaming OMEN 16 xf0070AX R9 7940HS/32GB/1TB/8GB RTX4070/240Hz/Win11 (8W945PA)
+[2025-06-09 23:22:14,710] [INFO] Thu thập dữ liệu (320/352): Laptop HP Elitebook X360 830 G11 Ultra 5 135U/16GB/512GB/Win11 Pro (A7RB9PT)
+[2025-06-09 23:22:20,760] [INFO] Thu thập dữ liệu (321/352): Laptop HP Elitebook X360 830 G11 Ultra 7 165U/16GB/512GB/Win11 Pro (A7RC0PT)
+[2025-06-09 23:22:26,781] [INFO] Thu thập dữ liệu (322/352): Laptop HP Envy X360 14 fa0097AU R5 8640HS/16GB/512GB/OfficeHS/Win11 (AY8U7PA)
+[2025-06-09 23:22:33,035] [INFO] Thu thập dữ liệu (323/352): Laptop HP Gaming OMEN Transcend 14 fb0135TX Ultra 7 155H/16GB/1TB/8GB RTX4060/120Hz/Win11 (AY8V1PA)
+[2025-06-09 23:22:38,747] [INFO] Thu thập dữ liệu (324/352): Laptop Apple MacBook Pro 16 inch Nano M4 Pro 24GB/512GB
+[2025-06-09 23:22:44,483] [INFO] Thu thập dữ liệu (325/352): Laptop LG Gram 14Z90S Ultra 5 125H/16GB/512GB/Win11 (14Z90S-G.AH55A5)
+[2025-06-09 23:22:50,008] [INFO] Thu thập dữ liệu (326/352): Laptop LG Gram 14Z90S Ultra 7 155H/16GB/512GB/Win11 (14Z90S-G.AH75A5)
+[2025-06-09 23:22:56,053] [INFO] Thu thập dữ liệu (327/352): Laptop LG Gram 17Z90S Ultra 7 155H/16GB/1TB/Win11 (17Z90S-G.AH78A5)
+[2025-06-09 23:23:02,023] [INFO] Thu thập dữ liệu (328/352): Laptop HP Elitebook 635 Aero G11 R5 8640U/16GB/512GB/Win11 (A8WS6PT)
+[2025-06-09 23:23:07,729] [INFO] Thu thập dữ liệu (329/352): Laptop Lenovo IdeaPad Slim 3 16IRH10 i5 13420H/16GB/512GB/Win11 (83K20002VN)
+[2025-06-09 23:23:13,702] [INFO] Thu thập dữ liệu (330/352): Laptop Lenovo IdeaPad Slim 3 16IRH10 i7 13620H/24GB/512GB/Win11 (83K20004VN)
+[2025-06-09 23:23:19,687] [INFO] Thu thập dữ liệu (331/352): Laptop Lenovo Ideapad Slim 3 16IRH10 i7 13620H/16GB/512GB/Win11 (83K20001VN)
+[2025-06-09 23:23:25,624] [INFO] Thu thập dữ liệu (332/352): Laptop GIGABYTE Gaming AORUS 16X X6LAG i7 14650HX/16GB/1TB/8GB RTX4070/165Hz/Win11 (9RX6LASGDDJIXDVN010)
+[2025-06-09 23:23:31,144] [INFO] Thu thập dữ liệu (333/352): Laptop Dell Inspiron 15 3530 i7 1355U/16GB/512GB/120Hz/OfficeHS24+365/Win11 (N5I7305W1)
+[2025-06-09 23:23:37,546] [INFO] Thu thập dữ liệu (334/352): Laptop Lenovo IdeaPad Slim 5 OLED 14IRH10 i5 13420H/32GB/1TB/Win11 (83HR0001VN)
+[2025-06-09 23:23:43,786] [INFO] Thu thập dữ liệu (335/352): Laptop Acer Gaming Predator Helios 18 AI PH18 73 98AQ Ultra 9 275HX/192GB/6TB/24GB RTX5090/120Hz/Win11 Pro (NH.QVWSV.001)
+[2025-06-09 23:23:53,407] [INFO] Thu thập dữ liệu (336/352): Laptop Acer Gaming Predator Helios 18 AI PH18 73 93P0 Ultra 9 275HX/64GB/3TB/16GB RTX5080/250Hz/Win11 Pro (NH.QVYSV.001)
+[2025-06-09 23:23:59,617] [INFO] Thu thập dữ liệu (337/352): Laptop Asus Gaming ROG Strix SCAR 16 G635LX Ultra 9 275HX/64GB/4TB/24GB RTX5090/240Hz/Win11 (RW179W)
+[2025-06-09 23:24:05,435] [INFO] Thu thập dữ liệu (338/352): Laptop HP Elitebook Ultra G1q X1E 78 100/32GB/1TB/Win11 Pro (B4PY1PT)
+[2025-06-09 23:24:12,240] [INFO] Thu thập dữ liệu (339/352): Laptop Lenovo Ideapad Slim 5 OLED 14AKP10 R7 AI 350/32GB/1TB/Win11 (83HX001JVN)
+[2025-06-09 23:24:18,823] [INFO] Thu thập dữ liệu (340/352): Laptop Lenovo Ideapad Slim 5 OLED 14AKP10 R5 AI 340/24GB/512GB/Win11 (83HX001KVN)
+[2025-06-09 23:24:24,883] [INFO] Thu thập dữ liệu (341/352): Laptop Lenovo IdeaPad Slim 3 14IRH10 i7 13620H/24GB/512GB/Win11 (83K00009VN)
+[2025-06-09 23:24:30,888] [INFO] Thu thập dữ liệu (342/352): Laptop Lenovo IdeaPad Slim 3 14IRH10 i7 13620H/16GB/512GB/Win11 (83K00007VN)
+[2025-06-09 23:24:36,849] [INFO] Thu thập dữ liệu (343/352): Laptop GIGABYTE AORUS MASTER 16 Ultra 9 275HX/32GB/1TB/16GB RTX5080/240Hz/Win11 (AORUS-MASTER-16-BYHC5VNE64SH)
+[2025-06-09 23:24:42,865] [INFO] Thu thập dữ liệu (344/352): Laptop GIGABYTE G6 MF RC56 i7 13620H/16GB/512GB/6GB RTX4050/165Hz/Win11 (9RC56MF0HJIIXIVN000)
+[2025-06-09 23:24:48,296] [INFO] Thu thập dữ liệu (345/352): Laptop GIGABYTE G6X 9KG C6LG i7 13650HX/16GB/1TB/8GB RTX4060/165Hz/Win11 (9RC6L9KGHSJIX1VN000)
+[2025-06-09 23:24:54,332] [INFO] Thu thập dữ liệu (346/352): Laptop Lenovo LOQ 15ARP9 R7 7435HS/24GB/512GB/6GB RTX4050/144Hz/Win11 (83JC00J0VN)
+[2025-06-09 23:25:00,950] [INFO] Thu thập dữ liệu (347/352): Laptop Lenovo IdeaPad Slim 5 OLED 15ARP10 R7 7735HS/32GB/512GB/165Hz//Win11 (83J3002SVN)
+[2025-06-09 23:25:06,462] [INFO] Thu thập dữ liệu (348/352): Laptop Dell Inspiron 14 5440 Core 5 120U/16GB/512GB/OfficeHS/Win11 (N4I5211W1)
+[2025-06-09 23:25:12,681] [INFO] Thu thập dữ liệu (349/352): Laptop Dell Latitude 3450 i7 1355U/16GB/512GB/Win11 (71058806)
+[2025-06-09 23:25:18,285] [INFO] Thu thập dữ liệu (350/352): Laptop GIGABYTE A16 GA6H i7 13620H/16GB/512GB/6GB RTX4050/165Hz/Win11 (GAMING-A16-CMHI2VN893SH)
+[2025-06-09 23:25:23,926] [INFO] Thu thập dữ liệu (351/352): Laptop GIGABYTE G6 KF RC56 i7 13620H/16GB/512GB/8GB RTX4060/165Hz/Win11 (9RC56KF0HJIIXIVN000)
+[2025-06-09 23:25:29,605] [INFO] Đã cập nhật 350 dòng vào DataFrame. Tổng số dòng: 350
+[2025-06-09 23:25:29,646] [INFO] Hoàn thành crawl dữ liệu cho danh mục laptop
+[2025-06-09 23:25:29,647] [INFO] Đang lấy danh sách sản phẩm cho: màn hình
+[2025-06-09 23:25:43,076] [INFO] Tổng sản phẩm thu thập được: 68
+[2025-06-09 23:25:43,078] [INFO] Thu thập dữ liệu (0/68): Màn hình Gaming Acer KB242Y P6 23.8 inch FHD/IPS/144Hz/1ms
+[2025-06-09 23:25:46,168] [INFO] Thu thập dữ liệu (1/68): Màn hình SingPC Q24F75-IPS 23.8 inch FHD/IPS/75Hz/4ms
+[2025-06-09 23:25:48,944] [INFO] Thu thập dữ liệu (2/68): Màn hình MSI PRO MP223 E2 21.45 inch FHD/VA/100Hz/1ms
+[2025-06-09 23:25:51,897] [INFO] Thu thập dữ liệu (3/68): Màn hình Samsung LS24F320GAEXXV 23.8 inch FHD/IPS/120Hz/5ms
+[2025-06-09 23:25:55,081] [INFO] Thu thập dữ liệu (4/68): Màn hình Samsung LS24D300GAEXXV 23.8 inch FHD/IPS/100Hz/1ms
+[2025-06-09 23:25:58,321] [INFO] Thu thập dữ liệu (5/68): Màn hình MSI PRO MP252L 24.5 inch FHD/IPS/100Hz/1ms
+[2025-06-09 23:26:01,141] [INFO] Thu thập dữ liệu (6/68): Màn hình Viewsonic VA2708-2K-MHD 27 inch 2K/IPS/100Hz/1ms
+[2025-06-09 23:26:03,885] [INFO] Thu thập dữ liệu (7/68): Màn hình Dell UltraSharp U2424H 23.8 inch FHD/IPS/120Hz/5ms
+[2025-06-09 23:26:06,666] [INFO] Thu thập dữ liệu (8/68): Màn hình Xiaomi A27i 27 inch FHD/IPS/100Hz/6ms/HDMI (ELA5345EU)
+[2025-06-09 23:26:09,462] [INFO] Thu thập dữ liệu (9/68): Màn hình Gaming Asus TUF VG249Q3A 23.8 inch FHD/IPS/180Hz/1ms/FreeSync/DisplayPort/HDMI
+[2025-06-09 23:26:12,754] [INFO] Thu thập dữ liệu (10/68): Màn hình Gaming Acer Nitro KG270 X1 27 inch FHD/IPS/200Hz/4ms
+[2025-06-09 23:26:15,973] [INFO] Thu thập dữ liệu (11/68): Màn hình MSI PRO MP251 E2 24.5 inch FHD/IPS/120Hz/1ms
+[2025-06-09 23:26:19,915] [INFO] Thu thập dữ liệu (12/68): Màn hình MSI PRO MP275 E2 27 inch FHD/IPS/120Hz/1ms
+[2025-06-09 23:26:23,225] [INFO] Thu thập dữ liệu (13/68): Màn hình Gaming Xiaomi G27i 27 inch FHD/IPS/165Hz/1ms/FreeSync/HDMI
+[2025-06-09 23:26:26,733] [INFO] Thu thập dữ liệu (14/68): Màn hình Gaming Asus TUF VG249QE5A 23.8 inch FHD/IPS/146Hz/1ms
+[2025-06-09 23:26:29,442] [INFO] Thu thập dữ liệu (15/68): Màn hình Asus VY279HGR 27 inch FHD/IPS/120Hz/1ms
+[2025-06-09 23:26:32,214] [INFO] Thu thập dữ liệu (16/68): Màn hình Xiaomi A27Qi 27 inch 2K/IPS/100Hz/6ms
+[2025-06-09 23:26:34,965] [INFO] Thu thập dữ liệu (17/68): Màn hình LG 27MR400-B.ATVQ 27 inch FHD/IPS/100Hz/5ms
+[2025-06-09 23:26:37,686] [INFO] Thu thập dữ liệu (18/68): Màn hình Viewsonic VA2732A-H 27 inch FHD/IPS/120Hz/1ms
+[2025-06-09 23:26:40,601] [INFO] Thu thập dữ liệu (19/68): Màn hình Viewsonic VA2432A-H 23.8 inch FHD/IPS/120Hz/1ms
+[2025-06-09 23:26:43,366] [INFO] Thu thập dữ liệu (20/68): Màn hình Asus VY249HGR 23.8 inch FHD/IPS/120Hz/1ms
+[2025-06-09 23:26:46,336] [INFO] Thu thập dữ liệu (21/68): Màn hình Gaming Acer Nitro KG240Y X1 23.8 inch FHD/IPS/200Hz/4ms
+[2025-06-09 23:26:50,313] [INFO] Thu thập dữ liệu (22/68): Màn hình LG 24MR400-B.ATVQ 23.8 inch FHD/IPS/100Hz/5ms
+[2025-06-09 23:26:54,430] [INFO] Thu thập dữ liệu (23/68): Màn hình Dell P2425H 23.8 inch FHD/IPS/100Hz/5ms
+[2025-06-09 23:27:01,377] [INFO] Thu thập dữ liệu (24/68): Màn hình Dell Ultrasharp U2723QE 27 inch 4K/IPS/60Hz/5ms/DisplayPort/TypeC
+[2025-06-09 23:27:05,047] [INFO] Thu thập dữ liệu (25/68): Màn hình Asus VA27EHF 27 inch FHD/IPS/100Hz/1ms/HDMI
+[2025-06-09 23:27:08,996] [INFO] Thu thập dữ liệu (26/68): Màn hình Gaming LG UltraGear 27GS60F-B.ATV 27 inch FHD/IPS/180Hz/1ms
+[2025-06-09 23:27:12,313] [INFO] Thu thập dữ liệu (27/68): Màn hình MSI PRO MP272L 27 inch FHD/IPS/100Hz/1ms
+[2025-06-09 23:27:15,172] [INFO] Thu thập dữ liệu (28/68): Màn hình Dell P2725H 27 inch FHD/IPS/100Hz/5ms
+[2025-06-09 23:27:18,367] [INFO] Thu thập dữ liệu (29/68): Màn hình Asus ProArt PA247CV 23.8 inch FHD/IPS/75Hz/5ms/DisplayPort/TypeC
+[2025-06-09 23:27:22,121] [INFO] Thu thập dữ liệu (30/68): Màn hình Gaming Asus TUF VG259Q3A 24.5 inch FHD/IPS/180Hz/1ms
+[2025-06-09 23:27:25,982] [INFO] Thu thập dữ liệu (31/68): Màn hình Gaming LG UltraGear 24GS60F-B.ATV 23.8 inch FHD/IPS/180Hz/1ms
+[2025-06-09 23:27:29,494] [INFO] Thu thập dữ liệu (32/68): Màn hình Gaming Viewsonic VX2479-HD-PRO 23.8 inch FHD/IPS/180Hz/1ms
+[2025-06-09 23:27:32,995] [INFO] Thu thập dữ liệu (33/68): Màn hình Asus ProArt PA248QV 24.1 inch FHD/IPS/75Hz/5ms/DisplayPort/HDMI/VGA/USB
+[2025-06-09 23:27:36,443] [INFO] Thu thập dữ liệu (34/68): Màn hình Gaming Xiaomi G34WQi 34 inch 3K/VA/180Hz/1ms/DisplayPort
+[2025-06-09 23:27:39,603] [INFO] Thu thập dữ liệu (35/68): Màn hình Gaming GIGABYTE GS27FA 27 inch FHD/IPS/180Hz/1ms
+[2025-06-09 23:27:42,726] [INFO] Thu thập dữ liệu (36/68): Màn hình Asus ProArt PA278QV 27 inch 2K IPS/75Hz/5ms
+[2025-06-09 23:27:45,944] [INFO] Thu thập dữ liệu (37/68): Màn hình Dell E2725H 27 inch FHD/VA/60Hz/5ms
+[2025-06-09 23:27:49,669] [INFO] Thu thập dữ liệu (38/68): Màn hình Samsung ViewFinity S5 S50GC LS34C500GAEXXV 34 inch 3K/VA/100Hz/5ms/HDMI
+[2025-06-09 23:27:52,567] [INFO] Thu thập dữ liệu (39/68): Màn hình Gaming GIGABYTE GS25F2 24.5 inch FHD/IPS/200Hz/1ms
+[2025-06-09 23:27:55,339] [INFO] Thu thập dữ liệu (40/68): Màn hình Asus ProArt PA278CV 27 inch 2K/IPS/75Hz/5ms/DisplayPort/TypeC
+[2025-06-09 23:27:58,763] [INFO] Thu thập dữ liệu (41/68): Màn hình Gaming Asus TUF VG279Q3A 27 inch FHD/IPS/180Hz/1ms/FreeSync/DisplayPort/HDMI
+[2025-06-09 23:28:01,722] [INFO] Thu thập dữ liệu (42/68): Màn hình Samsung ViewFinity S8 LS27B800PXEXXV 27 inch 4K/IPS/60Hz/5ms/HDR400/HDMI/TypeC
+[2025-06-09 23:28:05,063] [INFO] Thu thập dữ liệu (43/68): Màn hình Gaming Asus ROG Strix XG27ACS 27 inch 2K/IPS/180Hz/1ms
+[2025-06-09 23:28:08,459] [INFO] Thu thập dữ liệu (44/68): Màn hình Gaming Viewsonic VX2758A-2K-PRO-4 27 inch 2K/IPS/180Hz/1ms
+[2025-06-09 23:28:11,799] [INFO] Thu thập dữ liệu (45/68): Màn hình Gaming Asus TUF VG279QE5A 27 inch FHD/IPS/146Hz/1ms
+[2025-06-09 23:28:15,162] [INFO] Thu thập dữ liệu (46/68): Màn hình Viewsonic VA2708-4K-MHD 27 inch 4K/IPS/60Hz/4ms
+[2025-06-09 23:28:18,497] [INFO] Thu thập dữ liệu (47/68): Màn hình Lenovo L22e-40 21.5 inch FHD/VA/75Hz/4ms
+[2025-06-09 23:28:21,744] [INFO] Thu thập dữ liệu (48/68): Màn hình Lenovo L24i-4A 23.8 inch FHD/IPS/100Hz/1ms
+[2025-06-09 23:28:24,562] [INFO] Thu thập dữ liệu (49/68): Màn hình Asus ProArt PA328CGV 32 inch 2K/IPS/165Hz/5ms
+[2025-06-09 23:28:27,330] [INFO] Thu thập dữ liệu (50/68): Màn hình Gaming MSI MAG 255F-E20 24.5 inch FHD/Rapid IPS/200Hz/0.5ms
+[2025-06-09 23:28:30,690] [INFO] Thu thập dữ liệu (51/68): Màn hình Gaming MSI MAG 274F 27 inch FHD/Rapid IPS/200Hz/0.5ms
+[2025-06-09 23:28:34,154] [INFO] Thu thập dữ liệu (52/68): Màn hình MSI PRO MP341CQ 34 inch 3K/VA/100Hz/4ms
+[2025-06-09 23:28:37,599] [INFO] Thu thập dữ liệu (53/68): Màn hình Samsung Gaming Odyssey Neo G9 G95NC LS57CG952NEXXV 57 inch DUHD/VA/240Hz/1ms
+[2025-06-09 23:28:40,491] [INFO] Thu thập dữ liệu (54/68): Màn Hình Thông Minh Samsung M7 M70D LS43DM702UEXXV 43 inch 4K/VA/60Hz/4ms
+[2025-06-09 23:28:43,282] [INFO] Thu thập dữ liệu (55/68): Màn hình Gaming Xiaomi G Pro 27i 27 inch 2K/IPS/180Hz/1ms
+[2025-06-09 23:28:46,129] [INFO] Thu thập dữ liệu (56/68): Màn hình Lenovo L24-4e 23.8 inch FHD/IPS/100Hz/4ms
+[2025-06-09 23:28:48,884] [INFO] Thu thập dữ liệu (57/68): Màn hình Asus VA249HG-R 23.8 inch FHD/IPS/120Hz/1ms
+[2025-06-09 23:28:52,155] [INFO] Thu thập dữ liệu (58/68): Màn hình Gaming Asus TUF VG259Q5A 24.5 inch FHD/IPS/200Hz/1ms
+[2025-06-09 23:28:55,565] [INFO] Thu thập dữ liệu (59/68): Màn hình MSI Pro MP225 21.45 inch FHD/IPS/100Hz/1ms/HDMI
+[2025-06-09 23:28:59,399] [INFO] Thu thập dữ liệu (60/68): Màn hình Samsung S3 S33GC LS27C330GAEXXV 27 inch FHD/IPS/100Hz/4ms/HDMI
+[2025-06-09 23:29:02,926] [INFO] Thu thập dữ liệu (61/68): Màn hình Gaming MSI G255F 24.5 inch FHD/Rapid IPS/180Hz/1ms
+[2025-06-09 23:29:05,776] [INFO] Thu thập dữ liệu (62/68): Màn hình Dell E2423HN 23.8 inch FHD/VA/60Hz/5ms/HDMI
+[2025-06-09 23:29:08,796] [INFO] Thu thập dữ liệu (63/68): Màn hình Gaming Asus ROG Strix XG27AQDMG 26.5 inch 2K/WOLED/240Hz/0.03ms
+[2025-06-09 23:29:12,280] [INFO] Thu thập dữ liệu (64/68): Màn hình Xiaomi A27Ui 27 inch 4K/IPS/60Hz/6ms
+[2025-06-09 23:29:15,479] [INFO] Thu thập dữ liệu (65/68): Màn hình SingPC P22F100-IPS 21.5 inch FHD/IPS/100Hz/5ms
+[2025-06-09 23:29:18,705] [INFO] Thu thập dữ liệu (66/68): Màn hình SingPC P27F100-IPS 27 inch FHD/IPS/100Hz/5ms
+[2025-06-09 23:29:21,964] [INFO] Thu thập dữ liệu (67/68): Màn hình Asus VA279HG-R 27 inch FHD/IPS/120Hz/1ms
+[2025-06-09 23:29:25,160] [INFO] Đã cập nhật 68 dòng vào DataFrame. Tổng số dòng: 68
+[2025-06-09 23:29:25,165] [INFO] Hoàn thành crawl dữ liệu cho danh mục màn hình
+[2025-06-09 23:29:25,165] [INFO] Đang lấy danh sách sản phẩm cho: pc
+[2025-06-09 23:29:33,549] [INFO] Tổng sản phẩm thu thập được: 24
+[2025-06-09 23:29:33,550] [INFO] Thu thập dữ liệu (0/24): MiniPC SingPC i12450H682-W i5 12450H/8GB/256GB/Win11Pro
+[2025-06-09 23:29:36,643] [INFO] Thu thập dữ liệu (1/24): ROSA Crystal A10 Ryzen 3 3200G/8GB/256GB/Win11 Pro
+[2025-06-09 23:29:39,424] [INFO] Thu thập dữ liệu (2/24): SingPC i713H695SF-W i7 13620H/16GB/512GB/Bàn phím/Chuột/Win11Pro
+[2025-06-09 23:29:42,187] [INFO] Thu thập dữ liệu (3/24): ROSA Crystal I10 i3 13100/8GB/256GB/Win11 Pro
+[2025-06-09 23:29:45,414] [INFO] Thu thập dữ liệu (4/24): ASUS S500SE i3 13100/8GB/256GB/Bàn phím/Chuột/Win11 (S500SE-313100069W)
+[2025-06-09 23:29:48,498] [INFO] Thu thập dữ liệu (5/24): ASUS AIO V440VAK i3 1315U/8GB/512GB/23.8"Full HD/Bàn phím/Chuột/Win11 (WPC066W)
+[2025-06-09 23:29:51,810] [INFO] Thu thập dữ liệu (6/24): SingPC i512H682SF-W i5 12450H/8GB/256GB/Bàn phím/Chuột/Win11Pro
+[2025-06-09 23:30:00,278] [INFO] Thu thập dữ liệu (7/24): ASUS AIO V440VAK i5 13420H/16GB/512GB/23.8"FullHD/Bàn phím/Chuột/Win11 (WPC065W)
+[2025-06-09 23:30:03,176] [INFO] Thu thập dữ liệu (8/24): ASUS AIO V440VAT i5 13420H/16GB/512GB/23.8"Full HD/Bàn phím/Chuột/Win11 (WPD010W)
+[2025-06-09 23:30:06,592] [INFO] Thu thập dữ liệu (9/24): ROSA Rezo I20 i5 13400F/16GB/500GB/RTX3050 6GB/Win11 Pro
+[2025-06-09 23:30:09,558] [INFO] Thu thập dữ liệu (10/24): ROSA Rezo I30 i7 13700F/32GB/512GB/RTX4060 8GB/Win 11 Pro
+[2025-06-09 23:30:12,654] [INFO] Thu thập dữ liệu (11/24): iMac 24 inch M4 24GB - 256GB
+[2025-06-09 23:30:15,486] [INFO] Thu thập dữ liệu (12/24): ASUS V500MV i5 13420H/8GB/512GB/Bàn Phím/Chuột/Win11 (V500MV-13420H137W)
+[2025-06-09 23:30:18,522] [INFO] Thu thập dữ liệu (13/24): ROSA Crystal A20 Ryzen 5 5500GT/16GB/256GB/Win 11 Pro
+[2025-06-09 23:30:22,521] [INFO] Thu thập dữ liệu (14/24): iMac 24 inch M4 24GB/512GB
+[2025-06-09 23:30:25,582] [INFO] Thu thập dữ liệu (15/24): iMac 24 inch M4 16GB/256GB/10GPU
+[2025-06-09 23:30:28,910] [INFO] Thu thập dữ liệu (16/24): ROSA Rezo A20 Ryzen 5 5600X/16GB/500GB/RX6500XT 4GB/Win11 Pro
+[2025-06-09 23:30:31,768] [INFO] Thu thập dữ liệu (17/24): SingPC AIO M24Ei3128M5-W i3 12100/8GB/512GB/23.8"FullHD/Bàn phím/Chuột/Win11Pro
+[2025-06-09 23:30:34,702] [INFO] Thu thập dữ liệu (18/24): SingPC AIO M24Ei5128M5-W i5 12400/8GB/512GB/23.8 inch Full HD/Bàn Phím/Chuột/Win11Pro
+[2025-06-09 23:30:38,154] [INFO] Thu thập dữ liệu (19/24): Mac mini M4 16GB/256GB
+[2025-06-09 23:30:41,429] [INFO] Thu thập dữ liệu (20/24): Mac mini M4 24GB/1TB
+[2025-06-09 23:30:44,824] [INFO] Thu thập dữ liệu (21/24): ASUS V500MV i3 1315U/8GB/512GB/Bàn Phím/Chuột/Win11 (V500MV-31315U053W)
+[2025-06-09 23:30:48,176] [INFO] Thu thập dữ liệu (22/24): ASUS V500MV i3 1315U/8GB/256GB/Bàn Phím/Chuột/Win11 (V500MV-31315U054W)
+[2025-06-09 23:30:50,975] [INFO] Thu thập dữ liệu (23/24): MSI AIO Modern AM242 12M i5 1235U/8GB/512GB/23.8" Full HD/Bàn phím/Chuột/Win11
+[2025-06-09 23:30:54,226] [INFO] Đã cập nhật 24 dòng vào DataFrame. Tổng số dòng: 24
+[2025-06-09 23:30:54,249] [INFO] Hoàn thành crawl dữ liệu cho danh mục pc
+[2025-06-09 23:30:57,829] [INFO] >>> Bắt đầu crawl từ FPT
+[2025-06-09 23:30:57,832] [INFO] Khởi tạo trình duyệt và bắt đầu quá trình thu thập
+[2025-06-09 23:30:59,825] [INFO] Truy cập trang danh mục: máy tính bảng - URL: https://fptshop.com.vn/may-tinh-bang
+[2025-06-09 23:31:05,353] [INFO] Tổng số sản phẩm trong danh sách 16
+[2025-06-09 23:31:05,877] [INFO] Thu thập dữ liệu sản phẩm (1/16): Samsung Galaxy Tab A9 WiFi 8GB 128GB
+[2025-06-09 23:31:52,392] [INFO] Đã thu thập chi tiết sản phẩm Samsung Galaxy Tab A9 WiFi 8GB 128GB
+[2025-06-09 23:31:52,392] [INFO] Thu thập dữ liệu sản phẩm (2/16): iPad Pro 11 inch M4 2024 Wifi 256GB
+[2025-06-09 23:32:12,524] [INFO] Đã thu thập chi tiết sản phẩm iPad Pro 11 inch M4 2024 Wifi 256GB
+[2025-06-09 23:32:12,524] [INFO] Thu thập dữ liệu sản phẩm (3/16): Samsung Galaxy Tab S6 Lite 2024 4G 4GB 64GB
+[2025-06-09 23:32:38,114] [INFO] Đã thu thập chi tiết sản phẩm Samsung Galaxy Tab S6 Lite 2024 4G 4GB 64GB
+[2025-06-09 23:32:38,114] [INFO] Thu thập dữ liệu sản phẩm (4/16): JoyStar J6 WiFi 4G 64GB
+[2025-06-09 23:32:52,712] [INFO] Đã thu thập chi tiết sản phẩm JoyStar J6 WiFi 4G 64GB
+[2025-06-09 23:32:52,712] [INFO] Thu thập dữ liệu sản phẩm (5/16): iPad Air 11 inch M3 2025 WiFi 128GB
+[2025-06-09 23:33:22,647] [INFO] Đã thu thập chi tiết sản phẩm iPad Air 11 inch M3 2025 WiFi 128GB
+[2025-06-09 23:33:22,647] [INFO] Thu thập dữ liệu sản phẩm (6/16): Honor Pad X8a WiFi 4GB 128GB
+[2025-06-09 23:33:37,651] [INFO] Đã thu thập chi tiết sản phẩm Honor Pad X8a WiFi 4GB 128GB
+[2025-06-09 23:33:37,651] [INFO] Thu thập dữ liệu sản phẩm (7/16): Xiaomi Poco Pad WiFi 8GB 256GB
+[2025-06-09 23:33:58,251] [INFO] Đã thu thập chi tiết sản phẩm Xiaomi Poco Pad WiFi 8GB 256GB
+[2025-06-09 23:33:58,252] [INFO] Thu thập dữ liệu sản phẩm (8/16): Samsung Galaxy Tab S10 Plus Wifi 12GB 256GB
+[2025-06-09 23:34:18,417] [INFO] Đã thu thập chi tiết sản phẩm Samsung Galaxy Tab S10 Plus Wifi 12GB 256GB
+[2025-06-09 23:34:18,417] [INFO] Thu thập dữ liệu sản phẩm (9/16): Lenovo Tab M9 4G 4GB 128GB
+[2025-06-09 23:34:33,411] [INFO] Đã thu thập chi tiết sản phẩm Lenovo Tab M9 4G 4GB 128GB
+[2025-06-09 23:34:33,411] [INFO] Thu thập dữ liệu sản phẩm (10/16): TCL Tab 10L Gen 3 4G 4GB 64GB
+[2025-06-09 23:34:49,545] [INFO] Đã thu thập chi tiết sản phẩm TCL Tab 10L Gen 3 4G 4GB 64GB
+[2025-06-09 23:34:49,546] [INFO] Thu thập dữ liệu sản phẩm (11/16): Masstel Tab 11 Pro 4G 4GB 128GB
+[2025-06-09 23:35:04,053] [INFO] Đã thu thập chi tiết sản phẩm Masstel Tab 11 Pro 4G 4GB 128GB
+[2025-06-09 23:35:04,053] [INFO] Thu thập dữ liệu sản phẩm (12/16): Masstel Tab 10 Edu 4G 3GB-32GB
+[2025-06-09 23:35:23,994] [INFO] Đã thu thập chi tiết sản phẩm Masstel Tab 10 Edu 4G 3GB-32GB
+[2025-06-09 23:35:23,994] [INFO] Thu thập dữ liệu sản phẩm (13/16): Lenovo Tab 10.1 WiFi 4GB 64GB
+[2025-06-09 23:35:44,836] [INFO] Đã thu thập chi tiết sản phẩm Lenovo Tab 10.1 WiFi 4GB 64GB
+[2025-06-09 23:35:44,836] [INFO] Thu thập dữ liệu sản phẩm (14/16): Samsung Galaxy Tab A9 WiFi 4GB 64GB
+[2025-06-09 23:36:10,742] [INFO] Đã thu thập chi tiết sản phẩm Samsung Galaxy Tab A9 WiFi 4GB 64GB
+[2025-06-09 23:36:10,744] [INFO] Thu thập dữ liệu sản phẩm (15/16): iPad A16 WiFi 128GB
+[2025-06-09 23:36:41,201] [INFO] Đã thu thập chi tiết sản phẩm iPad A16 WiFi 128GB
+[2025-06-09 23:36:41,201] [INFO] Thu thập dữ liệu sản phẩm (16/16): JoyStar J10 4G 4GB-64GB
+[2025-06-09 23:36:56,025] [INFO] Đã thu thập chi tiết sản phẩm JoyStar J10 4G 4GB-64GB
+[2025-06-09 23:36:56,028] [INFO] Đã lưu dữ liệu danh mục máy tính bảng vào data/raw/fpt/tablet.csv
+[2025-06-09 23:36:58,326] [INFO] >>> Bắt đầu crawl từ CellphoneS
+[2025-06-09 23:36:58,326] [INFO] Khởi tạo trình duyệt và bắt đầu quá trình crawl
+[2025-06-09 23:36:59,577] [INFO] Xử lý danh mục: điện thoại
+[2025-06-09 23:36:59,578] [INFO] Thu thập nhu cầu sử dụng cho danh mục: điện thoại
+[2025-06-09 23:37:08,219] [INFO] Đã thêm nhu cầu 
+[2025-06-09 23:37:08,242] [INFO] Đã thêm nhu cầu 
+[2025-06-09 23:37:08,262] [INFO] Đã thêm nhu cầu 
+[2025-06-09 23:37:08,282] [INFO] Đã thêm nhu cầu 
+[2025-06-09 23:37:08,302] [INFO] Đã thêm nhu cầu 
+[2025-06-09 23:37:08,320] [INFO] Đã thêm nhu cầu 
+[2025-06-09 23:37:08,342] [INFO] Đã thêm nhu cầu 
+[2025-06-09 23:37:08,363] [INFO] Đã thêm nhu cầu 
+[2025-06-09 23:37:08,363] [INFO] Đang thu thập dữ liệu cho nhu cầu 
+[2025-06-09 23:37:54,296] [INFO] Tổng số sản phẩm cho nhu cầu : 209
+[2025-06-09 23:38:00,974] [INFO] Đã thu thập dữ liệu 209 sản phẩm từ 
+[2025-06-09 23:38:00,974] [INFO] Đang thu thập dữ liệu cho nhu cầu 
+[2025-06-09 23:38:17,087] [INFO] Tổng số sản phẩm cho nhu cầu : 12
+[2025-06-09 23:38:17,487] [INFO] Đã thu thập dữ liệu 12 sản phẩm từ 
+[2025-06-09 23:38:17,487] [INFO] Đang thu thập dữ liệu cho nhu cầu 
+[2025-06-09 23:38:50,692] [INFO] Tổng số sản phẩm cho nhu cầu : 123
+[2025-06-09 23:38:54,558] [INFO] Đã thu thập dữ liệu 123 sản phẩm từ 
+[2025-06-09 23:38:54,559] [INFO] Đang thu thập dữ liệu cho nhu cầu 
+[2025-06-09 23:39:27,830] [INFO] Tổng số sản phẩm cho nhu cầu : 132
+[2025-06-09 23:39:31,780] [INFO] Đã thu thập dữ liệu 132 sản phẩm từ 
+[2025-06-09 23:39:31,780] [INFO] Đang thu thập dữ liệu cho nhu cầu 
+[2025-06-09 23:40:05,092] [INFO] Tổng số sản phẩm cho nhu cầu : 131
+[2025-06-09 23:40:09,535] [INFO] Đã thu thập dữ liệu 131 sản phẩm từ 
+[2025-06-09 23:40:09,536] [INFO] Đang thu thập dữ liệu cho nhu cầu 
+[2025-06-09 23:40:55,396] [INFO] Tổng số sản phẩm cho nhu cầu : 209
+[2025-06-09 23:41:02,832] [INFO] Đã thu thập dữ liệu 209 sản phẩm từ 
+[2025-06-09 23:41:02,832] [INFO] Đang thu thập dữ liệu cho nhu cầu 
+[2025-06-09 23:41:30,249] [INFO] Tổng số sản phẩm cho nhu cầu : 100
+[2025-06-09 23:41:33,785] [INFO] Đã thu thập dữ liệu 100 sản phẩm từ 
+[2025-06-09 23:41:33,785] [INFO] Đang thu thập dữ liệu cho nhu cầu 
+[2025-06-09 23:41:57,620] [INFO] Tổng số sản phẩm cho nhu cầu : 67
+[2025-06-09 23:41:59,850] [INFO] Đã thu thập dữ liệu 67 sản phẩm từ 
+[2025-06-09 23:41:59,851] [INFO] Truy cập trang danh mục: https://cellphones.com.vn/mobile.html
+[2025-06-09 23:44:24,510] [WARNING] Không còn nút xem thêm hoặc lỗi xảy ra: Message: 
+
+[2025-06-09 23:45:10,250] [INFO] Tổng sản phẩm thu thập được: 1174
+[2025-06-09 23:45:10,257] [INFO] Bắt đầu lấy dữ liệu chi tiết sản phẩm từ 0 đến 1069 cho danh mục: điện thoại
+[2025-06-09 23:45:10,257] [INFO] Thu thập dữ liệu sản phẩm 0: Samsung Galaxy S25 256GB
+[2025-06-09 23:45:14,967] [INFO] Đã thu thập chi tiết sản phẩm Samsung Galaxy S25 256GB
+[2025-06-09 23:45:14,967] [INFO] Thu thập dữ liệu sản phẩm 1: iPhone 16 Pro Max 256GB | Chính hãng VN/A
+[2025-06-09 23:45:18,485] [INFO] Đã thu thập chi tiết sản phẩm iPhone 16 Pro Max 256GB | Chính hãng VN/A
+[2025-06-09 23:45:18,486] [INFO] Thu thập dữ liệu sản phẩm 2: Xiaomi 14T Pro 12GB 512GB
+[2025-06-09 23:45:23,106] [INFO] Đã thu thập chi tiết sản phẩm Xiaomi 14T Pro 12GB 512GB
+[2025-06-09 23:45:23,106] [INFO] Thu thập dữ liệu sản phẩm 3: Samsung Galaxy S25 Ultra 12GB 256GB
+[2025-06-09 23:45:27,451] [INFO] Đã thu thập chi tiết sản phẩm Samsung Galaxy S25 Ultra 12GB 256GB
+[2025-06-09 23:45:27,452] [INFO] Thu thập dữ liệu sản phẩm 4: OPPO Reno10 Pro+ 5G 12GB 256GB
+[2025-06-09 23:45:30,776] [INFO] Đã thu thập chi tiết sản phẩm OPPO Reno10 Pro+ 5G 12GB 256GB
+[2025-06-09 23:45:30,777] [INFO] Thu thập dữ liệu sản phẩm 5: iPhone 15 128GB | Chính hãng VN/A
+[2025-06-09 23:45:35,005] [INFO] Đã thu thập chi tiết sản phẩm iPhone 15 128GB | Chính hãng VN/A
+[2025-06-09 23:45:35,005] [INFO] Thu thập dữ liệu sản phẩm 6: iPhone 16 Pro 512GB | Chính hãng VN/A
+[2025-06-09 23:45:39,117] [INFO] Đã thu thập chi tiết sản phẩm iPhone 16 Pro 512GB | Chính hãng VN/A
+[2025-06-09 23:45:39,118] [INFO] Thu thập dữ liệu sản phẩm 7: Samsung Galaxy S24 FE 5G 8GB 128GB
+[2025-06-09 23:45:44,967] [INFO] Đã thu thập chi tiết sản phẩm Samsung Galaxy S24 FE 5G 8GB 128GB
+[2025-06-09 23:45:44,968] [INFO] Thu thập dữ liệu sản phẩm 8: Xiaomi 14T 12GB 512GB
+[2025-06-09 23:45:50,826] [INFO] Đã thu thập chi tiết sản phẩm Xiaomi 14T 12GB 512GB
+[2025-06-09 23:45:50,827] [INFO] Thu thập dữ liệu sản phẩm 9: Xiaomi Redmi Note 14 6GB 128GB
+[2025-06-09 23:45:55,224] [INFO] Đã thu thập chi tiết sản phẩm Xiaomi Redmi Note 14 6GB 128GB
+[2025-06-09 23:45:55,224] [INFO] Thu thập dữ liệu sản phẩm 10: iPhone 16 Pro 128GB | Chính hãng VN/A
